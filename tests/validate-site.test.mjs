@@ -154,3 +154,20 @@ test('validator rejects a forged PNG header with dimensions only', async () => {
   assert.notEqual(result.status, 0);
   assert.match(result.stdout, /capture dimensions mismatch/i);
 });
+
+test('validator allows passive absolute Open Graph metadata', async () => {
+  const fixture = await makeFixture();
+  const html = await readFile(join(fixture, 'index.html'), 'utf8');
+  assert.match(html, /<meta property="og:url" content="https:\/\/mursyidd\.github\.io\/benchmark-showcase\/">/);
+  assert.match(html, /<meta property="og:image" content="https:\/\/mursyidd\.github\.io\/benchmark-showcase\/assets\/social\/benchmark-preview\.png">/);
+  const result = run(fixture);
+  assert.equal(result.status, 0, result.stdout + result.stderr);
+});
+
+test('validator still rejects genuine external runtime requests', async () => {
+  const fixture = await makeFixture();
+  await appendFile(join(fixture, 'js', 'app.js'), "\nfetch('https://example.com/runtime.json');\n");
+  const result = run(fixture);
+  assert.notEqual(result.status, 0);
+  assert.match(result.stdout, /runtime external request/i);
+});

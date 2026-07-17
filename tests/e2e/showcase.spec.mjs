@@ -202,7 +202,11 @@ test('archive scope, provenance, timing, integrity, and review semantics are exp
   await expect(page.locator('.review-badge').first()).toHaveText('Verified for archive');
   await expect(page.locator('.classification-badge').first()).toHaveText('editorially-normalized');
   await expect(page.locator('#run-grid .timing-caveat')).toHaveCount(18);
-  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'assets/social/benchmark-preview.png');
+  await expect(page.locator('meta[property="og:url"]')).toHaveAttribute('content', 'https://mursyidd.github.io/benchmark-showcase/');
+  await expect(page.locator('meta[property="og:image"]')).toHaveAttribute('content', 'https://mursyidd.github.io/benchmark-showcase/assets/social/benchmark-preview.png');
+  await expect(page.locator('meta[property="og:image:width"]')).toHaveAttribute('content', '1200');
+  await expect(page.locator('meta[property="og:image:height"]')).toHaveAttribute('content', '630');
+  await expect(page.locator('meta[property="og:image:alt"]')).toHaveAttribute('content', 'Frontend Benchmark Evidence Archive preview');
 });
 
 test('all report navigation, cases, and valid filter values are operable', async ({ page }) => {

@@ -257,7 +257,8 @@ async function validateSecurityAndContent(data) {
   if (/location\.search|searchParams|[?&](url|src)=/i.test(shell)) error('SECURITY', 'standalone preview accepts an arbitrary URL parameter');
   if (/innerHTML/.test(viewer)) error('SECURITY', 'innerHTML is forbidden in exact text viewers');
   const jsFiles = await readdir(resolve(root, 'js'));
-  const runtimeSources = `${index}\n${preview}\n${await text('styles.css')}\n${(await Promise.all(jsFiles.filter((name) => name.endsWith('.js')).map((name) => text(`js/${name}`)))).join('\n')}`;
+  const runtimeHtml = `${index}\n${preview}`.replace(/<meta\b[^>]*\bproperty\s*=\s*["']og:[^"']*["'][^>]*>/gi, '');
+  const runtimeSources = `${runtimeHtml}\n${(await text('styles.css'))}\n${(await Promise.all(jsFiles.filter((name) => name.endsWith('.js')).map((name) => text(`js/${name}`)))).join('\n')}`;
   if (/https?:\/\//i.test(runtimeSources)) error('SECURITY', 'runtime external request found in showcase chrome');
   if (/javascript:|vbscript:|data:text\/html/i.test(runtimeSources)) error('SECURITY', 'unsafe URL scheme found in showcase chrome');
   const localRefs = [...(index + preview).matchAll(/(?:href|src|action|formaction)=["']([^"']+)["']/gi)].map((match) => match[1]);
