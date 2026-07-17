@@ -1,0 +1,2239 @@
+{
+  "schemaVersion": 1,
+  "benchmark": {
+    "title": "Frontend Benchmark Evidence Archive",
+    "description": "A transparent archive of 18 frontend generation runs; not a controlled study, model ranking, or superiority claim.",
+    "caseCount": 3,
+    "modelCount": 3,
+    "conditionCount": 2,
+    "runCount": 18,
+    "promptCount": 6
+  },
+  "screenshotEvidenceSummary": {
+    "originalScreenshotArtifactCount": 15,
+    "runsWithOriginalScreenshotEvidenceCount": 1,
+    "standardizedDerivedCaptureCount": 36,
+    "runsWithStandardizedDerivedCaptureCoverageCount": 18
+  },
+  "models": [
+    {
+      "id": "luna-xhigh",
+      "name": "Luna",
+      "reasoningLevel": "xhigh",
+      "label": "Luna xHigh"
+    },
+    {
+      "id": "sol-high",
+      "name": "Sol",
+      "reasoningLevel": "high",
+      "label": "Sol High"
+    },
+    {
+      "id": "terra-xhigh",
+      "name": "Terra",
+      "reasoningLevel": "xhigh",
+      "label": "Terra xHigh"
+    }
+  ],
+  "conditions": [
+    {
+      "id": "new-skill",
+      "label": "New Skill",
+      "skillLoaded": true
+    },
+    {
+      "id": "no-skill",
+      "label": "No Skill",
+      "skillLoaded": false
+    }
+  ],
+  "cases": [
+    {
+      "id": "case-01",
+      "number": 1,
+      "name": "Creative landing page",
+      "shortName": "Creative Landing",
+      "purpose": "A public-facing creative product landing page with responsive interaction requirements."
+    },
+    {
+      "id": "case-02",
+      "number": 2,
+      "name": "Operational dashboard",
+      "shortName": "Operational Dashboard",
+      "purpose": "A dense operational interface for monitoring and controlling agent work."
+    },
+    {
+      "id": "case-03",
+      "number": 3,
+      "name": "Settings form",
+      "shortName": "Settings Form",
+      "purpose": "A stateful account settings experience with validation and save feedback."
+    }
+  ],
+  "skill": {
+    "name": "frontend-art-direction",
+    "path": "inputs/skill/SKILL.md",
+    "verificationStatus": "verified",
+    "sanitized": false,
+    "checksumAlgorithm": "sha256",
+    "checksum": "d5b6e60238d56ff59adc9bead7ecd77477c135e5c43e083d1d4200f814213b08",
+    "usedByCondition": "new-skill",
+    "excludedFromCondition": "no-skill"
+  },
+  "prompts": [
+    {
+      "id": "case-01-new-skill",
+      "caseId": "case-01",
+      "conditionId": "new-skill",
+      "label": "Creative Landing — New Skill",
+      "path": "inputs/prompts/case-01/new-skill.md",
+      "checksumAlgorithm": "sha256",
+      "checksum": "6bc3be329f9f8ed7a86d18a0bc32c437e34d6fb2ccb201fda9cc8d362750bef2",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "skillLoadedSeparately": true,
+      "usedByRuns": [
+        "case-01-new-skill-luna-xhigh",
+        "case-01-new-skill-sol-high",
+        "case-01-new-skill-terra-xhigh"
+      ]
+    },
+    {
+      "id": "case-01-no-skill",
+      "caseId": "case-01",
+      "conditionId": "no-skill",
+      "label": "Creative Landing — No Skill",
+      "path": "inputs/prompts/case-01/no-skill.md",
+      "checksumAlgorithm": "sha256",
+      "checksum": "1f5d56e062f601d28760ea874c21050532fb0592bec551af29b9329089564a08",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "skillLoadedSeparately": false,
+      "usedByRuns": [
+        "case-01-no-skill-luna-xhigh",
+        "case-01-no-skill-sol-high",
+        "case-01-no-skill-terra-xhigh"
+      ]
+    },
+    {
+      "id": "case-02-new-skill",
+      "caseId": "case-02",
+      "conditionId": "new-skill",
+      "label": "Operational Dashboard — New Skill",
+      "path": "inputs/prompts/case-02/new-skill.md",
+      "checksumAlgorithm": "sha256",
+      "checksum": "a5a6691a54cc80105248bbc5cf6125487582c505300620d8e47905d1c9098dcd",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "skillLoadedSeparately": true,
+      "usedByRuns": [
+        "case-02-new-skill-luna-xhigh",
+        "case-02-new-skill-sol-high",
+        "case-02-new-skill-terra-xhigh"
+      ]
+    },
+    {
+      "id": "case-02-no-skill",
+      "caseId": "case-02",
+      "conditionId": "no-skill",
+      "label": "Operational Dashboard — No Skill",
+      "path": "inputs/prompts/case-02/no-skill.md",
+      "checksumAlgorithm": "sha256",
+      "checksum": "45c2003ebb00fb86c60a0c96eb8181965bccb752316d1e068726f55b70288c38",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "skillLoadedSeparately": false,
+      "usedByRuns": [
+        "case-02-no-skill-luna-xhigh",
+        "case-02-no-skill-sol-high",
+        "case-02-no-skill-terra-xhigh"
+      ]
+    },
+    {
+      "id": "case-03-new-skill",
+      "caseId": "case-03",
+      "conditionId": "new-skill",
+      "label": "Settings Form — New Skill",
+      "path": "inputs/prompts/case-03/new-skill.md",
+      "checksumAlgorithm": "sha256",
+      "checksum": "bdb3146710332b0a55a8b784cd443f9004aeb174480f4ea716653b75985688d1",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "skillLoadedSeparately": true,
+      "usedByRuns": [
+        "case-03-new-skill-luna-xhigh",
+        "case-03-new-skill-sol-high",
+        "case-03-new-skill-terra-xhigh"
+      ]
+    },
+    {
+      "id": "case-03-no-skill",
+      "caseId": "case-03",
+      "conditionId": "no-skill",
+      "label": "Settings Form — No Skill",
+      "path": "inputs/prompts/case-03/no-skill.md",
+      "checksumAlgorithm": "sha256",
+      "checksum": "b41589546b00f76aacd48cfbdac2a85368b5d67e4fa5b10500c2dbc4c99ad4f0",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "skillLoadedSeparately": false,
+      "usedByRuns": [
+        "case-03-no-skill-luna-xhigh",
+        "case-03-no-skill-sol-high",
+        "case-03-no-skill-terra-xhigh"
+      ]
+    }
+  ],
+  "runs": [
+    {
+      "id": "case-01-new-skill-luna-xhigh",
+      "caseId": "case-01",
+      "caseName": "Creative landing page",
+      "modelId": "luna-xhigh",
+      "modelLabel": "Luna xHigh",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-01-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-01/new-skill/luna-xhigh/index.html",
+      "evidencePath": "runs/case-01/new-skill/luna-xhigh/RUN.md",
+      "runNotesPath": "runs/case-01/new-skill/luna-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/01-creative-landing-new-skill.md",
+      "sourceDirectoryPath": "runs/case-01/new-skill/luna-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-01/new-skill/luna-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "0452075517bad534dc06fa9afd9f83e58da490ddc606d50a8d5189142b3aa90f"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-01/new-skill/luna-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "8ee050ae2ab5ef84d0c0adc8a06d486b140079ae8a8c08ead1d99609ab514e89"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-01/new-skill/luna-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "2df17cae19c3c40cd983d81d6c4350100adbdd9e5a5e4f5e88a53488dc4db17d"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-01/new-skill/luna-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "23db61f2f55b1046dea23982f4bbf1b31b6ba97c346480616145a318f7a46685"
+        }
+      ],
+      "durationSeconds": 1422.408,
+      "batchDurationSeconds": 1811.536,
+      "durationDisplay": "1422 seconds",
+      "timingCaveat": "Completion timestamps were recorded independently by the orchestrator immediately after each agent's final status was returned by the wait mechanism. The official elapsed values above therefore include queueing and tool-execution time and may include the minimal status-observation handoff between tool return and timestamp capture.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-new-skill-luna-xhigh",
+          "capturedFrom": "runs/case-01/new-skill/luna-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:14.871Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-new-skill-luna-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-new-skill-luna-xhigh",
+          "capturedFrom": "runs/case-01/new-skill/luna-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:15.828Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-new-skill-luna-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-01-new-skill-sol-high",
+      "caseId": "case-01",
+      "caseName": "Creative landing page",
+      "modelId": "sol-high",
+      "modelLabel": "Sol High",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-01-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-01/new-skill/sol-high/index.html",
+      "evidencePath": "runs/case-01/new-skill/sol-high/RUN.md",
+      "runNotesPath": "runs/case-01/new-skill/sol-high/RUN.md",
+      "summaryPath": "evidence/summaries/01-creative-landing-new-skill.md",
+      "sourceDirectoryPath": "runs/case-01/new-skill/sol-high/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-01/new-skill/sol-high/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "e7496f5b6944f5e81ef8f1429ff1e8e16b353b5cac87d2212742c46e33529e2b"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-01/new-skill/sol-high/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "40fd0f4ac7867b860da4ee1211b345a093de57b5e03198a2247aee2cd1639b1e"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-01/new-skill/sol-high/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "24c5489777125b78ae760865cc73d82088630e18d5586a515768135afa190c6c"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-01/new-skill/sol-high/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "e5d2635ecf4d80fd2898e9d8b2c624d1463b18afcef6a8044325d66acfa8f5fb"
+        }
+      ],
+      "durationSeconds": 1811.536,
+      "batchDurationSeconds": 1811.536,
+      "durationDisplay": "1812 seconds",
+      "timingCaveat": "Completion timestamps were recorded independently by the orchestrator immediately after each agent's final status was returned by the wait mechanism. The official elapsed values above therefore include queueing and tool-execution time and may include the minimal status-observation handoff between tool return and timestamp capture.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-new-skill-sol-high",
+          "capturedFrom": "runs/case-01/new-skill/sol-high/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:16.968Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-new-skill-sol-high/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-new-skill-sol-high",
+          "capturedFrom": "runs/case-01/new-skill/sol-high/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:17.871Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-new-skill-sol-high/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-control-room.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-desktop-viewport.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-desktop.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-features.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-final-cta.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-keyboard-focus.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-mobile-control.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-mobile-menu.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-mobile-pricing.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-mobile-ticket.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-mobile.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-pricing.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-tablet-control.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-tablet.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        },
+        {
+          "path": "runs/case-01/new-skill/sol-high/verification-workflow.png",
+          "provenance": "original-benchmark-evidence",
+          "label": "Original benchmark screenshot",
+          "sourceRunId": "case-01-new-skill-sol-high"
+        }
+      ],
+      "findingIds": []
+    },
+    {
+      "id": "case-01-new-skill-terra-xhigh",
+      "caseId": "case-01",
+      "caseName": "Creative landing page",
+      "modelId": "terra-xhigh",
+      "modelLabel": "Terra xHigh",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-01-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-01/new-skill/terra-xhigh/index.html",
+      "evidencePath": "runs/case-01/new-skill/terra-xhigh/RUN.md",
+      "runNotesPath": "runs/case-01/new-skill/terra-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/01-creative-landing-new-skill.md",
+      "sourceDirectoryPath": "runs/case-01/new-skill/terra-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-01/new-skill/terra-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "dcfcb25ffdce3a841689b3af937b36425e86d24991ad9733d419bcc0ca564647"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-01/new-skill/terra-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "5920da6b76f957cf904110c063241f1acb88e01b65f472d011195edccadfb179"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-01/new-skill/terra-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "ba7a454437ed84cb72fd9d2728fc532e90ff351db715936bd8e7cd9727320de2"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-01/new-skill/terra-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "bd6edfb1be1212c0009d9ec81c2731bfdcc8c84f4bb953f978f268f868959073"
+        }
+      ],
+      "durationSeconds": 617.783,
+      "batchDurationSeconds": 1811.536,
+      "durationDisplay": "618 seconds",
+      "timingCaveat": "Completion timestamps were recorded independently by the orchestrator immediately after each agent's final status was returned by the wait mechanism. The official elapsed values above therefore include queueing and tool-execution time and may include the minimal status-observation handoff between tool return and timestamp capture.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-new-skill-terra-xhigh",
+          "capturedFrom": "runs/case-01/new-skill/terra-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:18.975Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-new-skill-terra-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-new-skill-terra-xhigh",
+          "capturedFrom": "runs/case-01/new-skill/terra-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:19.873Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-new-skill-terra-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-01-no-skill-luna-xhigh",
+      "caseId": "case-01",
+      "caseName": "Creative landing page",
+      "modelId": "luna-xhigh",
+      "modelLabel": "Luna xHigh",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-01-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-01/no-skill/luna-xhigh/index.html",
+      "evidencePath": "runs/case-01/no-skill/luna-xhigh/RUN.md",
+      "runNotesPath": "runs/case-01/no-skill/luna-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/01-creative-landing-no-skill.md",
+      "sourceDirectoryPath": "runs/case-01/no-skill/luna-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-01/no-skill/luna-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "8fe45a3251fcc32abdee773b9a2070bf521650b46e8da20c9594ab02b1997ccc"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-01/no-skill/luna-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "a7a69b6024114902e74513ed90546c56c79a24109197f7b71ace3a84c1efb381"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-01/no-skill/luna-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "558a2ed0d64d9b5f683360472f7bc31c9cf1e0e70492266bfe95cb2f9c18c17b"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-01/no-skill/luna-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "91685d7d8c8008a3f8f4a66ae38e7cfbf3dab4f4cdea453b333918d79f4b49d0"
+        }
+      ],
+      "durationSeconds": 1193,
+      "batchDurationSeconds": 1193,
+      "durationDisplay": "1193 seconds",
+      "timingCaveat": "Timing limitations: Official durations use orchestrator-observed dispatch and final-result return timestamps. Agent self-recorded timing is supplementary. Completion timestamps were captured when each wait operation returned the final result.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-no-skill-luna-xhigh",
+          "capturedFrom": "runs/case-01/no-skill/luna-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:20.710Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-no-skill-luna-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-no-skill-luna-xhigh",
+          "capturedFrom": "runs/case-01/no-skill/luna-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:21.490Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-no-skill-luna-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-01-no-skill-sol-high",
+      "caseId": "case-01",
+      "caseName": "Creative landing page",
+      "modelId": "sol-high",
+      "modelLabel": "Sol High",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-01-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-01/no-skill/sol-high/index.html",
+      "evidencePath": "runs/case-01/no-skill/sol-high/RUN.md",
+      "runNotesPath": "runs/case-01/no-skill/sol-high/RUN.md",
+      "summaryPath": "evidence/summaries/01-creative-landing-no-skill.md",
+      "sourceDirectoryPath": "runs/case-01/no-skill/sol-high/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-01/no-skill/sol-high/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "71ba15e1a1c5de746933bdfeaaeae7cfe1f6896c1f60f77d30e6d09299342583"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-01/no-skill/sol-high/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "be124bc10a6d1d71f1ff5bc4dc344190db5f022e45ab150bfe230cb943187fe5"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-01/no-skill/sol-high/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "6bc4e3bd9a1328842f769856285dbd318f79fd04e285b0276616038f32bcc33f"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-01/no-skill/sol-high/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "5f94eb6af6671ac74bee72bfa078461f98a34697a5b965b2cfc68f6f89ae15c1"
+        }
+      ],
+      "durationSeconds": 540,
+      "batchDurationSeconds": 1193,
+      "durationDisplay": "540 seconds",
+      "timingCaveat": "Timing limitations: Official durations use orchestrator-observed dispatch and final-result return timestamps. Agent self-recorded timing is supplementary. Completion timestamps were captured when each wait operation returned the final result.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-no-skill-sol-high",
+          "capturedFrom": "runs/case-01/no-skill/sol-high/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:22.263Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-no-skill-sol-high/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-no-skill-sol-high",
+          "capturedFrom": "runs/case-01/no-skill/sol-high/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:23.027Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-no-skill-sol-high/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-01-no-skill-terra-xhigh",
+      "caseId": "case-01",
+      "caseName": "Creative landing page",
+      "modelId": "terra-xhigh",
+      "modelLabel": "Terra xHigh",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-01-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-01/no-skill/terra-xhigh/index.html",
+      "evidencePath": "runs/case-01/no-skill/terra-xhigh/RUN.md",
+      "runNotesPath": "runs/case-01/no-skill/terra-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/01-creative-landing-no-skill.md",
+      "sourceDirectoryPath": "runs/case-01/no-skill/terra-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-01/no-skill/terra-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "bbe88f34ff7f826af9c4b79e64345f139fab6143dadb190a657da098886a517b"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-01/no-skill/terra-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "2e43f4134797c7942c56ffbdfdec1754b8533155b7ba190de0686881fbcaa480"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-01/no-skill/terra-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "3f11742ac4eb3891e71c4d518ddae788800caa2154b429405f847425aef620d5"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-01/no-skill/terra-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "7605836f942e3ac150bc50a9cbde78029bc50bb5538a19306e84f8d164765b5c"
+        }
+      ],
+      "durationSeconds": 976,
+      "batchDurationSeconds": 1193,
+      "durationDisplay": "976 seconds",
+      "timingCaveat": "Timing limitations: Official durations use orchestrator-observed dispatch and final-result return timestamps. Agent self-recorded timing is supplementary. Completion timestamps were captured when each wait operation returned the final result.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-no-skill-terra-xhigh",
+          "capturedFrom": "runs/case-01/no-skill/terra-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:23.857Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-no-skill-terra-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-01-no-skill-terra-xhigh",
+          "capturedFrom": "runs/case-01/no-skill/terra-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:24.628Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-01-no-skill-terra-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-02-new-skill-luna-xhigh",
+      "caseId": "case-02",
+      "caseName": "Operational dashboard",
+      "modelId": "luna-xhigh",
+      "modelLabel": "Luna xHigh",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-02-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-02/new-skill/luna-xhigh/index.html",
+      "evidencePath": "runs/case-02/new-skill/luna-xhigh/RUN.md",
+      "runNotesPath": "runs/case-02/new-skill/luna-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/02-operational-dashboard-new-skill.md",
+      "sourceDirectoryPath": "runs/case-02/new-skill/luna-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-02/new-skill/luna-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "8094ba9783c0c32e33792723d874c1cd21e137babf2f6382f3fee9881dc8db3e"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-02/new-skill/luna-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "612af2a3c5305fdc604ebc7b5e9b93e8ccde07c536c18dd99f2126e4486b98f5"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-02/new-skill/luna-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "a12d1ba191f58372cfc15572f228749be0f24f4a2b2ead699ba5b6b63ced2460"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-02/new-skill/luna-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "7e3374a7f567d29ef39dcca9f2fe100bfe48b76cc13fbcd2ee59322beb2d9418"
+        }
+      ],
+      "durationSeconds": 998.843,
+      "batchDurationSeconds": 1540.046,
+      "durationDisplay": "999 seconds",
+      "timingCaveat": "The orchestrator captured Luna and Sol return timestamps immediately after their `wait_agent` calls completed. Terra’s wait result was surfaced as a completion notification before a receipt timestamp was captured; its exact completion timestamp above is the timestamp included in Terra’s returned completion report, so Terra’s official observer timing has a reporting-source limitation. No timestamps were estimated or rounded.\n\nThe first wait window expired after ten minutes without a result, but all three agents were kept running and subsequently completed. This did not change the dispatch timestamps or the final completion records.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-new-skill-luna-xhigh",
+          "capturedFrom": "runs/case-02/new-skill/luna-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:25.327Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-new-skill-luna-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-new-skill-luna-xhigh",
+          "capturedFrom": "runs/case-02/new-skill/luna-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:26.002Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-new-skill-luna-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": [
+        "finding-missing-fragment-target-case-02-new-skill-luna-xhigh"
+      ]
+    },
+    {
+      "id": "case-02-new-skill-sol-high",
+      "caseId": "case-02",
+      "caseName": "Operational dashboard",
+      "modelId": "sol-high",
+      "modelLabel": "Sol High",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-02-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-02/new-skill/sol-high/index.html",
+      "evidencePath": "runs/case-02/new-skill/sol-high/RUN.md",
+      "runNotesPath": "runs/case-02/new-skill/sol-high/RUN.md",
+      "summaryPath": "evidence/summaries/02-operational-dashboard-new-skill.md",
+      "sourceDirectoryPath": "runs/case-02/new-skill/sol-high/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-02/new-skill/sol-high/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "bcabceab06c785d6ac3c9cb7bdd8c2ddc94230d73be40adc248c8e5f74d8460d"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-02/new-skill/sol-high/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "f5b40950bb3ffc77530b53aa019d3cb9fd12519081e5ffd0e896d85eb5fb4572"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-02/new-skill/sol-high/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "ff5ed4f9e7533690dd7da0bf0bdb87076657d1a54abbbec702298a89405683ef"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-02/new-skill/sol-high/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "7c411f4f142fe4c8e26924556a36ac3c3a1d00ee5e0d1a24fe44955595a4a3f7"
+        }
+      ],
+      "durationSeconds": 1540.046,
+      "batchDurationSeconds": 1540.046,
+      "durationDisplay": "1540 seconds",
+      "timingCaveat": "The orchestrator captured Luna and Sol return timestamps immediately after their `wait_agent` calls completed. Terra’s wait result was surfaced as a completion notification before a receipt timestamp was captured; its exact completion timestamp above is the timestamp included in Terra’s returned completion report, so Terra’s official observer timing has a reporting-source limitation. No timestamps were estimated or rounded.\n\nThe first wait window expired after ten minutes without a result, but all three agents were kept running and subsequently completed. This did not change the dispatch timestamps or the final completion records.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-new-skill-sol-high",
+          "capturedFrom": "runs/case-02/new-skill/sol-high/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:26.816Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-new-skill-sol-high/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-new-skill-sol-high",
+          "capturedFrom": "runs/case-02/new-skill/sol-high/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:27.556Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-new-skill-sol-high/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": [
+        "finding-missing-fragment-target-case-02-new-skill-sol-high"
+      ]
+    },
+    {
+      "id": "case-02-new-skill-terra-xhigh",
+      "caseId": "case-02",
+      "caseName": "Operational dashboard",
+      "modelId": "terra-xhigh",
+      "modelLabel": "Terra xHigh",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-02-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-02/new-skill/terra-xhigh/index.html",
+      "evidencePath": "runs/case-02/new-skill/terra-xhigh/RUN.md",
+      "runNotesPath": "runs/case-02/new-skill/terra-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/02-operational-dashboard-new-skill.md",
+      "sourceDirectoryPath": "runs/case-02/new-skill/terra-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-02/new-skill/terra-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "b0d06bc5cd5255314f940d9a2c94596ea13540c8a9481fe6a2dfaa028519c650"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-02/new-skill/terra-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "c963089f9fe9b1947da96cf9c6575fc5fd1368023bd54de192a5f130d450ba59"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-02/new-skill/terra-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "ee06ac6e4e19d79a830ddf0d5e725f2da7e9413aeb04446006450f388bd99c95"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-02/new-skill/terra-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "1b726db5d0a13e07d2c1f761d6aac12753a699ea7544b068ec507cd57efdf3e0"
+        }
+      ],
+      "durationSeconds": 649.537,
+      "batchDurationSeconds": 1540.046,
+      "durationDisplay": "650 seconds",
+      "timingCaveat": "The orchestrator captured Luna and Sol return timestamps immediately after their `wait_agent` calls completed. Terra’s wait result was surfaced as a completion notification before a receipt timestamp was captured; its exact completion timestamp above is the timestamp included in Terra’s returned completion report, so Terra’s official observer timing has a reporting-source limitation. No timestamps were estimated or rounded.\n\nThe first wait window expired after ten minutes without a result, but all three agents were kept running and subsequently completed. This did not change the dispatch timestamps or the final completion records.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-new-skill-terra-xhigh",
+          "capturedFrom": "runs/case-02/new-skill/terra-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:28.440Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-new-skill-terra-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-new-skill-terra-xhigh",
+          "capturedFrom": "runs/case-02/new-skill/terra-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:29.296Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-new-skill-terra-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-02-no-skill-luna-xhigh",
+      "caseId": "case-02",
+      "caseName": "Operational dashboard",
+      "modelId": "luna-xhigh",
+      "modelLabel": "Luna xHigh",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-02-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-02/no-skill/luna-xhigh/index.html",
+      "evidencePath": "runs/case-02/no-skill/luna-xhigh/RUN.md",
+      "runNotesPath": "runs/case-02/no-skill/luna-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/02-operational-dashboard-no-skill.md",
+      "sourceDirectoryPath": "runs/case-02/no-skill/luna-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-02/no-skill/luna-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "bacd5658047547c12d0c16c37d9ed1747f2decb0689f48ea8641d7e90326196e"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-02/no-skill/luna-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "02b62bc6f26b6ffb9e0918dd5163542f2c50144c60e8b09afd15120a96481198"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-02/no-skill/luna-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "ae3285151452760a814a98aaf952ae672d3828eb82750640a540e6a6a811be8a"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-02/no-skill/luna-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "1e0a8400c3211a514995f909b4dbdde94a7b04b8f51859a35d76c969cb917ac1"
+        }
+      ],
+      "durationSeconds": 686.551,
+      "batchDurationSeconds": 994.699,
+      "durationDisplay": "687 seconds",
+      "timingCaveat": "Timing limitations or interruptions: No dispatch interruption, timeout, or cancellation occurred. The official durations are orchestrator-observed from dispatch through final wait return. Browser-based visual verification was environment-limited for all three agents.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-no-skill-luna-xhigh",
+          "capturedFrom": "runs/case-02/no-skill/luna-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:30.022Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-no-skill-luna-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-no-skill-luna-xhigh",
+          "capturedFrom": "runs/case-02/no-skill/luna-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:30.759Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-no-skill-luna-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": [
+        "finding-missing-fragment-target-case-02-no-skill-luna-xhigh"
+      ]
+    },
+    {
+      "id": "case-02-no-skill-sol-high",
+      "caseId": "case-02",
+      "caseName": "Operational dashboard",
+      "modelId": "sol-high",
+      "modelLabel": "Sol High",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-02-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-02/no-skill/sol-high/index.html",
+      "evidencePath": "runs/case-02/no-skill/sol-high/RUN.md",
+      "runNotesPath": "runs/case-02/no-skill/sol-high/RUN.md",
+      "summaryPath": "evidence/summaries/02-operational-dashboard-no-skill.md",
+      "sourceDirectoryPath": "runs/case-02/no-skill/sol-high/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-02/no-skill/sol-high/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "7d301dce000bf8c00e3b2a769a3f803ef159a2701b39d44d2537f290b41cf9a7"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-02/no-skill/sol-high/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "f91d4fa7d444199b295eb083db1d11b34c41d01447bf023673e8b7ab8d18eb84"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-02/no-skill/sol-high/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "df5ea38ea93fa9bb2aa9c575f5d958b0ef207cb2992d5e439656ded1fd6d650f"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-02/no-skill/sol-high/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "e0aa0ca37458c3797e00189e218604e7fe750734f4c195b4547d5ce655d7cbbf"
+        }
+      ],
+      "durationSeconds": 994.697,
+      "batchDurationSeconds": 994.699,
+      "durationDisplay": "995 seconds",
+      "timingCaveat": "Timing limitations or interruptions: No dispatch interruption, timeout, or cancellation occurred. The official durations are orchestrator-observed from dispatch through final wait return. Browser-based visual verification was environment-limited for all three agents.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-no-skill-sol-high",
+          "capturedFrom": "runs/case-02/no-skill/sol-high/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:31.471Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-no-skill-sol-high/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-no-skill-sol-high",
+          "capturedFrom": "runs/case-02/no-skill/sol-high/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:32.155Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-no-skill-sol-high/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": [
+        "finding-missing-fragment-target-case-02-no-skill-sol-high"
+      ]
+    },
+    {
+      "id": "case-02-no-skill-terra-xhigh",
+      "caseId": "case-02",
+      "caseName": "Operational dashboard",
+      "modelId": "terra-xhigh",
+      "modelLabel": "Terra xHigh",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-02-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-02/no-skill/terra-xhigh/index.html",
+      "evidencePath": "runs/case-02/no-skill/terra-xhigh/RUN.md",
+      "runNotesPath": "runs/case-02/no-skill/terra-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/02-operational-dashboard-no-skill.md",
+      "sourceDirectoryPath": "runs/case-02/no-skill/terra-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-02/no-skill/terra-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "d6678f11796a26742e55f29a2a50d688e67760bfb44e79a573209d7c20d9c838"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-02/no-skill/terra-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "cd5dd7f2a95527bfd7a7d1c95d9ba68c39f3f48fad740b6f1a5ec305be0262fd"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-02/no-skill/terra-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "226d6c22484ae70580d1a6f9f369755986f0225306713f2fd3b627ad40b3ce9d"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-02/no-skill/terra-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "bcc4eb517d1260cd23e0972915af659a676ae2e2afc3507fb22c2e0686a5267b"
+        }
+      ],
+      "durationSeconds": 994.672,
+      "batchDurationSeconds": 994.699,
+      "durationDisplay": "995 seconds",
+      "timingCaveat": "Timing limitations or interruptions: No dispatch interruption, timeout, or cancellation occurred. The official durations are orchestrator-observed from dispatch through final wait return. Browser-based visual verification was environment-limited for all three agents.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-no-skill-terra-xhigh",
+          "capturedFrom": "runs/case-02/no-skill/terra-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:32.848Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-no-skill-terra-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-02-no-skill-terra-xhigh",
+          "capturedFrom": "runs/case-02/no-skill/terra-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:33.578Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-02-no-skill-terra-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": [
+        "finding-missing-fragment-target-case-02-no-skill-terra-xhigh"
+      ]
+    },
+    {
+      "id": "case-03-new-skill-luna-xhigh",
+      "caseId": "case-03",
+      "caseName": "Settings form",
+      "modelId": "luna-xhigh",
+      "modelLabel": "Luna xHigh",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-03-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-03/new-skill/luna-xhigh/index.html",
+      "evidencePath": "runs/case-03/new-skill/luna-xhigh/RUN.md",
+      "runNotesPath": "runs/case-03/new-skill/luna-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/03-settings-form-new-skill.md",
+      "sourceDirectoryPath": "runs/case-03/new-skill/luna-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-03/new-skill/luna-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "73340edeb683bcec03d43b38a1bd952de497368cc6d51e323e20ee40117bc6de"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-03/new-skill/luna-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "edf0f625637d796547cdac21fa274bc31d380aebf63494edc9d86049bc87990b"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-03/new-skill/luna-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "a323110f15c6f4a9fc91516a91dd4fe4fd654c27b35e7c4e7028cbef55da22ef"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-03/new-skill/luna-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "934609244e1b12fa98e5f303ca7e5d158b1f4a898d65d12bf804bbae6408c402"
+        }
+      ],
+      "durationSeconds": 1126.672,
+      "batchDurationSeconds": 1126.672,
+      "durationDisplay": "1127 seconds",
+      "timingCaveat": "Timing limitations, interruptions, retries, or tool failures: No agent retries or interruptions. An additional orchestrator read-only filesystem audit of the implementation directories was attempted but rejected by the environment safety reviewer as unrelated/untrusted transcript inspection; therefore file inventories and RUN.md contents are reported from the agents' final completion results, not independently re-read by the orchestrator.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-new-skill-luna-xhigh",
+          "capturedFrom": "runs/case-03/new-skill/luna-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:34.274Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-new-skill-luna-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-new-skill-luna-xhigh",
+          "capturedFrom": "runs/case-03/new-skill/luna-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:34.971Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-new-skill-luna-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-03-new-skill-sol-high",
+      "caseId": "case-03",
+      "caseName": "Settings form",
+      "modelId": "sol-high",
+      "modelLabel": "Sol High",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-03-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-03/new-skill/sol-high/index.html",
+      "evidencePath": "runs/case-03/new-skill/sol-high/RUN.md",
+      "runNotesPath": "runs/case-03/new-skill/sol-high/RUN.md",
+      "summaryPath": "evidence/summaries/03-settings-form-new-skill.md",
+      "sourceDirectoryPath": "runs/case-03/new-skill/sol-high/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-03/new-skill/sol-high/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "4fbf2242f7d721fa676919a980551ec261cd76631c09c2d4b6f1a5f253f58431"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-03/new-skill/sol-high/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "30a987d95ffd84bfe76f2bd6fdc406aeeeec0b668d4fe01cd49bb25968137f4c"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-03/new-skill/sol-high/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "a86c54d459e633a36958d3677d6993fc5a665c2895af16580b0f284a2eec8a95"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-03/new-skill/sol-high/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "d60b39ff04157356282d2494a335896dbacba31402e00ee66ebad0494b9810d1"
+        }
+      ],
+      "durationSeconds": 995.421,
+      "batchDurationSeconds": 1126.672,
+      "durationDisplay": "995 seconds",
+      "timingCaveat": "Timing limitations, interruptions, retries, or tool failures: No agent retries or interruptions. An additional orchestrator read-only filesystem audit of the implementation directories was attempted but rejected by the environment safety reviewer as unrelated/untrusted transcript inspection; therefore file inventories and RUN.md contents are reported from the agents' final completion results, not independently re-read by the orchestrator.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-new-skill-sol-high",
+          "capturedFrom": "runs/case-03/new-skill/sol-high/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:35.641Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-new-skill-sol-high/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-new-skill-sol-high",
+          "capturedFrom": "runs/case-03/new-skill/sol-high/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:36.305Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-new-skill-sol-high/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": [
+        "finding-missing-fragment-target-case-03-new-skill-sol-high"
+      ]
+    },
+    {
+      "id": "case-03-new-skill-terra-xhigh",
+      "caseId": "case-03",
+      "caseName": "Settings form",
+      "modelId": "terra-xhigh",
+      "modelLabel": "Terra xHigh",
+      "conditionId": "new-skill",
+      "conditionLabel": "New Skill",
+      "promptId": "case-03-new-skill",
+      "skillPath": "inputs/skill/SKILL.md",
+      "previewPath": "runs/case-03/new-skill/terra-xhigh/index.html",
+      "evidencePath": "runs/case-03/new-skill/terra-xhigh/RUN.md",
+      "runNotesPath": "runs/case-03/new-skill/terra-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/03-settings-form-new-skill.md",
+      "sourceDirectoryPath": "runs/case-03/new-skill/terra-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-03/new-skill/terra-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "c7487fd6ef67897f74f0ad45393ede029407634e23db535585bfe75d2067e986"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-03/new-skill/terra-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "2bf58ae79942686629b0fbdaf7ae9e70dd20212be045ca42de06ce418e5ebbab"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-03/new-skill/terra-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "29980f7e4b1acb46da482243db390acccab783dd663deffec52a5e581df57606"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-03/new-skill/terra-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "bdc69eb7172d402fc03ea5f9210e02e2ca7940aeb365707270550c981a550add"
+        }
+      ],
+      "durationSeconds": 1105.63,
+      "batchDurationSeconds": 1126.672,
+      "durationDisplay": "1106 seconds",
+      "timingCaveat": "Timing limitations, interruptions, retries, or tool failures: No agent retries or interruptions. An additional orchestrator read-only filesystem audit of the implementation directories was attempted but rejected by the environment safety reviewer as unrelated/untrusted transcript inspection; therefore file inventories and RUN.md contents are reported from the agents' final completion results, not independently re-read by the orchestrator.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-new-skill-terra-xhigh",
+          "capturedFrom": "runs/case-03/new-skill/terra-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:37.008Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-new-skill-terra-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-new-skill-terra-xhigh",
+          "capturedFrom": "runs/case-03/new-skill/terra-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:37.689Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-new-skill-terra-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-03-no-skill-luna-xhigh",
+      "caseId": "case-03",
+      "caseName": "Settings form",
+      "modelId": "luna-xhigh",
+      "modelLabel": "Luna xHigh",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-03-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-03/no-skill/luna-xhigh/index.html",
+      "evidencePath": "runs/case-03/no-skill/luna-xhigh/RUN.md",
+      "runNotesPath": "runs/case-03/no-skill/luna-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/03-settings-form-no-skill.md",
+      "sourceDirectoryPath": "runs/case-03/no-skill/luna-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-03/no-skill/luna-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "912c3e2096e3ad7bed0839b10afba5082275c2b583568ebab2267a52d850003a"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-03/no-skill/luna-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "c8ffcead9a1ab4d709af6de559a21f502017b946817b3fbc561f6c4c4a226f6e"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-03/no-skill/luna-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "1b597a9f0bfb14a1b4e1a7a48376e643d30c5ff73c9bb8758c0234348b097e10"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-03/no-skill/luna-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "fb2ff2629b269a206cb21d5105aa3a6d91d5ffca6b44244827adc203da329ca7"
+        }
+      ],
+      "durationSeconds": 863.538,
+      "batchDurationSeconds": 863.606,
+      "durationDisplay": "864 seconds",
+      "timingCaveat": "Timing limitation: the orchestrator captured dispatch immediately before each spawn and completion immediately after each concurrent wait returned. The wait results surfaced together, so the three observed completion timestamps are clustered within 68 ms; these are the official orchestrator-observed benchmark timings.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-no-skill-luna-xhigh",
+          "capturedFrom": "runs/case-03/no-skill/luna-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:38.388Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-no-skill-luna-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-no-skill-luna-xhigh",
+          "capturedFrom": "runs/case-03/no-skill/luna-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:39.089Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-no-skill-luna-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-03-no-skill-sol-high",
+      "caseId": "case-03",
+      "caseName": "Settings form",
+      "modelId": "sol-high",
+      "modelLabel": "Sol High",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-03-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-03/no-skill/sol-high/index.html",
+      "evidencePath": "runs/case-03/no-skill/sol-high/RUN.md",
+      "runNotesPath": "runs/case-03/no-skill/sol-high/RUN.md",
+      "summaryPath": "evidence/summaries/03-settings-form-no-skill.md",
+      "sourceDirectoryPath": "runs/case-03/no-skill/sol-high/",
+      "sourceFiles": [
+        {
+          "name": "DESIGN.md",
+          "path": "runs/case-03/no-skill/sol-high/DESIGN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "2676289897f3f627b4ac6a6a19686ce15aaff1e616c3abf6a643bbca33e411e2"
+        },
+        {
+          "name": "PLAN.md",
+          "path": "runs/case-03/no-skill/sol-high/PLAN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "e1caada21e1088bd49953fe127740f30de8551a7871c99da1db799e34a962b3b"
+        },
+        {
+          "name": "RUN.md",
+          "path": "runs/case-03/no-skill/sol-high/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "b4535bfc0cefbf5c3651120d089271ccd569c8f0d9ecc67a7f9004444cb01231"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-03/no-skill/sol-high/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "f7a9749cd0dc32931d18ba627c5bbda8ed0e0040cf01fde514ad06463be1af9d"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-03/no-skill/sol-high/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "57da0bc1fa46b676f8cfc1009199e726340e60d03d5944b99fc7c32cb10c2097"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-03/no-skill/sol-high/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "d66c99eb31dc1ab2cf5e60d9b8f9c18ded1a1aa2382c3c664e63bb353fa2f9a7"
+        }
+      ],
+      "durationSeconds": 863.605,
+      "batchDurationSeconds": 863.606,
+      "durationDisplay": "864 seconds",
+      "timingCaveat": "Timing limitation: the orchestrator captured dispatch immediately before each spawn and completion immediately after each concurrent wait returned. The wait results surfaced together, so the three observed completion timestamps are clustered within 68 ms; these are the official orchestrator-observed benchmark timings.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-no-skill-sol-high",
+          "capturedFrom": "runs/case-03/no-skill/sol-high/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:39.806Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-no-skill-sol-high/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-no-skill-sol-high",
+          "capturedFrom": "runs/case-03/no-skill/sol-high/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:40.505Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-no-skill-sol-high/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    },
+    {
+      "id": "case-03-no-skill-terra-xhigh",
+      "caseId": "case-03",
+      "caseName": "Settings form",
+      "modelId": "terra-xhigh",
+      "modelLabel": "Terra xHigh",
+      "conditionId": "no-skill",
+      "conditionLabel": "No Skill",
+      "promptId": "case-03-no-skill",
+      "skillPath": null,
+      "previewPath": "runs/case-03/no-skill/terra-xhigh/index.html",
+      "evidencePath": "runs/case-03/no-skill/terra-xhigh/RUN.md",
+      "runNotesPath": "runs/case-03/no-skill/terra-xhigh/RUN.md",
+      "summaryPath": "evidence/summaries/03-settings-form-no-skill.md",
+      "sourceDirectoryPath": "runs/case-03/no-skill/terra-xhigh/",
+      "sourceFiles": [
+        {
+          "name": "RUN.md",
+          "path": "runs/case-03/no-skill/terra-xhigh/RUN.md",
+          "checksumAlgorithm": "sha256",
+          "checksum": "33f79639358bf8836bee07374e1553cd39590d4ff16455bad0d008204dd70f26"
+        },
+        {
+          "name": "index.html",
+          "path": "runs/case-03/no-skill/terra-xhigh/index.html",
+          "checksumAlgorithm": "sha256",
+          "checksum": "a3e00f18d81917e42f1c3cc65dfcebe88913496bac6108f20d77bf039ee62d82"
+        },
+        {
+          "name": "script.js",
+          "path": "runs/case-03/no-skill/terra-xhigh/script.js",
+          "checksumAlgorithm": "sha256",
+          "checksum": "4d0aed964283d266864f7fc7c2e8f0b8740a101407ef9a4a1814bd456a830dce"
+        },
+        {
+          "name": "styles.css",
+          "path": "runs/case-03/no-skill/terra-xhigh/styles.css",
+          "checksumAlgorithm": "sha256",
+          "checksum": "6be5ef55c1b1c931930e31875ff8634b05ef1794ab845e0eb7f8cc7625af4ce2"
+        }
+      ],
+      "durationSeconds": 863.601,
+      "batchDurationSeconds": 863.606,
+      "durationDisplay": "864 seconds",
+      "timingCaveat": "Timing limitation: the orchestrator captured dispatch immediately before each spawn and completion immediately after each concurrent wait returned. The wait results surfaced together, so the three observed completion timestamps are clustered within 68 ms; these are the official orchestrator-observed benchmark timings.",
+      "selfReportedStatus": null,
+      "derivedCaptures": {
+        "desktop": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-no-skill-terra-xhigh",
+          "capturedFrom": "runs/case-03/no-skill/terra-xhigh/index.html",
+          "variant": "desktop",
+          "captureViewport": {
+            "width": 1440,
+            "height": 900
+          },
+          "capturedAt": "2026-07-13T13:11:41.184Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-no-skill-terra-xhigh/desktop.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        },
+        "mobile": {
+          "provenance": "publication-time-derived-capture",
+          "label": "Publication-time derived capture",
+          "sourceRunId": "case-03-no-skill-terra-xhigh",
+          "capturedFrom": "runs/case-03/no-skill/terra-xhigh/index.html",
+          "variant": "mobile",
+          "captureViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "capturedAt": "2026-07-13T13:11:41.853Z",
+          "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+          "capturePolicy": {
+            "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+            "deviceScaleFactor": 1,
+            "colorScheme": "light",
+            "reducedMotion": "reduce",
+            "locale": "en-US",
+            "timezoneId": "UTC",
+            "format": "png",
+            "fullPage": false,
+            "initialInteraction": "none"
+          },
+          "path": "assets/screenshots/derived/case-03-no-skill-terra-xhigh/mobile.png",
+          "failureReason": null,
+          "status": "captured",
+          "sourceModified": false
+        }
+      },
+      "originalScreenshots": [],
+      "findingIds": []
+    }
+  ],
+  "findingsPath": "data/findings.json",
+  "captureProvenancePath": "data/capture-provenance.json",
+  "evidence": {
+    "manifestPath": "evidence/benchmark-manifest.json",
+    "publicationReadmePath": "evidence/README.md",
+    "sanitizationReportPath": "evidence/audit/sanitization-report.md",
+    "excludedArtifactsPath": "evidence/audit/excluded-artifacts.md",
+    "copyMapPath": "evidence/audit/showcase-copy-map.json"
+  }
+}

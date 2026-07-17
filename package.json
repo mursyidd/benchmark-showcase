@@ -1,0 +1,24 @@
+{
+  "name": "frontend-benchmark-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "intake": "node scripts/intake.mjs",
+    "build:data": "node scripts/build-dataset.mjs",
+    "build:findings": "node scripts/build-findings-review.mjs",
+    "build:html": "node scripts/build-static-page.mjs",
+    "build:social": "node scripts/create-social-preview.mjs",
+    "build": "npm run build:data && npm run build:findings && npm run build:html && npm run build:social",
+    "capture": "node scripts/capture-runs.mjs",
+    "capture:acceptance": "node scripts/capture-showcase-acceptance.mjs",
+    "validate": "node scripts/validate-site.mjs",
+    "serve": "node scripts/serve.mjs",
+    "test:e2e": "playwright test tests/e2e/showcase.spec.mjs"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.12.1",
+    "@playwright/test": "1.61.1"
+  }
+}

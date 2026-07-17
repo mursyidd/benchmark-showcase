@@ -1,0 +1,234 @@
+<!doctype html>
+<!-- Agent: Luna | Reasoning level: xhigh | Skill condition: New Skill | Output directory: <LOCAL_SAMPLE_ROOT>/luna-xhigh/new-skill/01-creative-landing -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Relay is a command desk for dispatching, observing, and shipping work from multiple AI coding agents." />
+    <title>AI Agent Desktop Tool — Luna xhigh — New Skill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="site-shell">
+      <header class="site-header" id="top">
+        <a class="brand" href="#top" aria-label="Relay home">
+          <svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M7 8h26v8H15v4h13v7H15v5H7V8Z" fill="currentColor" />
+            <path d="M27 20h6v12h-6z" fill="var(--signal)" />
+          </svg>
+          <span>relay<span class="brand-dot">.</span></span>
+        </a>
+
+        <nav class="primary-nav" aria-label="Primary navigation">
+          <a href="#product">Product</a>
+          <a href="#workflow">How it works</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#changelog">Changelog <span class="nav-pulse">new</span></a>
+        </nav>
+
+        <div class="header-actions">
+          <a class="text-link header-login" href="#footer">Sign in</a>
+          <a class="button button-small button-outline" href="#demo">Open the desk <span aria-hidden="true">↗</span></a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open navigation menu">
+            <span></span><span></span>
+          </button>
+        </div>
+      </header>
+
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation" hidden>
+        <a href="#product">Product</a>
+        <a href="#workflow">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#changelog">Changelog</a>
+        <a href="#footer">Sign in</a>
+      </nav>
+
+      <main id="main-content">
+        <section class="hero section-wrap" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> A command desk for parallel code</div>
+            <h1 id="hero-title">Make the <em>many</em> feel like one.</h1>
+            <p class="hero-lede">Relay gives your coding agents a shared desk: dispatch focused lanes, watch the work move, and bring the good parts home as one clean result.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#demo">Enter the control room <span aria-hidden="true">→</span></a>
+              <a class="button button-quiet" href="#workflow"><span class="play-icon" aria-hidden="true">▶</span> See the loop</a>
+            </div>
+            <div class="hero-proof" aria-label="Relay availability details">
+              <span><span class="proof-mark">✦</span> Local-first workspace</span>
+              <span><span class="proof-mark">◌</span> Git-aware by design</span>
+              <span><span class="proof-mark">⌁</span> Bring your own model</span>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-label="Relay orchestration preview">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="hero-label label-top">relay / dispatch.001</div>
+            <div class="hero-coordinate">37.7749° N<br />122.4194° W</div>
+            <div class="control-dial" aria-hidden="true">
+              <span class="dial-ring"></span>
+              <span class="dial-core">R</span>
+              <span class="dial-tick tick-a"></span><span class="dial-tick tick-b"></span><span class="dial-tick tick-c"></span>
+            </div>
+            <div class="hero-lane lane-a"><span class="mini-agent mini-cyan">A</span><span>api refactor</span><span class="lane-status">active</span></div>
+            <div class="hero-lane lane-b"><span class="mini-agent mini-coral">M</span><span>migration map</span><span class="lane-status">queued</span></div>
+            <div class="hero-lane lane-c"><span class="mini-agent mini-lime">Q</span><span>qa matrix</span><span class="lane-status">ready</span></div>
+            <div class="hero-scanline"></div>
+            <span class="hero-corner corner-tl"></span><span class="hero-corner corner-br"></span>
+          </div>
+        </section>
+
+        <section class="ticker" aria-label="Relay capability highlights">
+          <div class="ticker-track">
+            <span>dispatch with intent</span><span class="ticker-star">✳</span><span>observe the delta</span><span class="ticker-star">✳</span><span>merge with context</span><span class="ticker-star">✳</span><span>dispatch with intent</span><span class="ticker-star">✳</span><span>observe the delta</span><span class="ticker-star">✳</span><span>merge with context</span>
+          </div>
+        </section>
+
+        <section class="demo-section section-wrap" id="demo" aria-labelledby="demo-title">
+          <div class="section-intro intro-split">
+            <div>
+              <div class="eyebrow"><span class="eyebrow-dot"></span> The work, in plain sight</div>
+              <h2 id="demo-title">A live map of<br /><em>moving parts.</em></h2>
+            </div>
+            <p>Every lane has a job, a boundary, and a way home. See how a single brief becomes coordinated work without turning your team into air-traffic control.</p>
+          </div>
+
+          <div class="orchestration-shell" data-demo-state="dispatch">
+            <div class="board-topbar">
+              <div class="board-title"><span class="status-light"></span> workspace / signal-room <span class="board-slash">/</span> <span class="board-muted">release 24</span></div>
+              <div class="board-meta"><span class="live-indicator">●</span> <span id="board-status">3 lanes active</span> <span class="meta-divider"></span> <span>00:18:42</span></div>
+            </div>
+
+            <div class="demo-controls" role="tablist" aria-label="Orchestration playback states">
+              <button class="demo-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="demo-panel" id="tab-dispatch" data-demo-target="dispatch">01 / dispatch</button>
+              <button class="demo-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" id="tab-flight" data-demo-target="flight">02 / in flight</button>
+              <button class="demo-tab" type="button" role="tab" aria-selected="false" aria-controls="demo-panel" id="tab-assemble" data-demo-target="assemble">03 / assemble</button>
+              <span class="control-hint">select a state <span aria-hidden="true">↗</span></span>
+            </div>
+
+            <div class="board-body" id="demo-panel" role="tabpanel" tabindex="0" aria-labelledby="tab-dispatch">
+              <div class="brief-column">
+                <div class="column-kicker">orchestrator brief</div>
+                <div class="brief-card">
+                  <div class="brief-card-top"><span class="brief-icon">⌘</span><span>RLY-024</span><span class="brief-priority">P1</span></div>
+                  <h3 id="brief-title">Make checkout resilient<br />under network loss.</h3>
+                  <p id="brief-copy">Split the investigation into independent lanes. Keep the API contract as the source of truth.</p>
+                  <div class="brief-tags"><span>checkout</span><span>reliability</span><span>web</span></div>
+                </div>
+                <div class="brief-footer"><span class="avatar avatar-orch">R</span><span>orchestrated by <strong>Relay</strong></span><span class="footer-time">now</span></div>
+              </div>
+
+              <div class="lanes-column">
+                <div class="column-kicker lanes-kicker"><span>implementation lanes</span><span id="lane-count">03 / 03</span></div>
+                <div class="agent-lane" data-agent="atlas">
+                  <div class="agent-identity"><span class="avatar avatar-cyan">A</span><div><strong>Atlas</strong><span>API cartographer</span></div></div>
+                  <div class="agent-task"><span class="task-state state-active" id="atlas-state">ACTIVE</span><span id="atlas-task">tracing retry boundaries</span></div>
+                  <div class="progress-row"><div class="progress-track"><span id="atlas-progress" style="width: 64%"></span></div><span id="atlas-percent">64%</span></div>
+                  <div class="agent-foot"><span>branch <b>rly/atlas-contract</b></span><span class="agent-clock" id="atlas-clock">00:06:12</span></div>
+                </div>
+                <div class="agent-lane" data-agent="mira">
+                  <div class="agent-identity"><span class="avatar avatar-coral">M</span><div><strong>Mira</strong><span>failure analyst</span></div></div>
+                  <div class="agent-task"><span class="task-state state-queued" id="mira-state">QUEUED</span><span id="mira-task">waiting on Atlas / contract</span></div>
+                  <div class="progress-row"><div class="progress-track"><span id="mira-progress" style="width: 32%"></span></div><span id="mira-percent">32%</span></div>
+                  <div class="agent-foot"><span>branch <b>rly/mira-retry</b></span><span class="agent-clock" id="mira-clock">00:02:51</span></div>
+                </div>
+                <div class="agent-lane" data-agent="quill">
+                  <div class="agent-identity"><span class="avatar avatar-lime">Q</span><div><strong>Quill</strong><span>test architect</span></div></div>
+                  <div class="agent-task"><span class="task-state state-ready" id="quill-state">READY</span><span id="quill-task">building the offline matrix</span></div>
+                  <div class="progress-row"><div class="progress-track"><span id="quill-progress" style="width: 48%"></span></div><span id="quill-percent">48%</span></div>
+                  <div class="agent-foot"><span>branch <b>rly/quill-e2e</b></span><span class="agent-clock" id="quill-clock">00:04:07</span></div>
+                </div>
+                <div class="dependency-line" aria-label="Dependency from Atlas to Mira"><span class="line-node"></span><span>contract checkpoint</span><span class="line-arrow">→</span><span>retry logic</span></div>
+              </div>
+
+              <div class="output-column">
+                <div class="column-kicker">return channel</div>
+                <div class="output-card" id="output-card">
+                  <div class="output-radar"><span class="radar-ring"></span><span class="radar-ring ring-two"></span><span class="radar-sweep"></span><span class="radar-core"></span></div>
+                  <div class="output-label" id="output-label">waiting for lanes</div>
+                  <strong id="output-title">Nothing merged<br />yet.</strong>
+                  <p id="output-copy">Completed work returns here with its context intact.</p>
+                  <button class="text-button" type="button" id="inspect-output">Inspect the channel <span aria-hidden="true">↗</span></button>
+                </div>
+                <div class="event-log" aria-live="polite"><div class="log-line"><span class="log-dot"></span><span id="log-one">Atlas mapped 4 retry paths</span><time id="log-time">18:41:09</time></div><div class="log-line"><span class="log-dot dot-muted"></span><span id="log-two">Mira is holding for a contract</span><time>18:41:22</time></div><div class="log-line"><span class="log-dot dot-muted"></span><span id="log-three">Quill opened 12 test cases</span><time>18:42:01</time></div></div>
+              </div>
+            </div>
+            <div class="board-statusbar"><span class="statusbar-key">⌘ K</span><span>press a state to replay the handoff</span><span class="statusbar-right">sandbox / safe to explore <span class="status-check">✓</span></span></div>
+          </div>
+          <p class="demo-caption"><span class="caption-number">01</span> One brief. Three opinions. A single, legible result.</p>
+        </section>
+
+        <section class="feature-section section-wrap" id="product" aria-labelledby="feature-title">
+          <div class="section-intro feature-intro">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Built for the handoff</div>
+            <h2 id="feature-title">Coordination is<br /><em>a product feature.</em></h2>
+            <p>Relay keeps the human in the loop without making the human the loop.</p>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card feature-card-wide feature-signal">
+              <div class="feature-num">01</div><div class="feature-icon signal-icon" aria-hidden="true">⌁</div>
+              <h3>See the signal,<br />not the scroll.</h3>
+              <p>Activity is distilled into decisions, dependencies, and deltas. Open the full trace when you need to, stay at altitude when you don't.</p>
+              <div class="feature-visual trace-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><i></i></div>
+            </article>
+            <article class="feature-card feature-card-tall feature-branch">
+              <div class="feature-num">02</div><div class="feature-icon branch-icon" aria-hidden="true">⑂</div>
+              <h3>Give every<br />idea a lane.</h3>
+              <p>Parallel doesn't mean chaotic. Name the specialty, set the boundary, and let each agent make a focused pass.</p>
+              <div class="branch-visual" aria-hidden="true"><span class="branch-root"></span><span class="branch-stem stem-one"></span><span class="branch-stem stem-two"></span><span class="branch-stem stem-three"></span><b>brief</b><i>api</i><i>qa</i><i>ux</i></div>
+            </article>
+            <article class="feature-card feature-merge">
+              <div class="feature-num">03</div><div class="feature-icon merge-icon" aria-hidden="true">✦</div>
+              <h3>Merge the thinking<br />before the code.</h3>
+              <p>Compare outputs with their reasoning attached. Choose what ships, and keep the discarded context useful.</p>
+              <div class="merge-visual" aria-hidden="true"><span class="merge-pill pill-a">A</span><span class="merge-pill pill-m">M</span><span class="merge-pill pill-q">Q</span><strong>R</strong></div>
+            </article>
+          </div>
+        </section>
+
+        <section class="workflow-section section-wrap" id="workflow" aria-labelledby="workflow-title">
+          <div class="workflow-aside"><div class="eyebrow"><span class="eyebrow-dot"></span> A calmer way to ship</div><div class="vertical-label">THE RELAY LOOP / 04</div></div>
+          <div class="workflow-main">
+            <div class="section-intro workflow-intro"><h2 id="workflow-title">The loop is<br /><em>the unlock.</em></h2><p>Turn the messy middle of software work into a repeatable rhythm your whole team can read.</p></div>
+            <div class="workflow-steps">
+              <button class="workflow-step is-open" type="button" aria-expanded="true" aria-controls="step-detail-brief"><span class="step-index">01</span><span class="step-name">Frame the brief</span><span class="step-symbol">−</span></button>
+              <div class="step-detail" id="step-detail-brief"><p>Start with the outcome, not a pile of instructions. Relay turns the brief into a shared, bounded context every lane can reference.</p><span class="detail-note">signal / shared context</span></div>
+              <button class="workflow-step" type="button" aria-expanded="false" aria-controls="step-detail-dispatch"><span class="step-index">02</span><span class="step-name">Dispatch the lanes</span><span class="step-symbol">+</span></button>
+              <div class="step-detail" id="step-detail-dispatch" hidden><p>Assign specialists for the questions that deserve parallel attention. Each lane gets its own branch, responsibility, and visible status.</p><span class="detail-note">motion / focused work</span></div>
+              <button class="workflow-step" type="button" aria-expanded="false" aria-controls="step-detail-review"><span class="step-index">03</span><span class="step-name">Review the deltas</span><span class="step-symbol">+</span></button>
+              <div class="step-detail" id="step-detail-review" hidden><p>Read the change and the thinking behind it in one place. Spot collisions early, ask better questions, and keep momentum.</p><span class="detail-note">judgment / useful context</span></div>
+              <button class="workflow-step" type="button" aria-expanded="false" aria-controls="step-detail-return"><span class="step-index">04</span><span class="step-name">Return the result</span><span class="step-symbol">+</span></button>
+              <div class="step-detail" id="step-detail-return" hidden><p>Bring the strongest pieces back into the source branch with a traceable handoff. The work lands as one coherent story.</p><span class="detail-note">merge / one clean result</span></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="quote-section section-wrap" aria-label="Customer quote">
+          <div class="quote-mark">“</div><blockquote>It feels less like running four bots and more like having a tiny, unusually focused engineering room.</blockquote><div class="quote-attribution"><span class="avatar avatar-quote">N</span><span><strong>Nadia Flores</strong><br /><span>Staff engineer, Northstar</span></span></div>
+        </section>
+
+        <section class="pricing-section section-wrap" id="pricing" aria-labelledby="pricing-title">
+          <div class="pricing-head"><div><div class="eyebrow"><span class="eyebrow-dot"></span> A desk that scales with the work</div><h2 id="pricing-title">Pick your<br /><em>operating range.</em></h2></div><div class="billing-switch" role="group" aria-label="Billing frequency"><button class="billing-button is-active" type="button" aria-pressed="true" data-billing="monthly">Monthly</button><button class="billing-button" type="button" aria-pressed="false" data-billing="annual">Annual <span>save 20%</span></button></div></div>
+          <div class="pricing-grid">
+            <article class="price-card"><div class="price-tier">solo / for the curious</div><p class="price-amount"><span class="price-value" data-monthly="0" data-annual="0">$0</span><span>/ forever</span></p><p>Make your first handoff legible.</p><a class="button button-outline price-button" href="#demo">Start in the sandbox <span aria-hidden="true">→</span></a><ul><li>1 active lane</li><li>Shared local workspace</li><li>Basic activity trace</li></ul></article>
+            <article class="price-card price-card-featured"><div class="popular-tag">most in motion</div><div class="price-tier">studio / for small teams</div><p class="price-amount"><span class="price-value" data-monthly="24" data-annual="19">$24</span><span>/ seat / month</span></p><p>Put parallel work on the same page.</p><a class="button button-primary price-button" href="#demo">Open the control room <span aria-hidden="true">→</span></a><ul><li>Unlimited active lanes</li><li>Merge review with context</li><li>Team activity history</li></ul></article>
+            <article class="price-card"><div class="price-tier">flight / for growing orgs</div><p class="price-amount"><span class="price-custom">Let's talk</span></p><p>Make orchestration part of your stack.</p><a class="button button-outline price-button" href="#footer">Talk to the crew <span aria-hidden="true">→</span></a><ul><li>SSO and workspace controls</li><li>Custom model routing</li><li>Priority support + onboarding</li></ul></article>
+          </div>
+          <div class="pricing-foot"><span>All plans include the local desktop app.</span><span>Bring your own keys. Keep your code close.</span></div>
+        </section>
+
+        <section class="final-cta section-wrap" id="changelog" aria-labelledby="cta-title">
+          <div class="cta-grid-mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+          <div class="eyebrow"><span class="eyebrow-dot"></span> The next lane is yours</div><h2 id="cta-title">Make room<br />for <em>better work.</em></h2><p>One desk for the ideas, experiments, and agents that move your product forward.</p><a class="button button-primary" href="#demo">Enter Relay <span aria-hidden="true">↗</span></a>
+        </section>
+      </main>
+
+      <footer class="site-footer section-wrap" id="footer">
+        <div class="footer-top"><a class="brand" href="#top" aria-label="Relay home"><svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><path d="M7 8h26v8H15v4h13v7H15v5H7V8Z" fill="currentColor" /><path d="M27 20h6v12h-6z" fill="var(--signal)" /></svg><span>relay<span class="brand-dot">.</span></span></a><p>Built for the parallel age.<br />Made for the people shipping it.</p><div class="footer-links"><div><span>Explore</span><a href="#product">Product</a><a href="#workflow">How it works</a><a href="#pricing">Pricing</a></div><div><span>Elsewhere</span><a href="#footer">Docs</a><a href="#footer">Status</a><a href="#footer">Contact</a></div></div></div>
+        <div class="footer-bottom"><span>© 2026 Relay Systems</span><span>Privacy / Terms / <span class="footer-signal"><i></i> all systems nominal</span></span><span>Made with intent in SF + everywhere</span></div>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

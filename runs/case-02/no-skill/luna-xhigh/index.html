@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Parcel processing facility operations dashboard">
+  <title>Parcel Operations Dashboard — Luna xhigh — No Skill</title>
+  <!-- Agent: Luna | Reasoning level: xhigh | Skill condition: no-skill | Output directory: <LOCAL_SAMPLE_ROOT>/luna-xhigh/no-skill/02-operational-dashboard -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell" id="appShell">
+    <header class="app-header">
+      <div class="header-left">
+        <button class="icon-button menu-button" id="sidebarToggle" type="button" aria-label="Collapse navigation" aria-expanded="true" aria-controls="sidebar">
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+        </button>
+        <a class="brand" href="#overview" aria-label="Parcel operations overview">
+          <span class="brand-mark" aria-hidden="true">P</span>
+          <span class="brand-copy"><span>Parcel Operations</span><small>Network control room</small></span>
+        </a>
+      </div>
+      <div class="header-right">
+        <span class="system-status"><span class="status-dot status-dot--good" aria-hidden="true"></span>All systems reporting</span>
+        <span class="header-divider" aria-hidden="true"></span>
+        <div class="operator" aria-label="Signed in as Avery Chen">
+          <span class="operator-avatar" aria-hidden="true">AC</span>
+          <span class="operator-copy"><strong>Avery Chen</strong><small>Network operations</small></span>
+        </div>
+      </div>
+    </header>
+
+    <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+      <div class="sidebar-inner">
+        <div class="sidebar-context">
+          <span class="context-label">Workspace</span>
+          <span class="context-value">North America</span>
+        </div>
+        <nav class="primary-nav">
+          <a class="nav-link is-active" href="#overview" data-nav="Overview" aria-current="page">
+            <span class="nav-icon" aria-hidden="true">▦</span><span class="nav-label">Overview</span>
+          </a>
+          <a class="nav-link" href="#facilities" data-nav="Facilities">
+            <span class="nav-icon" aria-hidden="true">⌂</span><span class="nav-label">Facilities</span><span class="nav-count">12</span>
+          </a>
+          <a class="nav-link" href="#shipments" data-nav="Shipments">
+            <span class="nav-icon" aria-hidden="true">▤</span><span class="nav-label">Shipments</span>
+          </a>
+          <a class="nav-link" href="#alerts" data-nav="Alerts">
+            <span class="nav-icon" aria-hidden="true">!</span><span class="nav-label">Alerts</span><span class="nav-count nav-count--warning">7</span>
+          </a>
+          <a class="nav-link" href="#reports" data-nav="Reports">
+            <span class="nav-icon" aria-hidden="true">▥</span><span class="nav-label">Reports</span>
+          </a>
+        </nav>
+        <div class="sidebar-rule"></div>
+        <div class="sidebar-section-title"><span class="nav-label">Operations</span></div>
+        <nav class="secondary-nav" aria-label="Operations navigation">
+          <a class="nav-link" href="#staffing" data-nav="Staffing"><span class="nav-icon" aria-hidden="true">♙</span><span class="nav-label">Staffing</span></a>
+          <a class="nav-link" href="#equipment" data-nav="Equipment"><span class="nav-icon" aria-hidden="true">⚙</span><span class="nav-label">Equipment</span></a>
+        </nav>
+        <div class="sidebar-footer">
+          <span class="sidebar-footer-icon" aria-hidden="true">?</span>
+          <span class="nav-label"><strong>Need assistance?</strong><small>Open operations support</small></span>
+        </div>
+      </div>
+    </aside>
+    <button class="sidebar-backdrop" id="sidebarBackdrop" type="button" aria-label="Close navigation"></button>
+
+    <main class="main-content" id="overview">
+      <div class="content-wrap">
+        <section class="page-heading" aria-labelledby="pageTitle">
+          <div>
+            <p class="eyebrow">Operations overview <span class="eyebrow-separator">/</span> Live snapshot</p>
+            <h1 id="pageTitle">Network performance</h1>
+            <p class="page-subtitle">Monitor throughput, service risk, and facility health across the parcel network.</p>
+          </div>
+          <div class="last-updated" aria-live="polite"><span class="status-dot status-dot--good" aria-hidden="true"></span><span id="lastUpdated">Updated 09:42:18 local time</span></div>
+        </section>
+
+        <section class="control-bar" aria-label="Dashboard filters and state controls">
+          <div class="control-group">
+            <label for="facilitySelect">Facility</label>
+            <div class="select-wrap"><select id="facilitySelect" name="facility">
+              <option value="network">Network view</option>
+              <option value="memphis">Memphis Hub</option>
+              <option value="chicago">Chicago Sort Center</option>
+              <option value="newark">Newark Gateway</option>
+              <option value="dallas">Dallas West</option>
+            </select></div>
+          </div>
+          <div class="control-group">
+            <label for="dateRangeSelect">Date range</label>
+            <div class="select-wrap"><select id="dateRangeSelect" name="dateRange">
+              <option value="today">Today · Jul 13, 2026</option>
+              <option value="shift">Current shift · 06:00–14:00</option>
+              <option value="7d">Last 7 days</option>
+              <option value="30d">Last 30 days</option>
+            </select></div>
+          </div>
+          <div class="control-group control-group--state">
+            <label for="viewStateSelect">View state</label>
+            <div class="select-wrap"><select id="viewStateSelect" name="viewState" aria-describedby="stateHelp">
+              <option value="populated">Populated</option>
+              <option value="loading">Loading</option>
+              <option value="empty">Empty</option>
+              <option value="error">Error</option>
+            </select></div>
+            <span id="stateHelp" class="sr-only">Use this control to exercise dashboard data states.</span>
+          </div>
+        </section>
+
+        <div class="state-panel" id="statePanel" role="status" aria-live="polite" hidden></div>
+
+        <div class="dashboard-content" id="dashboardContent">
+          <section class="metric-grid" aria-label="Operational summary metrics">
+            <article class="metric-card">
+              <div class="metric-card-top"><span class="metric-label">Processed today</span><span class="metric-icon metric-icon--blue" aria-hidden="true">↗</span></div>
+              <div class="metric-value" id="metricProcessed">184,260</div>
+              <div class="metric-foot"><span class="metric-change metric-change--positive" id="metricProcessedChange">+8.4%</span><span>vs prior period</span></div>
+              <div class="metric-bar"><span id="processedBar" style="width:76%"></span></div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-card-top"><span class="metric-label">On-time departure</span><span class="metric-icon metric-icon--teal" aria-hidden="true">✓</span></div>
+              <div class="metric-value" id="metricDeparture">96.8<span class="metric-unit">%</span></div>
+              <div class="metric-foot"><span class="metric-change metric-change--positive" id="metricDepartureChange">+1.2 pts</span><span>vs prior period</span></div>
+              <div class="metric-bar metric-bar--teal"><span id="departureBar" style="width:96.8%"></span></div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-card-top"><span class="metric-label">Delayed shipments</span><span class="metric-icon metric-icon--orange" aria-hidden="true">!</span></div>
+              <div class="metric-value" id="metricDelayed">1,482</div>
+              <div class="metric-foot"><span class="metric-change metric-change--negative" id="metricDelayedChange">+14.6%</span><span>vs prior period</span></div>
+              <div class="metric-bar metric-bar--orange"><span id="delayedBar" style="width:34%"></span></div>
+            </article>
+            <article class="metric-card">
+              <div class="metric-card-top"><span class="metric-label">Network utilization</span><span class="metric-icon metric-icon--violet" aria-hidden="true">⌁</span></div>
+              <div class="metric-value" id="metricUtilization">82.4<span class="metric-unit">%</span></div>
+              <div class="metric-foot"><span class="metric-change metric-change--neutral" id="metricUtilizationChange">−0.8 pts</span><span>vs prior period</span></div>
+              <div class="metric-bar metric-bar--violet"><span id="utilizationBar" style="width:82.4%"></span></div>
+            </article>
+          </section>
+
+          <div class="primary-grid">
+            <section class="panel trend-panel" id="shipments" aria-labelledby="trendTitle">
+              <div class="panel-header">
+                <div><p class="panel-kicker">Throughput</p><h2 id="trendTitle">Parcel volume</h2></div>
+                <div class="panel-header-meta"><span class="legend"><span class="legend-swatch legend-swatch--blue" aria-hidden="true"></span>Processed</span><span class="legend"><span class="legend-swatch legend-swatch--orange" aria-hidden="true"></span>Plan</span></div>
+              </div>
+              <div class="chart-summary"><strong id="chartTotal">184,260</strong><span>parcels processed</span><span class="chart-period" id="chartPeriod">Today · hourly</span></div>
+              <div class="chart-wrap" id="chartWrap" role="img" aria-label="Line chart showing processed parcels compared with plan">
+                <svg id="volumeChart" viewBox="0 0 760 280" preserveAspectRatio="none" aria-hidden="true"></svg>
+              </div>
+              <div class="chart-foot"><span>06:00</span><span>08:00</span><span>10:00</span><span>12:00</span><span>14:00</span><span>16:00</span><span>18:00</span></div>
+            </section>
+
+            <section class="panel alert-panel" id="alerts" aria-labelledby="alertsTitle">
+              <div class="panel-header"><div><p class="panel-kicker">Action queue</p><h2 id="alertsTitle">Delayed shipments</h2></div><span class="panel-badge panel-badge--warning" id="alertCount">7 active</span></div>
+              <p class="panel-description">Shipments requiring review before the next dispatch window.</p>
+              <div class="alert-list" id="alertList"></div>
+              <button class="text-button" id="viewAllAlerts" type="button">View all alerts <span aria-hidden="true">→</span></button>
+            </section>
+          </div>
+
+          <div class="secondary-grid">
+            <section class="panel table-panel" id="facilities" aria-labelledby="facilityStatusTitle">
+              <div class="panel-header"><div><p class="panel-kicker">Network health</p><h2 id="facilityStatusTitle">Facility status</h2></div><button class="quiet-button" id="refreshFacilities" type="button"><span aria-hidden="true">↻</span> Refresh</button></div>
+              <div class="table-scroll">
+                <table>
+                  <caption class="sr-only">Current parcel processing status by facility</caption>
+                  <thead><tr><th scope="col">Facility</th><th scope="col">Status</th><th scope="col">Processed</th><th scope="col">Utilization</th><th scope="col">Next dispatch</th></tr></thead>
+                  <tbody id="facilityTableBody"></tbody>
+                </table>
+              </div>
+              <div class="table-footer"><span id="facilityTableNote">Showing 4 facilities</span><button class="text-button" id="viewFacilities" type="button">Facility details <span aria-hidden="true">→</span></button></div>
+            </section>
+
+            <section class="panel events-panel" aria-labelledby="eventsTitle">
+              <div class="panel-header"><div><p class="panel-kicker">Audit trail</p><h2 id="eventsTitle">Recent events</h2></div><span class="live-pill"><span class="status-dot status-dot--good" aria-hidden="true"></span>Live</span></div>
+              <ol class="event-list" id="eventList"></ol>
+              <button class="text-button" id="viewAllEvents" type="button">Open event log <span aria-hidden="true">→</span></button>
+            </section>
+          </div>
+        </div>
+
+        <footer class="app-footer"><span>Data refreshes every 60 seconds</span><span>Operational timezone: Central Time (CT)</span><span>Last sync <strong id="footerSync">09:42:18</strong></span></footer>
+      </div>
+    </main>
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

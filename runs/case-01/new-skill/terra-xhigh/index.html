@@ -1,0 +1,205 @@
+<!doctype html>
+<!-- Agent: Terra | Reasoning level: xhigh | Skill condition: new-skill | Output directory: <LOCAL_SAMPLE_ROOT>/terra-xhigh/new-skill/01-creative-landing -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Conductor is the desktop command center for coordinating AI coding agents." />
+    <title>AI Agent Desktop Tool — Terra xhigh — New Skill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <div class="page-grain" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <a class="wordmark" href="#top" aria-label="Conductor home">
+        <span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>CONDUCTOR</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#field-guide">Field guide</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#mission">Changelog <span class="nav-dot" aria-label="New"></span></a>
+      </nav>
+      <a class="header-cta" href="#pricing">Get the desktop app <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main-content">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal-dot"></span> DESKTOP CONTROL FOR CODING AGENTS</p>
+          <h1 id="hero-title">One change.<br /><em>Many minds.</em><br />No loose ends.</h1>
+          <p class="hero-intro">Conductor turns a big engineering ask into coordinated implementation lanes—then brings the decisions, tests, and finished work back to one place.</p>
+          <div class="hero-actions">
+            <a class="button button-signal" href="#mission">Watch an operation <span aria-hidden="true">→</span></a>
+            <button class="text-button" type="button" data-demo-state="review">Enter review mode <span aria-hidden="true">↘</span></button>
+          </div>
+          <dl class="hero-stats" aria-label="Product statistics">
+            <div><dt>08</dt><dd>active lanes per project</dd></div>
+            <div><dt>3.4×</dt><dd>faster change delivery</dd></div>
+            <div><dt>100%</dt><dd>worktree-aware context</dd></div>
+          </dl>
+        </div>
+
+        <section class="mission-board" id="mission" aria-labelledby="mission-title" data-state="dispatch">
+          <div class="board-topline">
+            <p class="board-kicker"><span class="live-mark"></span> LIVE OPERATION / 042</p>
+            <span class="board-time">14:28:16 UTC</span>
+          </div>
+          <div class="board-heading">
+            <div>
+              <p class="micro-label">CHANGE REQUEST</p>
+              <h2 id="mission-title">Queue resilience</h2>
+            </div>
+            <span class="operation-state" id="operation-state">DISPATCHING</span>
+          </div>
+
+          <div class="state-controls" role="group" aria-label="Operation playback controls">
+            <button class="state-control is-active" type="button" data-demo-state="dispatch" aria-pressed="true">1 Dispatch</button>
+            <button class="state-control" type="button" data-demo-state="review" aria-pressed="false">2 Review</button>
+            <button class="state-control" type="button" data-demo-state="merge" aria-pressed="false">3 Merge</button>
+          </div>
+
+          <div class="graph-stage" aria-label="Agent orchestration graph">
+            <svg class="graph-lines" viewBox="0 0 600 450" preserveAspectRatio="none" aria-hidden="true">
+              <path class="line line-orch" d="M78 100 C128 100 120 166 173 166" />
+              <path class="line line-orch" d="M78 100 C128 100 120 275 173 275" />
+              <path class="line line-orch" d="M78 100 C128 100 120 385 173 385" />
+              <path class="line line-return return-one" d="M385 166 C438 166 424 231 491 231" />
+              <path class="line line-return return-two" d="M385 275 C438 275 424 244 491 244" />
+              <path class="line line-return return-three" d="M385 385 C438 385 424 256 491 256" />
+              <circle cx="173" cy="166" r="4" /><circle cx="173" cy="275" r="4" /><circle cx="173" cy="385" r="4" />
+            </svg>
+
+            <article class="orch-node">
+              <span class="node-icon" aria-hidden="true">⌘</span>
+              <div><p>ORCHESTRATOR</p><strong>Split the change</strong><small id="orch-detail">3 lanes / 1 shared brief</small></div>
+            </article>
+
+            <div class="agent-lanes" aria-label="Implementation lanes">
+              <button class="agent-card is-selected" type="button" data-agent="fern" aria-pressed="true" aria-label="Inspect Fern, integration engineer, currently running at 68 percent">
+                <span class="agent-avatar fern">F</span>
+                <span class="agent-main"><span class="agent-label">FERN <small>integration</small></span><span class="agent-task">Deduplicate retry queue</span><span class="progress"><i style="--progress: 68%"></i></span></span>
+                <span class="agent-status status-running">68%<small>RUNNING</small></span>
+              </button>
+              <button class="agent-card" type="button" data-agent="moss" aria-pressed="false" aria-label="Inspect Moss, test strategist, blocked by integration contract">
+                <span class="agent-avatar moss">M</span>
+                <span class="agent-main"><span class="agent-label">MOSS <small>test strategy</small></span><span class="agent-task">Map race-condition cases</span><span class="dependency-tag">↳ waits for Fern's contract</span></span>
+                <span class="agent-status status-waiting">—<small>BLOCKED</small></span>
+              </button>
+              <button class="agent-card" type="button" data-agent="rook" aria-pressed="false" aria-label="Inspect Rook, interface builder, completed and returned output">
+                <span class="agent-avatar rook">R</span>
+                <span class="agent-main"><span class="agent-label">ROOK <small>interface</small></span><span class="agent-task">Expose queue health signals</span><span class="return-tag">✓ returned: 4 files, 0 conflicts</span></span>
+                <span class="agent-status status-done">100%<small>RETURNED</small></span>
+              </button>
+            </div>
+
+            <article class="merge-node" aria-live="polite">
+              <div class="merge-symbol" aria-hidden="true">+</div>
+              <p>RESULT INTAKE</p>
+              <strong id="merge-title">Awaiting outputs</strong>
+              <small id="merge-detail">Rook's interface lane is ready.</small>
+              <span class="merge-count" id="merge-count">1 / 3</span>
+            </article>
+          </div>
+
+          <aside class="agent-inspector" aria-live="polite" aria-label="Selected agent detail">
+            <span class="inspector-label">NOW INSPECTING</span>
+            <div id="agent-inspector-content"><strong>Fern / integration</strong><span>Rebuilding the retry contract before tests unblock.</span><code>worktree / queue-resilience</code></div>
+          </aside>
+          <p class="board-caption" id="board-caption">The orchestrator gives each agent its own lane, dependency context, and clean return path—without turning your desktop into a pile of terminals.</p>
+        </section>
+      </section>
+
+      <section class="proof-strip" aria-label="Product benefits">
+        <p>BUILT FOR THE MOMENT A CHANGE<br />BECOMES A <em>PROGRAM</em>, NOT A PROMPT.</p>
+        <div class="proof-rules" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <p class="proof-detail">Independent worktrees. Visible decisions.<br />One accountable merge.</p>
+      </section>
+
+      <section class="feature-section section-shell" id="field-guide" aria-labelledby="features-title">
+        <div class="section-intro">
+          <p class="eyebrow">THE FIELD GUIDE / 01—03</p>
+          <h2 id="features-title">A calmer way to run a complicated change.</h2>
+          <p>Every operation is legible at a glance: who owns what, what is waiting, and what is safe to fold back in.</p>
+        </div>
+        <div class="feature-list">
+          <article class="feature feature-01">
+            <div class="feature-number">01</div>
+            <div><p class="micro-label">GIVE WORK A SHAPE</p><h3>Dispatch with boundaries.</h3><p>Turn a request into concrete lanes. Give each agent the files, constraints, and decision context it actually needs—nothing more.</p></div>
+            <div class="feature-visual boundary-visual" aria-hidden="true"><span>auth</span><span>queue</span><span>tests</span><i></i></div>
+          </article>
+          <article class="feature feature-02">
+            <div class="feature-number">02</div>
+            <div><p class="micro-label">KEEP THE SIGNAL</p><h3>Observe the reasoning trail.</h3><p>Watch work advance through concise activity notes, file-level evidence, and dependency signals instead of endless chat scroll.</p></div>
+            <div class="feature-visual trail-visual" aria-hidden="true"><span></span><span></span><span></span><span></span><i>contract accepted</i></div>
+          </article>
+          <article class="feature feature-03">
+            <div class="feature-number">03</div>
+            <div><p class="micro-label">MERGE WITH JUDGMENT</p><h3>Bring back a coherent change.</h3><p>Conductor assembles returned work beside its verification evidence, so you review the whole outcome—not a mystery bundle of diffs.</p></div>
+            <div class="feature-visual intake-visual" aria-hidden="true"><span>✓</span><span>✓</span><span>+</span><i>ready for review</i></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="workflow-section" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-head section-shell">
+          <div><p class="eyebrow"><span class="signal-dot"></span> THE OPERATING LOOP</p><h2 id="workflow-title">The handoff is the product.</h2></div>
+          <p>Good multi-agent work isn’t about adding more activity. It’s about maintaining context while responsibility moves.</p>
+        </div>
+        <div class="workflow-steps section-shell">
+          <details open>
+            <summary><span>01</span><strong>Frame the operation</strong><em>Brief → constraints → lanes</em></summary>
+            <div class="details-body"><p>Start with the outcome, repository boundaries, and non-negotiables. Conductor proposes independent lanes and surfaces overlaps before dispatch.</p><code>“Make retry handling idempotent without changing delivery semantics.”</code></div>
+          </details>
+          <details>
+            <summary><span>02</span><strong>Watch the joints</strong><em>Signals → decisions → dependencies</em></summary>
+            <div class="details-body"><p>Each lane reports only the moments that matter: an assumption, a blocked dependency, a test result, or a concrete output ready to return.</p><code>Fern accepted queue contract · Moss unblocked · 12 cases generated</code></div>
+          </details>
+          <details>
+            <summary><span>03</span><strong>Collect the evidence</strong><em>Outputs → review → merge</em></summary>
+            <div class="details-body"><p>Returned changes arrive with their files, decisions, and verification notes attached. You see the complete change set before it lands.</p><code>3 lanes returned · 17 files · tests green · 0 overlap warnings</code></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="pricing-section section-shell" id="pricing" aria-labelledby="pricing-title">
+        <div class="pricing-copy"><p class="eyebrow">DESKTOP, NOT A DASHBOARD TAB</p><h2 id="pricing-title">A serious workspace for serious changes.</h2><p>Start solo. Bring the team when the work starts branching.</p></div>
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button type="button" class="billing-option is-active" data-billing="monthly" aria-pressed="true">Monthly</button>
+          <button type="button" class="billing-option" data-billing="yearly" aria-pressed="false">Yearly <span>save 20%</span></button>
+        </div>
+        <div class="pricing-grid">
+          <article class="price-card">
+            <p class="micro-label">FOR THE INDIVIDUAL BUILDER</p><h3>Operator</h3><p class="price"><span class="currency">$</span><strong data-price="operator">24</strong><small data-period>/ month</small></p><p class="price-note">Your desktop agent desk.</p>
+            <ul><li>4 concurrent agent lanes</li><li>Local worktree coordination</li><li>Activity evidence timeline</li></ul>
+            <a class="button button-outline" href="#top">Start building <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="price-card featured">
+            <span class="recommended">MOST CHOSEN</span><p class="micro-label">FOR THE SHARED CODEBASE</p><h3>Command</h3><p class="price"><span class="currency">$</span><strong data-price="command">48</strong><small data-period>/ seat / month</small></p><p class="price-note">A shared record of every handoff.</p>
+            <ul><li>8 concurrent agent lanes</li><li>Shared operation history</li><li>Review-ready change intake</li></ul>
+            <a class="button button-signal" href="#top">Equip the team <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="final-cta section-shell" aria-labelledby="cta-title">
+        <p class="eyebrow">KEEP THE WHOLE CHANGE IN VIEW</p>
+        <h2 id="cta-title">The work is parallel.<br /><em>Your judgment stays central.</em></h2>
+        <a class="button button-light" href="#top">Get Conductor for desktop <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="wordmark" href="#top" aria-label="Conductor home"><span class="wordmark-mark" aria-hidden="true"><i></i><i></i><i></i></span><span>CONDUCTOR</span></a>
+      <p>Designed for the moment code starts moving in parallel.</p>
+      <div><a href="#field-guide">Product</a><a href="#pricing">Pricing</a><a href="#top">Security</a><span>© 2026</span></div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

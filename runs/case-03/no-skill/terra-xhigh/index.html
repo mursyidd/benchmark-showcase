@@ -1,0 +1,144 @@
+<!doctype html>
+<!-- Agent: Terra | Reasoning level: xhigh | Skill condition: no-skill (Active frontend skill: None) | Output directory: <LOCAL_SAMPLE_ROOT>/terra-xhigh/no-skill/03-settings-form -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Account settings form" />
+    <title>Account Settings — Terra xhigh — No Skill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#account-settings">Skip to account settings</a>
+
+    <header class="app-header">
+      <a class="brand" href="#account-settings" aria-label="Clarity home">
+        <span class="brand-mark" aria-hidden="true">C</span>
+        <span>Clarity</span>
+      </a>
+      <div class="header-user" aria-label="Signed in as Maya Chen">
+        <span class="avatar" aria-hidden="true">MC</span>
+        <span class="header-user-name">Maya Chen</span>
+      </div>
+    </header>
+
+    <div class="app-layout">
+      <aside class="settings-nav" aria-label="Settings navigation">
+        <p class="nav-heading">Settings</p>
+        <nav>
+          <ul>
+            <li><a class="nav-link is-active" href="#account-settings" aria-current="page">Account</a></li>
+            <li><a class="nav-link" href="#notification-preferences">Notifications</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <main id="account-settings" class="content">
+        <div class="page-intro">
+          <p class="eyebrow">Personal settings</p>
+          <h1>Account settings</h1>
+          <p>Manage the profile details and notifications associated with your account.</p>
+        </div>
+
+        <section class="settings-card" aria-labelledby="profile-heading">
+          <div class="card-heading">
+            <div>
+              <h2 id="profile-heading">Profile information</h2>
+              <p>These details help teammates recognize you and keep your account preferences current.</p>
+            </div>
+            <span class="required-key"><span aria-hidden="true">*</span> Required</span>
+          </div>
+
+          <div id="unsaved-warning" class="unsaved-warning" role="status" hidden>
+            <span class="notice-icon" aria-hidden="true">!</span>
+            <span><strong>Unsaved changes</strong><br />Your updates have not been saved yet.</span>
+          </div>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+          <form id="settings-form" novalidate>
+            <fieldset id="profile-fields">
+              <legend class="sr-only">Profile details</legend>
+
+              <div class="form-field">
+                <label for="email">Email address <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="email-help" aria-errormessage="email-error" value="demo@example.invalid" />
+                <p id="email-help" class="field-help">Used for sign-in and account notifications.</p>
+                <p id="email-error" class="field-error" role="alert" hidden></p>
+              </div>
+
+              <div class="form-field">
+                <label for="display-name">Display name <span aria-hidden="true">*</span></label>
+                <input id="display-name" name="displayName" type="text" autocomplete="name" required aria-describedby="display-name-help" aria-errormessage="display-name-error" value="Maya Chen" />
+                <p id="display-name-help" class="field-help">Shown on comments, tasks, and shared activity.</p>
+                <p id="display-name-error" class="field-error" role="alert" hidden></p>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-field">
+                  <label for="time-zone">Time zone</label>
+                  <select id="time-zone" name="timeZone" aria-describedby="time-zone-help">
+                    <option value="America/Los_Angeles">Pacific Time (UTC−08:00)</option>
+                    <option value="America/Denver">Mountain Time (UTC−07:00)</option>
+                    <option value="America/Chicago">Central Time (UTC−06:00)</option>
+                    <option value="America/New_York" selected>Eastern Time (UTC−05:00)</option>
+                    <option value="Europe/London">Greenwich Mean Time (UTC+00:00)</option>
+                    <option value="Asia/Singapore">Singapore Time (UTC+08:00)</option>
+                  </select>
+                  <p id="time-zone-help" class="field-help">Used for dates, reminders, and scheduled activity.</p>
+                </div>
+
+                <div class="form-field">
+                  <label for="language">Language</label>
+                  <select id="language" name="language" aria-describedby="language-help">
+                    <option value="en" selected>English (United States)</option>
+                    <option value="en-GB">English (United Kingdom)</option>
+                    <option value="de">Deutsch</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                  </select>
+                  <p id="language-help" class="field-help">Controls the language used in your workspace.</p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset id="notification-fields" class="notification-section">
+              <legend>Notification preferences</legend>
+              <p id="notification-preferences" class="section-help">Choose which account updates we send to your email address.</p>
+
+              <div class="preference-list">
+                <label class="preference-row" for="email-notifications">
+                  <input id="email-notifications" name="emailNotifications" type="checkbox" checked />
+                  <span class="preference-copy">
+                    <strong>Email notifications</strong>
+                    <small>Receive a concise activity summary and important account updates.</small>
+                  </span>
+                </label>
+
+                <label class="preference-row" for="product-updates">
+                  <input id="product-updates" name="productUpdates" type="checkbox" />
+                  <span class="preference-copy">
+                    <strong>Product updates</strong>
+                    <small>Hear about relevant improvements and new capabilities.</small>
+                  </span>
+                </label>
+              </div>
+            </fieldset>
+
+            <div class="form-actions">
+              <button id="save-button" class="button button-primary" type="submit">
+                <span class="button-label">Save changes</span>
+                <span class="button-saving" hidden><span class="spinner" aria-hidden="true"></span>Saving changes</span>
+              </button>
+              <button id="cancel-button" class="button button-secondary" type="button">Cancel</button>
+            </div>
+          </form>
+        </section>
+
+        <p class="privacy-note">Your profile information is visible only to people in your workspace.</p>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

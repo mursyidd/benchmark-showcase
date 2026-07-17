@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Account settings for the Northline workspace." />
+    <title>Account Settings — Luna xhigh — New Skill</title>
+    <!-- Agent: Luna | Reasoning level: xhigh | Skill condition: new-skill | Output directory: <LOCAL_SAMPLE_ROOT>/luna-xhigh/new-skill/03-settings-form -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to account settings</a>
+
+    <header class="app-header">
+      <div class="brand-lockup" aria-label="Northline workspace">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span class="brand-name">Northline</span>
+        <span class="brand-divider" aria-hidden="true"></span>
+        <span class="brand-context">Workspace</span>
+      </div>
+      <div class="header-context">
+        <span class="header-status-dot" aria-hidden="true"></span>
+        <span>Personal account</span>
+        <span class="header-avatar" aria-hidden="true">ME</span>
+      </div>
+    </header>
+
+    <main id="main-content" class="app-shell">
+      <aside class="settings-sidebar" aria-label="Settings navigation">
+        <div class="sidebar-kicker">Settings</div>
+        <nav>
+          <ul class="settings-nav">
+            <li>
+              <a class="settings-link is-active" href="#profile-section" aria-current="page">
+                <span class="nav-index" aria-hidden="true">01</span>
+                <span>Account</span>
+              </a>
+            </li>
+            <li>
+              <a class="settings-link" href="#notifications-section">
+                <span class="nav-index" aria-hidden="true">02</span>
+                <span>Notifications</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="sidebar-note">Manage the details your Northline teammates see.</p>
+      </aside>
+
+      <section class="settings-content" aria-labelledby="page-title">
+        <div class="breadcrumb" aria-label="Breadcrumb">
+          <span>Workspace</span>
+          <span aria-hidden="true">/</span>
+          <span>Settings</span>
+        </div>
+
+        <div class="page-intro">
+          <p class="eyebrow">Your account</p>
+          <h1 id="page-title">Account settings</h1>
+          <p class="page-summary">Keep your profile details current so your teammates know how to reach you.</p>
+        </div>
+
+        <div id="dirty-banner" class="notice notice-warning" role="status" aria-live="polite" hidden>
+          <span class="notice-symbol" aria-hidden="true">!</span>
+          <div>
+            <strong>Unsaved changes</strong>
+            <span>Your updates stay on this device until you choose Save changes.</span>
+          </div>
+        </div>
+
+        <div id="validation-summary" class="notice notice-error" role="alert" hidden>
+          <span class="notice-symbol" aria-hidden="true">!</span>
+          <div>
+            <strong>Review the highlighted fields</strong>
+            <span id="validation-summary-text">Please correct the errors below before saving.</span>
+          </div>
+        </div>
+
+        <form id="account-form" class="settings-form" novalidate>
+          <section id="profile-section" class="form-card" aria-labelledby="profile-heading">
+            <div class="card-heading">
+              <div>
+                <p class="section-number">01 / Profile</p>
+                <h2 id="profile-heading">Profile information</h2>
+              </div>
+              <p class="card-description">These details appear in your workspace profile and in messages you send.</p>
+            </div>
+
+            <fieldset id="profile-fields" class="field-grid">
+              <legend class="sr-only">Profile information fields</legend>
+
+              <div class="field field-wide">
+                <label for="display-name">Display name <span class="required-mark" aria-hidden="true">*</span></label>
+                <p id="display-name-hint" class="field-hint">Use the name your team will recognize.</p>
+                <input id="display-name" name="displayName" type="text" value="Mara Ellison" autocomplete="name" required aria-describedby="display-name-hint display-name-error" />
+                <p id="display-name-error" class="field-error" role="alert" hidden></p>
+              </div>
+
+              <div class="field field-wide">
+                <label for="email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+                <p id="email-hint" class="field-hint">We use this address for account notices and sign-in.</p>
+                <input id="email" name="email" type="email" value="demo@example.invalid" autocomplete="email" required aria-describedby="email-hint email-error" />
+                <p id="email-error" class="field-error" role="alert" hidden></p>
+              </div>
+
+              <div class="field">
+                <label for="time-zone">Time zone</label>
+                <p id="time-zone-hint" class="field-hint">Dates and reminders use this zone.</p>
+                <select id="time-zone" name="timeZone" aria-describedby="time-zone-hint">
+                  <option value="America/Los_Angeles">Pacific Time (US &amp; Canada)</option>
+                  <option value="America/New_York">Eastern Time (US &amp; Canada)</option>
+                  <option value="Europe/London">London</option>
+                  <option value="Asia/Singapore">Singapore</option>
+                  <option value="Australia/Sydney">Sydney</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="language">Language</label>
+                <p id="language-hint" class="field-hint">Choose your default workspace language.</p>
+                <select id="language" name="language" aria-describedby="language-hint">
+                  <option value="en-US">English (United States)</option>
+                  <option value="en-GB">English (United Kingdom)</option>
+                  <option value="fr-FR">Français (France)</option>
+                  <option value="de-DE">Deutsch (Deutschland)</option>
+                  <option value="ja-JP">日本語 (日本)</option>
+                </select>
+              </div>
+            </fieldset>
+          </section>
+
+          <section id="notifications-section" class="form-card" aria-labelledby="notifications-heading">
+            <div class="card-heading">
+              <div>
+                <p class="section-number">02 / Updates</p>
+                <h2 id="notifications-heading">Notification preferences</h2>
+              </div>
+              <p class="card-description">Choose the updates that are useful to you. Security alerts always include email.</p>
+            </div>
+
+            <fieldset id="notification-fields" class="notification-list">
+              <legend class="sr-only">Notification preferences</legend>
+
+              <label class="preference-row" for="product-updates">
+                <span class="preference-copy">
+                  <span class="preference-title">Product updates</span>
+                  <span class="preference-description">Occasional notes about new Northline features and improvements.</span>
+                </span>
+                <span class="toggle-wrap">
+                  <input id="product-updates" name="productUpdates" type="checkbox" checked aria-describedby="product-updates-state" />
+                  <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+                  <span id="product-updates-state" class="toggle-state">On</span>
+                </span>
+              </label>
+
+              <label class="preference-row" for="security-alerts">
+                <span class="preference-copy">
+                  <span class="preference-title">Security alerts</span>
+                  <span class="preference-description">A notice when your account signs in from a new device or location.</span>
+                </span>
+                <span class="toggle-wrap">
+                  <input id="security-alerts" name="securityAlerts" type="checkbox" checked aria-describedby="security-alerts-state" />
+                  <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+                  <span id="security-alerts-state" class="toggle-state">On</span>
+                </span>
+              </label>
+
+              <label class="preference-row" for="weekly-digest">
+                <span class="preference-copy">
+                  <span class="preference-title">Weekly digest</span>
+                  <span class="preference-description">A Monday summary of conversations, tasks, and mentions you missed.</span>
+                </span>
+                <span class="toggle-wrap">
+                  <input id="weekly-digest" name="weeklyDigest" type="checkbox" aria-describedby="weekly-digest-state" />
+                  <span class="toggle-track" aria-hidden="true"><span class="toggle-thumb"></span></span>
+                  <span id="weekly-digest-state" class="toggle-state">Off</span>
+                </span>
+              </label>
+            </fieldset>
+          </section>
+
+          <section class="form-actions" aria-label="Save account settings">
+            <div class="action-copy">
+              <p id="save-meta" class="save-meta">Last saved today at 09:42</p>
+              <p id="saving-note" class="saving-note" role="status" aria-live="polite" hidden>
+                <span class="spinner" aria-hidden="true"></span>
+                Saving your account settings…
+              </p>
+            </div>
+            <div class="action-buttons">
+              <button id="cancel-button" class="button button-secondary" type="reset">Cancel</button>
+              <button id="save-button" class="button button-primary" type="submit">
+                <span class="button-label">Save changes</span>
+                <span class="button-progress" aria-hidden="true"></span>
+              </button>
+            </div>
+          </section>
+
+          <div id="feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+        </form>
+
+        <details class="evaluation-controls">
+          <summary>Evaluation controls</summary>
+          <div class="evaluation-body">
+            <label for="save-outcome">Next save outcome</label>
+            <select id="save-outcome" name="saveOutcome">
+              <option value="success">Successful save</option>
+              <option value="failure">Failed save</option>
+            </select>
+            <p>Choose an outcome, make a change, then press Save changes. This control affects the next simulated save only.</p>
+          </div>
+        </details>
+      </section>
+    </main>
+  </body>
+</html>

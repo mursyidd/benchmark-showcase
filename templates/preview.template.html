@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Isolated evidence preview</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="preview-page">
+  <header class="preview-header">
+    <a href="index.html#run-explorer">Back to report</a>
+    <div>
+      <p class="eyebrow">Sandboxed evidence viewer</p>
+      <h1 id="preview-title">Isolated evidence preview</h1>
+    </div>
+  </header>
+  <main id="main" class="preview-main">
+    <p id="preview-status" role="status">Resolving run…</p>
+    <div id="preview-controls" hidden></div>
+    <div id="preview-container" class="preview-container"></div>
+  </main>
+  <script type="module" src="js/preview-shell.js"></script>
+</body>
+</html>

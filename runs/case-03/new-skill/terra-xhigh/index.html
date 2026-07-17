@@ -1,0 +1,178 @@
+<!doctype html>
+<!--
+  Agent: Terra
+  Reasoning level: xhigh
+  Skill condition: new-skill / frontend-art-direction
+  Output directory: <LOCAL_SAMPLE_ROOT>/terra-xhigh/new-skill/03-settings-form
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Account Settings — Terra xhigh — New Skill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#settings-content">Skip to account settings</a>
+
+    <header class="app-header">
+      <a class="brand" href="#settings-content" aria-label="Northline home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Northline</span>
+      </a>
+      <div class="workspace-context">
+        <span class="workspace-name">Harbour &amp; Finch</span>
+        <span class="workspace-role">Workspace administrator</span>
+      </div>
+      <div class="account-menu" aria-label="Signed in as Maya Patel">
+        <span class="avatar" aria-hidden="true">MP</span>
+        <span class="account-menu-text">Maya Patel</span>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="settings-nav" aria-label="Settings navigation">
+        <p class="nav-label">Settings</p>
+        <nav>
+          <a class="nav-link is-active" href="#profile" aria-current="page">
+            <span aria-hidden="true">●</span> Account
+          </a>
+          <a class="nav-link" href="#notifications">
+            <span aria-hidden="true">○</span> Notifications
+          </a>
+        </nav>
+      </aside>
+
+      <main id="settings-content" class="settings-content" tabindex="-1">
+        <div class="page-heading">
+          <p class="eyebrow">Personal settings</p>
+          <h1>Account settings</h1>
+          <p>Update the profile and notification details used across your Northline workspace.</p>
+        </div>
+
+        <div id="status-region" class="status-region" aria-live="polite" aria-atomic="true"></div>
+
+        <form id="account-form" novalidate>
+          <section id="profile" class="form-section" aria-labelledby="profile-heading">
+            <div class="section-heading">
+              <h2 id="profile-heading">Profile information</h2>
+              <p>These details identify you to people in your workspace.</p>
+            </div>
+
+            <div class="form-grid">
+              <div class="field" data-field="email">
+                <label for="email">Email address <span aria-hidden="true">*</span></label>
+                <p id="email-description" class="field-description">Used for sign-in and important account notices.</p>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autocomplete="email"
+                  inputmode="email"
+                  value="demo@example.invalid"
+                  required
+                  aria-describedby="email-description email-error"
+                  aria-errormessage="email-error"
+                />
+                <p id="email-error" class="field-error" role="alert"></p>
+              </div>
+
+              <div class="field" data-field="displayName">
+                <label for="displayName">Display name <span aria-hidden="true">*</span></label>
+                <p id="display-name-description" class="field-description">Shown on requests, comments, and internal activity.</p>
+                <input
+                  id="displayName"
+                  name="displayName"
+                  type="text"
+                  autocomplete="name"
+                  value="Maya Patel"
+                  required
+                  aria-describedby="display-name-description display-name-error"
+                  aria-errormessage="display-name-error"
+                />
+                <p id="display-name-error" class="field-error" role="alert"></p>
+              </div>
+
+              <div class="field" data-field="timeZone">
+                <label for="timeZone">Time zone</label>
+                <p id="time-zone-description" class="field-description">Sets dates and times in your activity and reminders.</p>
+                <select id="timeZone" name="timeZone" aria-describedby="time-zone-description">
+                  <option value="America/Los_Angeles">Pacific Time — Vancouver</option>
+                  <option value="America/New_York">Eastern Time — New York</option>
+                  <option value="Europe/London">Greenwich Mean Time — London</option>
+                  <option value="Asia/Kuala_Lumpur" selected>Malaysia Time — Kuala Lumpur</option>
+                  <option value="Asia/Tokyo">Japan Standard Time — Tokyo</option>
+                </select>
+              </div>
+
+              <div class="field" data-field="language">
+                <label for="language">Language</label>
+                <p id="language-description" class="field-description">Sets the language for application navigation and emails.</p>
+                <select id="language" name="language" aria-describedby="language-description">
+                  <option value="en-MY" selected>English (Malaysia)</option>
+                  <option value="en-GB">English (United Kingdom)</option>
+                  <option value="en-US">English (United States)</option>
+                  <option value="ms-MY">Bahasa Melayu</option>
+                  <option value="ja-JP">日本語</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section id="notifications" class="form-section notification-section" aria-labelledby="notifications-heading">
+            <div class="section-heading">
+              <h2 id="notifications-heading">Notification preferences</h2>
+              <p>Choose how Northline should keep you informed about work that needs your attention.</p>
+            </div>
+
+            <fieldset class="preference-list">
+              <legend class="visually-hidden">Notification preferences</legend>
+              <label class="preference-row" for="notifyAssignments">
+                <span class="preference-copy">
+                  <span class="preference-title">Assigned work</span>
+                  <span class="preference-description">Email me when a request is assigned to me or needs a decision.</span>
+                </span>
+                <input id="notifyAssignments" name="notifyAssignments" type="checkbox" checked />
+                <span class="toggle" aria-hidden="true"><span></span></span>
+              </label>
+
+              <label class="preference-row" for="notifyMentions">
+                <span class="preference-copy">
+                  <span class="preference-title">Mentions and replies</span>
+                  <span class="preference-description">Email me when someone mentions me or replies to my comment.</span>
+                </span>
+                <input id="notifyMentions" name="notifyMentions" type="checkbox" checked />
+                <span class="toggle" aria-hidden="true"><span></span></span>
+              </label>
+
+              <label class="preference-row" for="notifyDigest">
+                <span class="preference-copy">
+                  <span class="preference-title">Weekly activity digest</span>
+                  <span class="preference-description">Send me a Monday summary of workspace activity and overdue tasks.</span>
+                </span>
+                <input id="notifyDigest" name="notifyDigest" type="checkbox" />
+                <span class="toggle" aria-hidden="true"><span></span></span>
+              </label>
+            </fieldset>
+          </section>
+
+          <div id="unsaved-warning" class="unsaved-warning" hidden role="status">
+            <span class="warning-symbol" aria-hidden="true">!</span>
+            <span><strong>You have unsaved changes.</strong> Save them now, or cancel to discard them.</span>
+          </div>
+
+          <div class="form-actions">
+            <button id="save-button" class="button button-primary" type="submit">
+              <span class="button-label">Save changes</span>
+              <span class="button-spinner" aria-hidden="true"></span>
+            </button>
+            <button id="cancel-button" class="button button-secondary" type="button">Cancel</button>
+          </div>
+        </form>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

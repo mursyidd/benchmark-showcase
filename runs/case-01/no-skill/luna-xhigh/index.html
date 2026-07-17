@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Switchyard is a desktop control plane for coordinating multiple AI coding agents. Dispatch parallel lanes, observe progress, and synthesize finished work.">
+  <title>AI Agent Desktop Tool — Luna xhigh — No Skill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Agent: Luna | Reasoning level: xhigh | Skill condition: no-skill | Output directory: <LOCAL_SAMPLE_ROOT>/luna-xhigh/no-skill/01-creative-landing -->
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Switchyard home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span>switchyard</span>
+      </a>
+      <div class="nav-links" id="primary-links">
+        <a href="#control-room">Control room</a>
+        <a href="#method">Method</a>
+        <a href="#plans">Plans</a>
+      </div>
+      <div class="nav-actions">
+        <span class="nav-signal"><i aria-hidden="true"></i> local-first runtime</span>
+        <a class="text-link nav-signin" href="#final-cta">Sign in</a>
+        <a class="button button-small button-dark" href="#final-cta">Start building <span aria-hidden="true">↗</span></a>
+      </div>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-links" aria-label="Open navigation menu">
+        <span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Desktop command surface / v0.9</p>
+        <h1>Build in parallel.<br><em>Ship on signal.</em></h1>
+        <p class="hero-lede">Switchyard turns one ambitious ticket into a visible, coordinated build: dispatch specialist coding agents, watch their work as it lands, and merge the cleanest path into your branch.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#control-room">Open the control room <span aria-hidden="true">↗</span></a>
+          <a class="button button-quiet" href="#method"><span class="play-icon" aria-hidden="true">▶</span> See how it runs</a>
+        </div>
+        <div class="hero-proof" aria-label="Product proof points">
+          <div><strong>04</strong><span>active lanes</span></div>
+          <div><strong>01</strong><span>shared brief</span></div>
+          <div><strong>00</strong><span>context swaps</span></div>
+        </div>
+      </div>
+      <div class="hero-aside" aria-label="Product promise">
+        <div class="orbit-ring orbit-ring-one"></div>
+        <div class="orbit-ring orbit-ring-two"></div>
+        <div class="hero-stamp">FOR<br>THE<br>LONG<br>BUILD</div>
+        <p>One desktop for the messy middle between idea and merge.</p>
+      </div>
+    </section>
+
+    <section class="control-room section-shell" id="control-room" aria-labelledby="control-room-title">
+      <div class="section-intro intro-with-rule">
+        <div>
+          <p class="eyebrow">01 / orchestration, made legible</p>
+          <h2 id="control-room-title">See the whole build<br><em>at a glance.</em></h2>
+        </div>
+        <p class="section-note">No inbox archaeology. Every agent, dependency, diff, and decision sits on the same signal path.</p>
+      </div>
+
+      <div class="demo-window" data-phase="observe">
+        <div class="demo-topbar">
+          <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span class="window-title">switchyard / run 482</span>
+          <span class="window-branch"><span class="live-dot" aria-hidden="true"></span> checkout-redesign</span>
+          <button class="icon-button close-demo" type="button" aria-label="Demo stays open" title="Demo stays open">↗</button>
+        </div>
+        <div class="demo-toolbar">
+          <div class="demo-context">
+            <span class="demo-kicker">RUN / 482</span>
+            <strong data-demo-title>Checkout redesign</strong>
+            <span class="demo-subline" data-phase-copy>Agents are reading the brief and staking their lanes.</span>
+          </div>
+          <div class="demo-controls" role="group" aria-label="Orchestration demo controls">
+            <div class="phase-tabs" role="tablist" aria-label="Run phase">
+              <button class="phase-tab" type="button" role="tab" aria-selected="false" data-phase-button="dispatch">Dispatch</button>
+              <button class="phase-tab is-active" type="button" role="tab" aria-selected="true" data-phase-button="observe">Observe</button>
+              <button class="phase-tab" type="button" role="tab" aria-selected="false" data-phase-button="synthesize">Synthesize</button>
+            </div>
+            <button class="button button-play" type="button" data-play aria-pressed="false"><span aria-hidden="true">▶</span> Play run</button>
+          </div>
+        </div>
+
+        <div class="demo-body">
+          <aside class="demo-sidebar" aria-label="Run summary">
+            <div class="sidebar-label">RUNBOARD</div>
+            <div class="run-health"><span class="health-pulse" aria-hidden="true"></span><strong data-run-state>4 lanes in motion</strong><span>healthy</span></div>
+            <div class="sidebar-block">
+              <span>Brief</span>
+              <strong>checkout-redesign.md</strong>
+              <small>updated 2m ago by Maya</small>
+            </div>
+            <div class="sidebar-block">
+              <span>Target branch</span>
+              <strong>feat/express-checkout</strong>
+              <small>protected · merge queue on</small>
+            </div>
+            <div class="dependency-legend">
+              <span class="sidebar-label">DEPENDENCY MAP</span>
+              <div><i class="legend-line legend-orange"></i> ready to merge</div>
+              <div><i class="legend-line legend-blue"></i> waiting on signal</div>
+              <div><i class="legend-line legend-gray"></i> independent lane</div>
+            </div>
+            <div class="sidebar-foot"><span>SYNC</span><strong>12:48:09</strong></div>
+          </aside>
+
+          <div class="demo-main">
+            <div class="demo-main-head">
+              <div>
+                <span class="sidebar-label">ACTIVE IMPLEMENTATION LANES</span>
+                <p class="demo-helper" data-filter-summary>Showing all 4 lanes · dependencies resolved in view</p>
+              </div>
+              <div class="filter-tabs" role="group" aria-label="Filter agent lanes">
+                <button class="filter-tab is-active" type="button" data-filter="all" aria-pressed="true">All <span>4</span></button>
+                <button class="filter-tab" type="button" data-filter="active" aria-pressed="false">In flight <span>2</span></button>
+                <button class="filter-tab" type="button" data-filter="complete" aria-pressed="false">Complete <span>1</span></button>
+              </div>
+            </div>
+
+            <div class="lane-board" aria-live="polite">
+              <div class="board-grid" aria-hidden="true"></div>
+              <svg class="dependency-lines" viewBox="0 0 760 370" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M232 56 C300 56 296 138 360 138"></path>
+                <path d="M232 158 C298 158 296 138 360 138"></path>
+                <path d="M528 138 C600 138 588 56 672 56"></path>
+                <path d="M528 138 C600 138 600 248 672 248"></path>
+                <circle cx="360" cy="138" r="5"></circle>
+                <circle cx="528" cy="138" r="5"></circle>
+              </svg>
+
+              <article class="lane-card lane-atlas" data-status="complete" data-lane="atlas">
+                <div class="lane-card-top"><span class="lane-id">A1 / ATLAS</span><span class="lane-status status-complete">complete</span></div>
+                <div class="agent-line"><span class="agent-avatar avatar-orange">A</span><div><strong>API contract map</strong><small>atlas · systems</small></div></div>
+                <p>Mapped tax, wallet, and address states into one checkout contract.</p>
+                <div class="lane-progress"><span style="--progress: 100%"></span></div>
+                <div class="lane-meta"><span>100%</span><span class="hash">2f8d1c</span></div>
+              </article>
+
+              <article class="lane-card lane-nova" data-status="active" data-lane="nova">
+                <div class="lane-card-top"><span class="lane-id">B2 / NOVA</span><span class="lane-status status-active">in flight</span></div>
+                <div class="agent-line"><span class="agent-avatar avatar-blue">N</span><div><strong>UI shell + states</strong><small>nova · interface</small></div></div>
+                <p>Building the one-screen checkout with keyboard-safe field states.</p>
+                <div class="lane-progress"><span style="--progress: 78%"></span></div>
+                <div class="lane-meta"><span>78%</span><span class="hash">e91b44</span></div>
+              </article>
+
+              <article class="lane-card lane-kite" data-status="active" data-lane="kite">
+                <div class="lane-card-top"><span class="lane-id">C3 / KITE</span><span class="lane-status status-waiting">waiting</span></div>
+                <div class="agent-line"><span class="agent-avatar avatar-lime">K</span><div><strong>Regression net</strong><small>kite · quality</small></div></div>
+                <p>Writing the failure matrix. Unblocks when Atlas signs the contract.</p>
+                <div class="lane-progress"><span style="--progress: 42%"></span></div>
+                <div class="lane-meta"><span>42%</span><span class="depends">↳ depends A1</span></div>
+              </article>
+
+              <article class="lane-card lane-ember" data-status="ready" data-lane="ember">
+                <div class="lane-card-top"><span class="lane-id">D4 / EMBER</span><span class="lane-status status-ready">ready</span></div>
+                <div class="agent-line"><span class="agent-avatar avatar-pink">E</span><div><strong>Release notes</strong><small>ember · narrative</small></div></div>
+                <p>Drafted migration notes and a crisp handoff for the release train.</p>
+                <div class="lane-progress"><span style="--progress: 12%"></span></div>
+                <div class="lane-meta"><span>12%</span><span class="depends">↳ depends B2</span></div>
+              </article>
+
+              <div class="orchestrator-node">
+                <span class="node-orbit" aria-hidden="true"></span>
+                <span class="sidebar-label">ORCHESTRATOR</span>
+                <strong>switchyard core</strong>
+                <small data-orchestrator-copy>routing signals · watching 4 lanes</small>
+              </div>
+
+              <div class="output-node">
+                <div class="output-icon" aria-hidden="true">↓</div>
+                <div><span class="sidebar-label">COMPLETED OUTPUT</span><strong>merge queue / 01</strong><small data-output-copy>Atlas signed the contract · ready for synthesis</small></div>
+                <button class="mini-button" type="button" data-toast="Synthesis queued. Review opens in the local workspace." aria-label="Queue completed output for synthesis">Queue <span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="demo-footbar"><span>LOCAL EVENT STREAM</span><span class="event-tick" aria-hidden="true"></span><span data-event-copy>atlas emitted contract.json · 12:47:55</span><span class="demo-foot-right">⌘ K <span>command palette</span></span></div>
+      </div>
+    </section>
+
+    <section class="features section-shell" id="features" aria-labelledby="features-title">
+      <div class="section-intro intro-with-rule">
+        <div>
+          <p class="eyebrow">02 / the useful kind of busy</p>
+          <h2 id="features-title">More signal.<br><em>Less babysitting.</em></h2>
+        </div>
+        <p class="section-note">The work stays parallel. Your attention stays on the decisions that actually compound.</p>
+      </div>
+      <div class="feature-list">
+        <article class="feature-row">
+          <div class="feature-number">01</div>
+          <div class="feature-copy"><h3>Split a brief into real lanes</h3><p>Give each agent a job with a boundary, a target path, and the context it needs. Switchyard keeps contracts between lanes explicit.</p><a class="arrow-link" href="#method">See lane briefs <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-art brief-art" aria-hidden="true"><span class="art-line line-one"></span><span class="art-line line-two"></span><span class="art-line line-three"></span><span class="art-stamp">BRIEF<br>→<br>LANES</span></div>
+        </article>
+        <article class="feature-row feature-row-reverse">
+          <div class="feature-number">02</div>
+          <div class="feature-copy"><h3>Watch evidence, not typing</h3><p>Follow diffs, checks, and handoffs as they happen. The timeline surfaces the moment a dependency changes the plan.</p><a class="arrow-link" href="#control-room">Read the runboard <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-art timeline-art" aria-hidden="true"><div class="timeline-axis"></div><span class="timeline-node node-a">A1</span><span class="timeline-node node-b">B2</span><span class="timeline-node node-c">C3</span><span class="timeline-caption">evidence<br>over noise</span></div>
+        </article>
+        <article class="feature-row">
+          <div class="feature-number">03</div>
+          <div class="feature-copy"><h3>Bring back a clean result</h3><p>Review what made it through the checks, compare competing approaches, and send one coherent output back to your branch.</p><a class="arrow-link" href="#plans">Find your pace <span aria-hidden="true">↗</span></a></div>
+          <div class="feature-art result-art" aria-hidden="true"><span class="result-bracket">{</span><span class="result-chip">PASS</span><span class="result-chip chip-two">MERGE</span><span class="result-bracket bracket-right">}</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="method section-shell" id="method" aria-labelledby="method-title">
+      <div class="section-intro intro-with-rule">
+        <div>
+          <p class="eyebrow">03 / the operating rhythm</p>
+          <h2 id="method-title">A short path from<br><em>brief to branch.</em></h2>
+        </div>
+        <p class="section-note">Designed for the four tabs you would otherwise keep open while an agent works.</p>
+      </div>
+      <div class="method-layout">
+        <div class="method-rail" aria-hidden="true"><span class="rail-dot"></span><span class="rail-dot"></span><span class="rail-dot"></span><span class="rail-dot"></span></div>
+        <div class="method-steps">
+          <article class="method-step is-open">
+            <div class="step-index">01</div><div class="step-main"><div class="step-heading"><h3>Frame the brief</h3><span class="step-tag">you</span></div><p>Describe the outcome once. Add constraints, acceptance checks, and the files that matter.</p><div class="step-detail"><code>brief.yml</code><span>objective + boundaries + checks</span></div></div>
+          </article>
+          <article class="method-step">
+            <div class="step-index">02</div><div class="step-main"><div class="step-heading"><h3>Dispatch lanes</h3><span class="step-tag">switchyard</span></div><button class="step-toggle" type="button" aria-expanded="false" aria-controls="detail-dispatch">Expand step <span aria-hidden="true">+</span></button><div class="step-hidden" id="detail-dispatch" hidden>Assign narrow jobs to agents with different strengths. Each lane gets a clear output contract and a place to report.</div></div>
+          </article>
+          <article class="method-step">
+            <div class="step-index">03</div><div class="step-main"><div class="step-heading"><h3>Review signals</h3><span class="step-tag">you + agents</span></div><button class="step-toggle" type="button" aria-expanded="false" aria-controls="detail-review">Expand step <span aria-hidden="true">+</span></button><div class="step-hidden" id="detail-review" hidden>Open the diff, see which checks moved, and intervene only when a lane needs a decision or a new dependency.</div></div>
+          </article>
+          <article class="method-step">
+            <div class="step-index">04</div><div class="step-main"><div class="step-heading"><h3>Synthesize the result</h3><span class="step-tag">switchyard</span></div><button class="step-toggle" type="button" aria-expanded="false" aria-controls="detail-synthesize">Expand step <span aria-hidden="true">+</span></button><div class="step-hidden" id="detail-synthesize" hidden>Pick the strongest path, run the final checks, and return one reviewable output to your branch. No mystery merge.</div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="plans section-shell" id="plans" aria-labelledby="plans-title">
+      <div class="section-intro intro-with-rule">
+        <div><p class="eyebrow">04 / start small, stay in flow</p><h2 id="plans-title">The right amount<br><em>of runway.</em></h2></div>
+        <div class="billing-wrap"><span>Billing</span><div class="billing-toggle" role="group" aria-label="Billing period"><button type="button" class="billing-button is-active" data-billing="monthly" aria-pressed="true">Monthly</button><button type="button" class="billing-button" data-billing="annual" aria-pressed="false">Annual <b>−20%</b></button></div></div>
+      </div>
+      <div class="pricing-grid">
+        <article class="price-card price-solo"><div class="price-top"><span class="price-label">SOLO</span><span class="price-mark">01</span></div><h3>For the focused builder</h3><p>One developer, enough parallelism to keep the big work moving.</p><div class="price"><span class="price-amount" data-monthly="24" data-annual="18">$24</span><span>/ month</span></div><span class="price-note" data-price-note>cancel any time</span><a class="button button-outline" href="#final-cta">Try Solo <span aria-hidden="true">↗</span></a><ul><li>3 concurrent agents</li><li>Local workspace + run history</li><li>Diff and check timeline</li></ul></article>
+        <article class="price-card price-studio"><div class="price-top"><span class="price-label">STUDIO <i>most chosen</i></span><span class="price-mark">04</span></div><h3>For serious parallel work</h3><p>A shared command surface for the projects where handoffs get expensive.</p><div class="price"><span class="price-amount" data-monthly="68" data-annual="52">$68</span><span>/ month</span></div><span class="price-note" data-price-note>cancel any time</span><a class="button button-primary" href="#final-cta">Start Studio <span aria-hidden="true">↗</span></a><ul><li>12 concurrent agents</li><li>Dependency-aware orchestration</li><li>Shared lanes + review exports</li></ul></article>
+        <article class="price-card price-custom"><div class="price-top"><span class="price-label">FLIGHT DECK</span><span class="price-mark">∞</span></div><h3>For the whole crew</h3><p>Bring your team’s conventions, permissions, and merge rituals into one control plane.</p><div class="custom-price">Let’s map it</div><span class="price-note">tailored for your stack</span><a class="button button-outline" href="#final-cta">Talk to us <span aria-hidden="true">↗</span></a><ul><li>Unlimited collaborators</li><li>Custom agent profiles</li><li>Audit trail + support</li></ul></article>
+      </div>
+      <p class="billing-footnote" data-billing-note>Simple monthly billing. No seat math for your agents.</p>
+    </section>
+
+    <section class="final-cta section-shell" id="final-cta" aria-labelledby="final-cta-title">
+      <div class="cta-grid-lines" aria-hidden="true"></div>
+      <div class="cta-copy"><p class="eyebrow">05 / make room for the ambitious version</p><h2 id="final-cta-title">Your next big build<br><em>has more than one path.</em></h2><p>Give every good idea a lane. Switchyard keeps the thread.</p><a class="button button-cta" href="mailto:contact@example.invalid">Request desktop access <span aria-hidden="true">↗</span></a></div>
+      <div class="cta-signal" aria-hidden="true"><span class="signal-ring ring-1"></span><span class="signal-ring ring-2"></span><span class="signal-ring ring-3"></span><strong>READY<br>WHEN<br>YOU<br>ARE</strong></div>
+    </section>
+  </main>
+
+  <footer class="site-footer section-shell">
+    <div class="footer-main"><a class="brand" href="#top" aria-label="Switchyard home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span>switchyard</span></a><p>Parallel thinking for serious builders.</p><div class="footer-links"><a href="#control-room">Product</a><a href="#method">Method</a><a href="#plans">Plans</a><a href="mailto:contact@example.invalid">Contact</a></div></div>
+    <div class="footer-bottom"><span>© 2026 Switchyard Systems</span><span>Built for the long build <span class="footer-symbol" aria-hidden="true">✳</span></span><span>Privacy · Terms</span></div>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>

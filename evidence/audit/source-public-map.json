@@ -1,0 +1,668 @@
+{
+  "schemaVersion": 1,
+  "artifacts": [
+    {
+      "sourcePath": "benchmark-results/01-creative-landing-new-skill.md",
+      "publicPath": "summaries/01-creative-landing-new-skill.md",
+      "artifactType": "benchmark-summary",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "benchmark-results/01-creative-landing-no-skill.md",
+      "publicPath": "summaries/01-creative-landing-no-skill.md",
+      "artifactType": "benchmark-summary",
+      "sanitizationChanges": [
+        "local-path",
+        "opaque-identifier",
+        "incidental-worker-nickname"
+      ]
+    },
+    {
+      "sourcePath": "benchmark-results/02-operational-dashboard-new-skill.md",
+      "publicPath": "summaries/02-operational-dashboard-new-skill.md",
+      "artifactType": "benchmark-summary",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "benchmark-results/02-operational-dashboard-no-skill.md",
+      "publicPath": "summaries/02-operational-dashboard-no-skill.md",
+      "artifactType": "benchmark-summary",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "benchmark-results/03-settings-form-new-skill.md",
+      "publicPath": "summaries/03-settings-form-new-skill.md",
+      "artifactType": "benchmark-summary",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "benchmark-results/03-settings-form-no-skill.md",
+      "publicPath": "summaries/03-settings-form-no-skill.md",
+      "artifactType": "benchmark-summary",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/01-creative-landing/RUN.md",
+      "publicPath": "raw/case-01/new-skill/luna-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/01-creative-landing/index.html",
+      "publicPath": "raw/case-01/new-skill/luna-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/01-creative-landing/script.js",
+      "publicPath": "raw/case-01/new-skill/luna-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/01-creative-landing/styles.css",
+      "publicPath": "raw/case-01/new-skill/luna-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/RUN.md",
+      "publicPath": "raw/case-02/new-skill/luna-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/index.html",
+      "publicPath": "raw/case-02/new-skill/luna-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/script.js",
+      "publicPath": "raw/case-02/new-skill/luna-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/styles.css",
+      "publicPath": "raw/case-02/new-skill/luna-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/03-settings-form/RUN.md",
+      "publicPath": "raw/case-03/new-skill/luna-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/03-settings-form/index.html",
+      "publicPath": "raw/case-03/new-skill/luna-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/03-settings-form/script.js",
+      "publicPath": "raw/case-03/new-skill/luna-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/new-skill/03-settings-form/styles.css",
+      "publicPath": "raw/case-03/new-skill/luna-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/01-creative-landing/RUN.md",
+      "publicPath": "raw/case-01/no-skill/luna-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/01-creative-landing/index.html",
+      "publicPath": "raw/case-01/no-skill/luna-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/01-creative-landing/script.js",
+      "publicPath": "raw/case-01/no-skill/luna-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/01-creative-landing/styles.css",
+      "publicPath": "raw/case-01/no-skill/luna-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/RUN.md",
+      "publicPath": "raw/case-02/no-skill/luna-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/index.html",
+      "publicPath": "raw/case-02/no-skill/luna-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/script.js",
+      "publicPath": "raw/case-02/no-skill/luna-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/styles.css",
+      "publicPath": "raw/case-02/no-skill/luna-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/03-settings-form/RUN.md",
+      "publicPath": "raw/case-03/no-skill/luna-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/03-settings-form/index.html",
+      "publicPath": "raw/case-03/no-skill/luna-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/03-settings-form/script.js",
+      "publicPath": "raw/case-03/no-skill/luna-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "luna-xhigh/no-skill/03-settings-form/styles.css",
+      "publicPath": "raw/case-03/no-skill/luna-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/RUN.md",
+      "publicPath": "raw/case-01/new-skill/sol-high/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/index.html",
+      "publicPath": "raw/case-01/new-skill/sol-high/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/script.js",
+      "publicPath": "raw/case-01/new-skill/sol-high/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/styles.css",
+      "publicPath": "raw/case-01/new-skill/sol-high/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-control-room.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-control-room.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-desktop-viewport.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-desktop-viewport.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-desktop.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-desktop.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-features.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-features.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-final-cta.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-final-cta.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-keyboard-focus.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-keyboard-focus.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-control.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-control.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-menu.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-menu.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-pricing.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-pricing.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-ticket.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-ticket.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-pricing.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-pricing.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-tablet-control.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-tablet-control.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-tablet.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-tablet.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/01-creative-landing/verification-workflow.png",
+      "publicPath": "raw/case-01/new-skill/sol-high/verification-workflow.png",
+      "artifactType": "screenshot",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/02-operational-dashboard/RUN.md",
+      "publicPath": "raw/case-02/new-skill/sol-high/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/new-skill/02-operational-dashboard/index.html",
+      "publicPath": "raw/case-02/new-skill/sol-high/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/new-skill/02-operational-dashboard/script.js",
+      "publicPath": "raw/case-02/new-skill/sol-high/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/02-operational-dashboard/styles.css",
+      "publicPath": "raw/case-02/new-skill/sol-high/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/03-settings-form/RUN.md",
+      "publicPath": "raw/case-03/new-skill/sol-high/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/new-skill/03-settings-form/index.html",
+      "publicPath": "raw/case-03/new-skill/sol-high/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/new-skill/03-settings-form/script.js",
+      "publicPath": "raw/case-03/new-skill/sol-high/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/new-skill/03-settings-form/styles.css",
+      "publicPath": "raw/case-03/new-skill/sol-high/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/01-creative-landing/RUN.md",
+      "publicPath": "raw/case-01/no-skill/sol-high/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/01-creative-landing/index.html",
+      "publicPath": "raw/case-01/no-skill/sol-high/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/01-creative-landing/script.js",
+      "publicPath": "raw/case-01/no-skill/sol-high/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/01-creative-landing/styles.css",
+      "publicPath": "raw/case-01/no-skill/sol-high/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/02-operational-dashboard/RUN.md",
+      "publicPath": "raw/case-02/no-skill/sol-high/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/02-operational-dashboard/index.html",
+      "publicPath": "raw/case-02/no-skill/sol-high/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/02-operational-dashboard/script.js",
+      "publicPath": "raw/case-02/no-skill/sol-high/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/02-operational-dashboard/styles.css",
+      "publicPath": "raw/case-02/no-skill/sol-high/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/03-settings-form/DESIGN.md",
+      "publicPath": "raw/case-03/no-skill/sol-high/DESIGN.md",
+      "artifactType": "auxiliary-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/03-settings-form/PLAN.md",
+      "publicPath": "raw/case-03/no-skill/sol-high/PLAN.md",
+      "artifactType": "auxiliary-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/03-settings-form/RUN.md",
+      "publicPath": "raw/case-03/no-skill/sol-high/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/03-settings-form/index.html",
+      "publicPath": "raw/case-03/no-skill/sol-high/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "sol-high/no-skill/03-settings-form/script.js",
+      "publicPath": "raw/case-03/no-skill/sol-high/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "sol-high/no-skill/03-settings-form/styles.css",
+      "publicPath": "raw/case-03/no-skill/sol-high/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/01-creative-landing/RUN.md",
+      "publicPath": "raw/case-01/new-skill/terra-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/01-creative-landing/index.html",
+      "publicPath": "raw/case-01/new-skill/terra-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/01-creative-landing/script.js",
+      "publicPath": "raw/case-01/new-skill/terra-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/01-creative-landing/styles.css",
+      "publicPath": "raw/case-01/new-skill/terra-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/RUN.md",
+      "publicPath": "raw/case-02/new-skill/terra-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/index.html",
+      "publicPath": "raw/case-02/new-skill/terra-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/script.js",
+      "publicPath": "raw/case-02/new-skill/terra-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/styles.css",
+      "publicPath": "raw/case-02/new-skill/terra-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/03-settings-form/RUN.md",
+      "publicPath": "raw/case-03/new-skill/terra-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/03-settings-form/index.html",
+      "publicPath": "raw/case-03/new-skill/terra-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/03-settings-form/script.js",
+      "publicPath": "raw/case-03/new-skill/terra-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/new-skill/03-settings-form/styles.css",
+      "publicPath": "raw/case-03/new-skill/terra-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/01-creative-landing/RUN.md",
+      "publicPath": "raw/case-01/no-skill/terra-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/01-creative-landing/index.html",
+      "publicPath": "raw/case-01/no-skill/terra-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/01-creative-landing/script.js",
+      "publicPath": "raw/case-01/no-skill/terra-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/01-creative-landing/styles.css",
+      "publicPath": "raw/case-01/no-skill/terra-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/RUN.md",
+      "publicPath": "raw/case-02/no-skill/terra-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/index.html",
+      "publicPath": "raw/case-02/no-skill/terra-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/script.js",
+      "publicPath": "raw/case-02/no-skill/terra-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/styles.css",
+      "publicPath": "raw/case-02/no-skill/terra-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/03-settings-form/RUN.md",
+      "publicPath": "raw/case-03/no-skill/terra-xhigh/RUN.md",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/03-settings-form/index.html",
+      "publicPath": "raw/case-03/no-skill/terra-xhigh/index.html",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": [
+        "local-path",
+        "email-alias"
+      ]
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/03-settings-form/script.js",
+      "publicPath": "raw/case-03/no-skill/terra-xhigh/script.js",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    },
+    {
+      "sourcePath": "terra-xhigh/no-skill/03-settings-form/styles.css",
+      "publicPath": "raw/case-03/no-skill/terra-xhigh/styles.css",
+      "artifactType": "run-artifact",
+      "sanitizationChanges": []
+    }
+  ]
+}

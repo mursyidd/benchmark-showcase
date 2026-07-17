@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A transparent evidence archive of 18 finalized frontend generation runs, with prompts, outputs, screenshots, timing, provenance, and preserved defects.">
+  <meta property="og:title" content="Frontend Benchmark Evidence Archive">
+  <meta property="og:description" content="An 18-run evidence archive—not a controlled study, model ranking, or superiority claim.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/social/benchmark-preview.png">
+  <title>Frontend Benchmark Evidence Archive</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to evidence archive</a>
+  {{STATIC_NAV}}
+  <main id="main">
+    <section id="overview" class="hero section-shell" aria-labelledby="page-title">
+      <p class="eyebrow">Transparent evidence archive · sanitized publication</p>
+      <h1 id="page-title">Frontend Benchmark<br><em>Evidence Archive</em></h1>
+      <p class="hero-deck">18 finalized runs across 3 model configurations, 3 task types, and 2 prompting conditions.</p>
+<p class="scope-statement">This archive documents an 18-run frontend generation exercise across three task types, three model configurations, and two prompting conditions. It is provided as a transparent showcase of the work performed, not as a controlled study, model ranking, or claim that one approach is superior. It is non-evaluative: it does not identify a winner or support causal conclusions.</p>
+      <div class="hero-actions"><a class="button primary" href="#results">Explore the archive</a><a class="button" href="#methodology">Read archive context</a><a class="button" href="#tested-skill">View tested skill</a></div>
+      <div id="summary-metrics" class="metric-rail" aria-label="Archive summary">{{STATIC_METRICS}}</div>
+    </section>
+    <section id="results" class="section-shell"><header class="section-heading"><p class="section-number">01</p><div><p class="eyebrow">Evidence archive</p><h2>Archived run matrix</h2></div></header><div id="case-selector">{{STATIC_CASE_SELECTOR}}</div><div id="comparison-grid">{{STATIC_COMPARISON}}</div></section>
+    <section id="cases" class="section-shell"><header class="section-heading"><p class="section-number">02</p><div><p class="eyebrow">Three task briefs</p><h2>Archived tasks</h2></div></header><div id="case-cards">{{STATIC_CASES}}</div></section>
+    <section id="run-explorer" class="section-shell"><header class="section-heading"><p class="section-number">03</p><div><p class="eyebrow">All finalized outputs</p><h2>Run explorer</h2></div></header><div id="run-filters"><p>Use the evidence links below, or enable JavaScript for validated filters and dialogs.</p></div><p id="run-count" role="status">18 runs shown</p><div id="run-grid" class="run-grid">{{STATIC_RUN_CARDS}}</div></section>
+    <section id="prompts" class="section-shell"><header class="section-heading"><p class="section-number">04</p><div><p class="eyebrow">Archived generation inputs</p><h2>Exact prompts</h2></div></header><div id="prompt-grid" class="prompt-grid">{{STATIC_PROMPT_CARDS}}</div></section>
+    <section id="tested-skill" class="section-shell"><header class="section-heading"><p class="section-number">05</p><div><p class="eyebrow">Canonical input</p><h2>Tested skill</h2></div></header><div id="skill-view">{{STATIC_SKILL_CARD}}</div></section>
+    <section id="methodology" class="section-shell"><header class="section-heading"><p class="section-number">06</p><div><p class="eyebrow">How to read this archive</p><h2>Archive context</h2></div></header><div id="methodology-content">{{STATIC_METHODOLOGY}}</div></section>
+    <section id="findings" class="section-shell"><header class="section-heading"><p class="section-number">07</p><div><p class="eyebrow">Traceable observations</p><h2>Findings</h2></div></header><div id="findings-content">{{STATIC_FINDINGS}}</div></section>
+    <section id="limitations" class="section-shell"><header class="section-heading"><p class="section-number">08</p><div><p class="eyebrow">Read before concluding</p><h2>Limitations</h2></div></header><div id="limitations-content">{{STATIC_LIMITATIONS}}</div></section>
+    <section id="evidence" class="section-shell"><header class="section-heading"><p class="section-number">09</p><div><p class="eyebrow">Audit trail</p><h2>Evidence</h2></div></header><div id="evidence-content">{{STATIC_EVIDENCE}}</div></section>
+  </main>
+  {{STATIC_DIALOGS}}
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

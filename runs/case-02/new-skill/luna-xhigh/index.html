@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <!-- Agent: Luna | Reasoning level: xhigh | Skill condition: new-skill | Output directory: <LOCAL_SAMPLE_ROOT>/luna-xhigh/new-skill/02-operational-dashboard -->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#172026" />
+    <title>Parcel Operations Dashboard — Luna xhigh — New Skill</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to dashboard content</a>
+
+    <header class="app-header">
+      <div class="header-brand">
+        <button class="icon-button menu-toggle" id="sidebar-toggle" type="button" aria-label="Collapse navigation" aria-expanded="true" aria-controls="app-sidebar">
+          <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+        </button>
+        <div class="brand-mark" aria-hidden="true"><span>PO</span></div>
+        <div class="brand-copy">
+          <span class="eyebrow">Operations control</span>
+          <strong>Parcel Operations</strong>
+        </div>
+      </div>
+      <div class="header-actions">
+        <span class="system-status"><span class="status-dot status-dot--teal" aria-hidden="true"></span>Network live</span>
+        <button class="avatar-button" type="button" aria-label="Open profile menu for Maya Chen">MC</button>
+      </div>
+    </header>
+
+    <div class="app-shell">
+      <aside class="app-sidebar" id="app-sidebar" aria-label="Primary navigation">
+        <div class="sidebar-section-label">Workspace</div>
+        <nav class="primary-nav" aria-label="Operations sections">
+          <a class="nav-link nav-link--active" href="#overview" aria-current="page">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg>
+            <span>Overview</span>
+          </a>
+          <a class="nav-link" href="#facilities">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4 20V8l8-4 8 4v12H4Z"/><path d="M8 20v-5h8v5M8 9h.01M12 9h.01M16 9h.01"/></svg>
+            <span>Facilities</span>
+            <span class="nav-count">12</span>
+          </a>
+          <a class="nav-link" href="#delays">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M12 4 3.5 19h17L12 4Z"/><path d="M12 9v4M12 16h.01"/></svg>
+            <span>Delays</span>
+            <span class="nav-count nav-count--alert">07</span>
+          </a>
+          <a class="nav-link" href="#events">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M5 5h14v14H5z"/><path d="M8 9h8M8 13h5M8 17h3"/></svg>
+            <span>Event log</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-divider"></div>
+        <div class="sidebar-section-label">System</div>
+        <nav class="secondary-nav" aria-label="System sections">
+          <a class="nav-link" href="#service-health">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M4 12h3l2-5 4 10 2-5h5"/></svg>
+            <span>Service health</span>
+          </a>
+          <a class="nav-link" href="#preferences">
+            <svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.64 5.64l2.12 2.12M16.24 16.24l2.12 2.12M18.36 5.64l-2.12 2.12M7.76 16.24l-2.12 2.12"/><circle cx="12" cy="12" r="4"/></svg>
+            <span>Preferences</span>
+          </a>
+        </nav>
+
+        <div class="sidebar-footer">
+          <div class="operator-card">
+            <div class="operator-avatar" aria-hidden="true">MC</div>
+            <div class="operator-details"><strong>Maya Chen</strong><span>Network operations</span></div>
+            <span class="status-dot status-dot--teal" aria-label="Online"></span>
+          </div>
+          <p class="sidebar-footnote">Shift 2 · 14:00–22:00 CT</p>
+        </div>
+      </aside>
+
+      <main class="main-content" id="main-content" tabindex="-1">
+        <section class="page-heading" id="overview" aria-labelledby="page-title">
+          <div>
+            <p class="section-kicker">Tuesday, 13 August 2024 <span class="kicker-separator">/</span> 16:40 CT</p>
+            <h1 id="page-title">Network overview</h1>
+            <p class="page-summary">A live read on parcel flow, capacity, and exceptions across the domestic network.</p>
+          </div>
+          <div class="view-controls" aria-label="Dashboard filters">
+            <label class="field-label" for="facility-select">Facility</label>
+            <select class="select-control" id="facility-select" name="facility">
+              <option value="network">All facilities</option>
+              <option value="memphis">Memphis South</option>
+              <option value="dallas">Dallas North</option>
+              <option value="newark">Newark East</option>
+              <option value="reno">Reno West</option>
+            </select>
+            <label class="field-label" for="date-select">Window</label>
+            <select class="select-control" id="date-select" name="date-range">
+              <option value="today">Today · 00:00–now</option>
+              <option value="yesterday">Yesterday · 00:00–24:00</option>
+              <option value="seven-days">Last 7 days</option>
+            </select>
+          </div>
+        </section>
+
+        <section class="control-strip" aria-label="View state controls">
+          <div class="control-strip-copy"><span class="control-strip-label">Display state</span><span id="state-description">Showing current network data</span></div>
+          <div class="state-switcher" role="group" aria-label="Select dashboard display state">
+            <button class="state-button state-button--active" type="button" data-state="populated" aria-pressed="true">Live data</button>
+            <button class="state-button" type="button" data-state="loading" aria-pressed="false">Loading</button>
+            <button class="state-button" type="button" data-state="empty" aria-pressed="false">Empty</button>
+            <button class="state-button" type="button" data-state="error" aria-pressed="false">Error</button>
+          </div>
+        </section>
+
+        <div class="dashboard-grid">
+          <section class="metric-grid" aria-label="Operational summary metrics" id="metrics-region"></section>
+
+          <section class="panel chart-panel" aria-labelledby="volume-heading" id="volume-panel">
+            <div class="panel-header">
+              <div><p class="panel-kicker">Throughput</p><h2 id="volume-heading">Parcel volume</h2></div>
+              <div class="panel-meta"><span class="legend-key"><span class="legend-swatch legend-swatch--volume" aria-hidden="true"></span>Processed</span><span class="legend-key"><span class="legend-swatch legend-swatch--target" aria-hidden="true"></span>Plan</span></div>
+            </div>
+            <div class="chart-summary"><strong id="chart-total">84,260</strong><span>parcels processed</span><span class="delta-positive">+6.4% vs plan</span></div>
+            <figure class="volume-chart" id="chart-region" aria-labelledby="volume-heading chart-caption"><figcaption id="chart-caption" class="chart-caption">Hourly processed parcels compared with the operating plan. Hover or focus a point for detail.</figcaption></figure>
+          </section>
+
+          <section class="panel alerts-panel" aria-labelledby="alerts-heading" id="delays">
+            <div class="panel-header"><div><p class="panel-kicker">Exceptions</p><h2 id="alerts-heading">Delayed shipments</h2></div><span class="count-badge count-badge--alert" id="alert-count">07 open</span></div>
+            <div class="alert-list" id="alerts-region"></div>
+            <button class="text-button" type="button" id="view-all-delays">View all delay cases <span aria-hidden="true">→</span></button>
+          </section>
+
+          <section class="panel facility-panel" aria-labelledby="facilities-heading" id="facilities">
+            <div class="panel-header"><div><p class="panel-kicker">Network health</p><h2 id="facilities-heading">Facility status</h2></div><span class="panel-meta" id="facility-updated">Updated 2 min ago</span></div>
+            <div class="table-scroll" id="facility-table-region"></div>
+          </section>
+
+          <section class="panel events-panel" aria-labelledby="events-heading" id="events">
+            <div class="panel-header"><div><p class="panel-kicker">Audit trail</p><h2 id="events-heading">Recent operational events</h2></div><button class="icon-button panel-action" type="button" aria-label="Open event log"><svg aria-hidden="true" viewBox="0 0 24 24" focusable="false"><path d="M5 5h14v14H5zM8 9h8M8 13h5M8 17h3"/></svg></button></div>
+            <ol class="event-list" id="events-region"></ol>
+          </section>
+        </div>
+        <p class="sr-only" id="live-region" aria-live="polite"></p>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

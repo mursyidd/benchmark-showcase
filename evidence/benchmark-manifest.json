@@ -1,0 +1,1091 @@
+{
+  "schemaVersion": 1,
+  "runCount": 18,
+  "caseCount": 3,
+  "conditions": [
+    "new-skill",
+    "no-skill"
+  ],
+  "publicationStatus": "sanitized",
+  "rawArtifactDescription": "Sanitized, content-preserving copies of the original run artifacts.",
+  "sourcePublicMapPath": "audit/source-public-map.json",
+  "skill": {
+    "name": "frontend-art-direction",
+    "publicPath": "inputs/skill/SKILL.md",
+    "sourceClassification": "user-provided-authoritative-benchmark-input",
+    "verificationStatus": "verified",
+    "sanitized": false,
+    "contentModifiedBeyondSanitization": false,
+    "usedByCondition": "new-skill",
+    "excludedFromCondition": "no-skill",
+    "publishedChecksumAlgorithm": "sha256",
+    "publishedChecksum": "d5b6e60238d56ff59adc9bead7ecd77477c135e5c43e083d1d4200f814213b08"
+  },
+  "prompts": [
+    {
+      "id": "case-01-new-skill",
+      "case": 1,
+      "condition": "new-skill",
+      "publicPath": "inputs/prompts/case-01/new-skill.md",
+      "sourceClassification": "user-provided-authoritative-benchmark-input",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "contentModifiedBeyondSanitization": false,
+      "publishedChecksumAlgorithm": "sha256",
+      "publishedChecksum": "6bc3be329f9f8ed7a86d18a0bc32c437e34d6fb2ccb201fda9cc8d362750bef2",
+      "usedByRuns": [
+        "case-01-new-skill-luna-xhigh",
+        "case-01-new-skill-sol-high",
+        "case-01-new-skill-terra-xhigh"
+      ],
+      "skillPath": "inputs/skill/SKILL.md"
+    },
+    {
+      "id": "case-01-no-skill",
+      "case": 1,
+      "condition": "no-skill",
+      "publicPath": "inputs/prompts/case-01/no-skill.md",
+      "sourceClassification": "user-provided-authoritative-benchmark-input",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "contentModifiedBeyondSanitization": false,
+      "publishedChecksumAlgorithm": "sha256",
+      "publishedChecksum": "1f5d56e062f601d28760ea874c21050532fb0592bec551af29b9329089564a08",
+      "usedByRuns": [
+        "case-01-no-skill-luna-xhigh",
+        "case-01-no-skill-sol-high",
+        "case-01-no-skill-terra-xhigh"
+      ],
+      "skillPath": null
+    },
+    {
+      "id": "case-02-new-skill",
+      "case": 2,
+      "condition": "new-skill",
+      "publicPath": "inputs/prompts/case-02/new-skill.md",
+      "sourceClassification": "user-provided-authoritative-benchmark-input",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "contentModifiedBeyondSanitization": false,
+      "publishedChecksumAlgorithm": "sha256",
+      "publishedChecksum": "a5a6691a54cc80105248bbc5cf6125487582c505300620d8e47905d1c9098dcd",
+      "usedByRuns": [
+        "case-02-new-skill-luna-xhigh",
+        "case-02-new-skill-sol-high",
+        "case-02-new-skill-terra-xhigh"
+      ],
+      "skillPath": "inputs/skill/SKILL.md"
+    },
+    {
+      "id": "case-02-no-skill",
+      "case": 2,
+      "condition": "no-skill",
+      "publicPath": "inputs/prompts/case-02/no-skill.md",
+      "sourceClassification": "user-provided-authoritative-benchmark-input",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "contentModifiedBeyondSanitization": false,
+      "publishedChecksumAlgorithm": "sha256",
+      "publishedChecksum": "45c2003ebb00fb86c60a0c96eb8181965bccb752316d1e068726f55b70288c38",
+      "usedByRuns": [
+        "case-02-no-skill-luna-xhigh",
+        "case-02-no-skill-sol-high",
+        "case-02-no-skill-terra-xhigh"
+      ],
+      "skillPath": null
+    },
+    {
+      "id": "case-03-new-skill",
+      "case": 3,
+      "condition": "new-skill",
+      "publicPath": "inputs/prompts/case-03/new-skill.md",
+      "sourceClassification": "user-provided-authoritative-benchmark-input",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "contentModifiedBeyondSanitization": false,
+      "publishedChecksumAlgorithm": "sha256",
+      "publishedChecksum": "bdb3146710332b0a55a8b784cd443f9004aeb174480f4ea716653b75985688d1",
+      "usedByRuns": [
+        "case-03-new-skill-luna-xhigh",
+        "case-03-new-skill-sol-high",
+        "case-03-new-skill-terra-xhigh"
+      ],
+      "skillPath": "inputs/skill/SKILL.md"
+    },
+    {
+      "id": "case-03-no-skill",
+      "case": 3,
+      "condition": "no-skill",
+      "publicPath": "inputs/prompts/case-03/no-skill.md",
+      "sourceClassification": "user-provided-authoritative-benchmark-input",
+      "verificationStatus": "verified",
+      "sanitized": true,
+      "contentModifiedBeyondSanitization": false,
+      "publishedChecksumAlgorithm": "sha256",
+      "publishedChecksum": "b41589546b00f76aacd48cfbdac2a85368b5d67e4fa5b10500c2dbc4c99ad4f0",
+      "usedByRuns": [
+        "case-03-no-skill-luna-xhigh",
+        "case-03-no-skill-sol-high",
+        "case-03-no-skill-terra-xhigh"
+      ],
+      "skillPath": null
+    }
+  ],
+  "runs": [
+    {
+      "runId": "case-01-new-skill-luna-xhigh",
+      "case": 1,
+      "condition": "new-skill",
+      "model": "Luna",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-01-new-skill",
+      "promptPath": "inputs/prompts/case-01/new-skill.md",
+      "sourcePath": "luna-xhigh/new-skill/01-creative-landing",
+      "publicPath": "runs/case-01/new-skill/luna-xhigh/README.md",
+      "rawPath": "raw/case-01/new-skill/luna-xhigh",
+      "summaryPath": "summaries/01-creative-landing-new-skill.md",
+      "runNotesPath": "raw/case-01/new-skill/luna-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "luna-xhigh/new-skill/01-creative-landing/RUN.md",
+          "publicPath": "raw/case-01/new-skill/luna-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/01-creative-landing/index.html",
+          "publicPath": "raw/case-01/new-skill/luna-xhigh/index.html"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/01-creative-landing/script.js",
+          "publicPath": "raw/case-01/new-skill/luna-xhigh/script.js"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/01-creative-landing/styles.css",
+          "publicPath": "raw/case-01/new-skill/luna-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1811.536,
+      "recordedIndividualDuration": 1422.408,
+      "timingCaveat": "Completion timestamps were recorded independently by the orchestrator immediately after each agent's final status was returned by the wait mechanism. The official elapsed values above therefore include queueing and tool-execution time and may include the minimal status-observation handoff between tool return and timestamp capture.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-01-new-skill-sol-high",
+      "case": 1,
+      "condition": "new-skill",
+      "model": "Sol",
+      "reasoningLevel": "high",
+      "promptId": "case-01-new-skill",
+      "promptPath": "inputs/prompts/case-01/new-skill.md",
+      "sourcePath": "sol-high/new-skill/01-creative-landing",
+      "publicPath": "runs/case-01/new-skill/sol-high/README.md",
+      "rawPath": "raw/case-01/new-skill/sol-high",
+      "summaryPath": "summaries/01-creative-landing-new-skill.md",
+      "runNotesPath": "raw/case-01/new-skill/sol-high/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/RUN.md",
+          "publicPath": "raw/case-01/new-skill/sol-high/RUN.md"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/index.html",
+          "publicPath": "raw/case-01/new-skill/sol-high/index.html"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/script.js",
+          "publicPath": "raw/case-01/new-skill/sol-high/script.js"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/styles.css",
+          "publicPath": "raw/case-01/new-skill/sol-high/styles.css"
+        }
+      ],
+      "screenshots": [
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-control-room.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-control-room.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-desktop-viewport.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-desktop-viewport.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-desktop.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-desktop.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-features.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-features.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-final-cta.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-final-cta.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-keyboard-focus.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-keyboard-focus.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-control.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-control.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-menu.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-menu.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-pricing.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-pricing.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile-ticket.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile-ticket.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-mobile.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-mobile.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-pricing.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-pricing.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-tablet-control.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-tablet-control.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-tablet.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-tablet.png"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/01-creative-landing/verification-workflow.png",
+          "publicPath": "raw/case-01/new-skill/sol-high/verification-workflow.png"
+        }
+      ],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1811.536,
+      "recordedIndividualDuration": 1811.536,
+      "timingCaveat": "Completion timestamps were recorded independently by the orchestrator immediately after each agent's final status was returned by the wait mechanism. The official elapsed values above therefore include queueing and tool-execution time and may include the minimal status-observation handoff between tool return and timestamp capture.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-01-new-skill-terra-xhigh",
+      "case": 1,
+      "condition": "new-skill",
+      "model": "Terra",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-01-new-skill",
+      "promptPath": "inputs/prompts/case-01/new-skill.md",
+      "sourcePath": "terra-xhigh/new-skill/01-creative-landing",
+      "publicPath": "runs/case-01/new-skill/terra-xhigh/README.md",
+      "rawPath": "raw/case-01/new-skill/terra-xhigh",
+      "summaryPath": "summaries/01-creative-landing-new-skill.md",
+      "runNotesPath": "raw/case-01/new-skill/terra-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "terra-xhigh/new-skill/01-creative-landing/RUN.md",
+          "publicPath": "raw/case-01/new-skill/terra-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/01-creative-landing/index.html",
+          "publicPath": "raw/case-01/new-skill/terra-xhigh/index.html"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/01-creative-landing/script.js",
+          "publicPath": "raw/case-01/new-skill/terra-xhigh/script.js"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/01-creative-landing/styles.css",
+          "publicPath": "raw/case-01/new-skill/terra-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1811.536,
+      "recordedIndividualDuration": 617.783,
+      "timingCaveat": "Completion timestamps were recorded independently by the orchestrator immediately after each agent's final status was returned by the wait mechanism. The official elapsed values above therefore include queueing and tool-execution time and may include the minimal status-observation handoff between tool return and timestamp capture.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-01-no-skill-luna-xhigh",
+      "case": 1,
+      "condition": "no-skill",
+      "model": "Luna",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-01-no-skill",
+      "promptPath": "inputs/prompts/case-01/no-skill.md",
+      "sourcePath": "luna-xhigh/no-skill/01-creative-landing",
+      "publicPath": "runs/case-01/no-skill/luna-xhigh/README.md",
+      "rawPath": "raw/case-01/no-skill/luna-xhigh",
+      "summaryPath": "summaries/01-creative-landing-no-skill.md",
+      "runNotesPath": "raw/case-01/no-skill/luna-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "luna-xhigh/no-skill/01-creative-landing/RUN.md",
+          "publicPath": "raw/case-01/no-skill/luna-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/01-creative-landing/index.html",
+          "publicPath": "raw/case-01/no-skill/luna-xhigh/index.html"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/01-creative-landing/script.js",
+          "publicPath": "raw/case-01/no-skill/luna-xhigh/script.js"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/01-creative-landing/styles.css",
+          "publicPath": "raw/case-01/no-skill/luna-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1193.0,
+      "recordedIndividualDuration": 1193.0,
+      "timingCaveat": "Timing limitations: Official durations use orchestrator-observed dispatch and final-result return timestamps. Agent self-recorded timing is supplementary. Completion timestamps were captured when each wait operation returned the final result.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-01-no-skill-sol-high",
+      "case": 1,
+      "condition": "no-skill",
+      "model": "Sol",
+      "reasoningLevel": "high",
+      "promptId": "case-01-no-skill",
+      "promptPath": "inputs/prompts/case-01/no-skill.md",
+      "sourcePath": "sol-high/no-skill/01-creative-landing",
+      "publicPath": "runs/case-01/no-skill/sol-high/README.md",
+      "rawPath": "raw/case-01/no-skill/sol-high",
+      "summaryPath": "summaries/01-creative-landing-no-skill.md",
+      "runNotesPath": "raw/case-01/no-skill/sol-high/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "sol-high/no-skill/01-creative-landing/RUN.md",
+          "publicPath": "raw/case-01/no-skill/sol-high/RUN.md"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/01-creative-landing/index.html",
+          "publicPath": "raw/case-01/no-skill/sol-high/index.html"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/01-creative-landing/script.js",
+          "publicPath": "raw/case-01/no-skill/sol-high/script.js"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/01-creative-landing/styles.css",
+          "publicPath": "raw/case-01/no-skill/sol-high/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1193.0,
+      "recordedIndividualDuration": 540.0,
+      "timingCaveat": "Timing limitations: Official durations use orchestrator-observed dispatch and final-result return timestamps. Agent self-recorded timing is supplementary. Completion timestamps were captured when each wait operation returned the final result.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-01-no-skill-terra-xhigh",
+      "case": 1,
+      "condition": "no-skill",
+      "model": "Terra",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-01-no-skill",
+      "promptPath": "inputs/prompts/case-01/no-skill.md",
+      "sourcePath": "terra-xhigh/no-skill/01-creative-landing",
+      "publicPath": "runs/case-01/no-skill/terra-xhigh/README.md",
+      "rawPath": "raw/case-01/no-skill/terra-xhigh",
+      "summaryPath": "summaries/01-creative-landing-no-skill.md",
+      "runNotesPath": "raw/case-01/no-skill/terra-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "terra-xhigh/no-skill/01-creative-landing/RUN.md",
+          "publicPath": "raw/case-01/no-skill/terra-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/01-creative-landing/index.html",
+          "publicPath": "raw/case-01/no-skill/terra-xhigh/index.html"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/01-creative-landing/script.js",
+          "publicPath": "raw/case-01/no-skill/terra-xhigh/script.js"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/01-creative-landing/styles.css",
+          "publicPath": "raw/case-01/no-skill/terra-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1193.0,
+      "recordedIndividualDuration": 976.0,
+      "timingCaveat": "Timing limitations: Official durations use orchestrator-observed dispatch and final-result return timestamps. Agent self-recorded timing is supplementary. Completion timestamps were captured when each wait operation returned the final result.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-02-new-skill-luna-xhigh",
+      "case": 2,
+      "condition": "new-skill",
+      "model": "Luna",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-02-new-skill",
+      "promptPath": "inputs/prompts/case-02/new-skill.md",
+      "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard",
+      "publicPath": "runs/case-02/new-skill/luna-xhigh/README.md",
+      "rawPath": "raw/case-02/new-skill/luna-xhigh",
+      "summaryPath": "summaries/02-operational-dashboard-new-skill.md",
+      "runNotesPath": "raw/case-02/new-skill/luna-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/RUN.md",
+          "publicPath": "raw/case-02/new-skill/luna-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/index.html",
+          "publicPath": "raw/case-02/new-skill/luna-xhigh/index.html"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/script.js",
+          "publicPath": "raw/case-02/new-skill/luna-xhigh/script.js"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/02-operational-dashboard/styles.css",
+          "publicPath": "raw/case-02/new-skill/luna-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1540.046,
+      "recordedIndividualDuration": 998.843,
+      "timingCaveat": "The orchestrator captured Luna and Sol return timestamps immediately after their `wait_agent` calls completed. Terra\u2019s wait result was surfaced as a completion notification before a receipt timestamp was captured; its exact completion timestamp above is the timestamp included in Terra\u2019s returned completion report, so Terra\u2019s official observer timing has a reporting-source limitation. No timestamps were estimated or rounded.\n\nThe first wait window expired after ten minutes without a result, but all three agents were kept running and subsequently completed. This did not change the dispatch timestamps or the final completion records.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-02-new-skill-sol-high",
+      "case": 2,
+      "condition": "new-skill",
+      "model": "Sol",
+      "reasoningLevel": "high",
+      "promptId": "case-02-new-skill",
+      "promptPath": "inputs/prompts/case-02/new-skill.md",
+      "sourcePath": "sol-high/new-skill/02-operational-dashboard",
+      "publicPath": "runs/case-02/new-skill/sol-high/README.md",
+      "rawPath": "raw/case-02/new-skill/sol-high",
+      "summaryPath": "summaries/02-operational-dashboard-new-skill.md",
+      "runNotesPath": "raw/case-02/new-skill/sol-high/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "sol-high/new-skill/02-operational-dashboard/RUN.md",
+          "publicPath": "raw/case-02/new-skill/sol-high/RUN.md"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/02-operational-dashboard/index.html",
+          "publicPath": "raw/case-02/new-skill/sol-high/index.html"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/02-operational-dashboard/script.js",
+          "publicPath": "raw/case-02/new-skill/sol-high/script.js"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/02-operational-dashboard/styles.css",
+          "publicPath": "raw/case-02/new-skill/sol-high/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1540.046,
+      "recordedIndividualDuration": 1540.046,
+      "timingCaveat": "The orchestrator captured Luna and Sol return timestamps immediately after their `wait_agent` calls completed. Terra\u2019s wait result was surfaced as a completion notification before a receipt timestamp was captured; its exact completion timestamp above is the timestamp included in Terra\u2019s returned completion report, so Terra\u2019s official observer timing has a reporting-source limitation. No timestamps were estimated or rounded.\n\nThe first wait window expired after ten minutes without a result, but all three agents were kept running and subsequently completed. This did not change the dispatch timestamps or the final completion records.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-02-new-skill-terra-xhigh",
+      "case": 2,
+      "condition": "new-skill",
+      "model": "Terra",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-02-new-skill",
+      "promptPath": "inputs/prompts/case-02/new-skill.md",
+      "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard",
+      "publicPath": "runs/case-02/new-skill/terra-xhigh/README.md",
+      "rawPath": "raw/case-02/new-skill/terra-xhigh",
+      "summaryPath": "summaries/02-operational-dashboard-new-skill.md",
+      "runNotesPath": "raw/case-02/new-skill/terra-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/RUN.md",
+          "publicPath": "raw/case-02/new-skill/terra-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/index.html",
+          "publicPath": "raw/case-02/new-skill/terra-xhigh/index.html"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/script.js",
+          "publicPath": "raw/case-02/new-skill/terra-xhigh/script.js"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/02-operational-dashboard/styles.css",
+          "publicPath": "raw/case-02/new-skill/terra-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1540.046,
+      "recordedIndividualDuration": 649.537,
+      "timingCaveat": "The orchestrator captured Luna and Sol return timestamps immediately after their `wait_agent` calls completed. Terra\u2019s wait result was surfaced as a completion notification before a receipt timestamp was captured; its exact completion timestamp above is the timestamp included in Terra\u2019s returned completion report, so Terra\u2019s official observer timing has a reporting-source limitation. No timestamps were estimated or rounded.\n\nThe first wait window expired after ten minutes without a result, but all three agents were kept running and subsequently completed. This did not change the dispatch timestamps or the final completion records.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-02-no-skill-luna-xhigh",
+      "case": 2,
+      "condition": "no-skill",
+      "model": "Luna",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-02-no-skill",
+      "promptPath": "inputs/prompts/case-02/no-skill.md",
+      "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard",
+      "publicPath": "runs/case-02/no-skill/luna-xhigh/README.md",
+      "rawPath": "raw/case-02/no-skill/luna-xhigh",
+      "summaryPath": "summaries/02-operational-dashboard-no-skill.md",
+      "runNotesPath": "raw/case-02/no-skill/luna-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/RUN.md",
+          "publicPath": "raw/case-02/no-skill/luna-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/index.html",
+          "publicPath": "raw/case-02/no-skill/luna-xhigh/index.html"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/script.js",
+          "publicPath": "raw/case-02/no-skill/luna-xhigh/script.js"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/02-operational-dashboard/styles.css",
+          "publicPath": "raw/case-02/no-skill/luna-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 994.699,
+      "recordedIndividualDuration": 686.551,
+      "timingCaveat": "Timing limitations or interruptions: No dispatch interruption, timeout, or cancellation occurred. The official durations are orchestrator-observed from dispatch through final wait return. Browser-based visual verification was environment-limited for all three agents.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-02-no-skill-sol-high",
+      "case": 2,
+      "condition": "no-skill",
+      "model": "Sol",
+      "reasoningLevel": "high",
+      "promptId": "case-02-no-skill",
+      "promptPath": "inputs/prompts/case-02/no-skill.md",
+      "sourcePath": "sol-high/no-skill/02-operational-dashboard",
+      "publicPath": "runs/case-02/no-skill/sol-high/README.md",
+      "rawPath": "raw/case-02/no-skill/sol-high",
+      "summaryPath": "summaries/02-operational-dashboard-no-skill.md",
+      "runNotesPath": "raw/case-02/no-skill/sol-high/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "sol-high/no-skill/02-operational-dashboard/RUN.md",
+          "publicPath": "raw/case-02/no-skill/sol-high/RUN.md"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/02-operational-dashboard/index.html",
+          "publicPath": "raw/case-02/no-skill/sol-high/index.html"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/02-operational-dashboard/script.js",
+          "publicPath": "raw/case-02/no-skill/sol-high/script.js"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/02-operational-dashboard/styles.css",
+          "publicPath": "raw/case-02/no-skill/sol-high/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 994.699,
+      "recordedIndividualDuration": 994.697,
+      "timingCaveat": "Timing limitations or interruptions: No dispatch interruption, timeout, or cancellation occurred. The official durations are orchestrator-observed from dispatch through final wait return. Browser-based visual verification was environment-limited for all three agents.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-02-no-skill-terra-xhigh",
+      "case": 2,
+      "condition": "no-skill",
+      "model": "Terra",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-02-no-skill",
+      "promptPath": "inputs/prompts/case-02/no-skill.md",
+      "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard",
+      "publicPath": "runs/case-02/no-skill/terra-xhigh/README.md",
+      "rawPath": "raw/case-02/no-skill/terra-xhigh",
+      "summaryPath": "summaries/02-operational-dashboard-no-skill.md",
+      "runNotesPath": "raw/case-02/no-skill/terra-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/RUN.md",
+          "publicPath": "raw/case-02/no-skill/terra-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/index.html",
+          "publicPath": "raw/case-02/no-skill/terra-xhigh/index.html"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/script.js",
+          "publicPath": "raw/case-02/no-skill/terra-xhigh/script.js"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/02-operational-dashboard/styles.css",
+          "publicPath": "raw/case-02/no-skill/terra-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 994.699,
+      "recordedIndividualDuration": 994.672,
+      "timingCaveat": "Timing limitations or interruptions: No dispatch interruption, timeout, or cancellation occurred. The official durations are orchestrator-observed from dispatch through final wait return. Browser-based visual verification was environment-limited for all three agents.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-03-new-skill-luna-xhigh",
+      "case": 3,
+      "condition": "new-skill",
+      "model": "Luna",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-03-new-skill",
+      "promptPath": "inputs/prompts/case-03/new-skill.md",
+      "sourcePath": "luna-xhigh/new-skill/03-settings-form",
+      "publicPath": "runs/case-03/new-skill/luna-xhigh/README.md",
+      "rawPath": "raw/case-03/new-skill/luna-xhigh",
+      "summaryPath": "summaries/03-settings-form-new-skill.md",
+      "runNotesPath": "raw/case-03/new-skill/luna-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "luna-xhigh/new-skill/03-settings-form/RUN.md",
+          "publicPath": "raw/case-03/new-skill/luna-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/03-settings-form/index.html",
+          "publicPath": "raw/case-03/new-skill/luna-xhigh/index.html"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/03-settings-form/script.js",
+          "publicPath": "raw/case-03/new-skill/luna-xhigh/script.js"
+        },
+        {
+          "sourcePath": "luna-xhigh/new-skill/03-settings-form/styles.css",
+          "publicPath": "raw/case-03/new-skill/luna-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1126.672,
+      "recordedIndividualDuration": 1126.672,
+      "timingCaveat": "Timing limitations, interruptions, retries, or tool failures: No agent retries or interruptions. An additional orchestrator read-only filesystem audit of the implementation directories was attempted but rejected by the environment safety reviewer as unrelated/untrusted transcript inspection; therefore file inventories and RUN.md contents are reported from the agents' final completion results, not independently re-read by the orchestrator.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html",
+            "script.js"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-03-new-skill-sol-high",
+      "case": 3,
+      "condition": "new-skill",
+      "model": "Sol",
+      "reasoningLevel": "high",
+      "promptId": "case-03-new-skill",
+      "promptPath": "inputs/prompts/case-03/new-skill.md",
+      "sourcePath": "sol-high/new-skill/03-settings-form",
+      "publicPath": "runs/case-03/new-skill/sol-high/README.md",
+      "rawPath": "raw/case-03/new-skill/sol-high",
+      "summaryPath": "summaries/03-settings-form-new-skill.md",
+      "runNotesPath": "raw/case-03/new-skill/sol-high/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "sol-high/new-skill/03-settings-form/RUN.md",
+          "publicPath": "raw/case-03/new-skill/sol-high/RUN.md"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/03-settings-form/index.html",
+          "publicPath": "raw/case-03/new-skill/sol-high/index.html"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/03-settings-form/script.js",
+          "publicPath": "raw/case-03/new-skill/sol-high/script.js"
+        },
+        {
+          "sourcePath": "sol-high/new-skill/03-settings-form/styles.css",
+          "publicPath": "raw/case-03/new-skill/sol-high/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1126.672,
+      "recordedIndividualDuration": 995.421,
+      "timingCaveat": "Timing limitations, interruptions, retries, or tool failures: No agent retries or interruptions. An additional orchestrator read-only filesystem audit of the implementation directories was attempted but rejected by the environment safety reviewer as unrelated/untrusted transcript inspection; therefore file inventories and RUN.md contents are reported from the agents' final completion results, not independently re-read by the orchestrator.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-03-new-skill-terra-xhigh",
+      "case": 3,
+      "condition": "new-skill",
+      "model": "Terra",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-03-new-skill",
+      "promptPath": "inputs/prompts/case-03/new-skill.md",
+      "sourcePath": "terra-xhigh/new-skill/03-settings-form",
+      "publicPath": "runs/case-03/new-skill/terra-xhigh/README.md",
+      "rawPath": "raw/case-03/new-skill/terra-xhigh",
+      "summaryPath": "summaries/03-settings-form-new-skill.md",
+      "runNotesPath": "raw/case-03/new-skill/terra-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "terra-xhigh/new-skill/03-settings-form/RUN.md",
+          "publicPath": "raw/case-03/new-skill/terra-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/03-settings-form/index.html",
+          "publicPath": "raw/case-03/new-skill/terra-xhigh/index.html"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/03-settings-form/script.js",
+          "publicPath": "raw/case-03/new-skill/terra-xhigh/script.js"
+        },
+        {
+          "sourcePath": "terra-xhigh/new-skill/03-settings-form/styles.css",
+          "publicPath": "raw/case-03/new-skill/terra-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 1126.672,
+      "recordedIndividualDuration": 1105.63,
+      "timingCaveat": "Timing limitations, interruptions, retries, or tool failures: No agent retries or interruptions. An additional orchestrator read-only filesystem audit of the implementation directories was attempted but rejected by the environment safety reviewer as unrelated/untrusted transcript inspection; therefore file inventories and RUN.md contents are reported from the agents' final completion results, not independently re-read by the orchestrator.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html",
+            "script.js"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-03-no-skill-luna-xhigh",
+      "case": 3,
+      "condition": "no-skill",
+      "model": "Luna",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-03-no-skill",
+      "promptPath": "inputs/prompts/case-03/no-skill.md",
+      "sourcePath": "luna-xhigh/no-skill/03-settings-form",
+      "publicPath": "runs/case-03/no-skill/luna-xhigh/README.md",
+      "rawPath": "raw/case-03/no-skill/luna-xhigh",
+      "summaryPath": "summaries/03-settings-form-no-skill.md",
+      "runNotesPath": "raw/case-03/no-skill/luna-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "luna-xhigh/no-skill/03-settings-form/RUN.md",
+          "publicPath": "raw/case-03/no-skill/luna-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/03-settings-form/index.html",
+          "publicPath": "raw/case-03/no-skill/luna-xhigh/index.html"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/03-settings-form/script.js",
+          "publicPath": "raw/case-03/no-skill/luna-xhigh/script.js"
+        },
+        {
+          "sourcePath": "luna-xhigh/no-skill/03-settings-form/styles.css",
+          "publicPath": "raw/case-03/no-skill/luna-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 863.606,
+      "recordedIndividualDuration": 863.538,
+      "timingCaveat": "Timing limitation: the orchestrator captured dispatch immediately before each spawn and completion immediately after each concurrent wait returned. The wait results surfaced together, so the three observed completion timestamps are clustered within 68 ms; these are the official orchestrator-observed benchmark timings.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-03-no-skill-sol-high",
+      "case": 3,
+      "condition": "no-skill",
+      "model": "Sol",
+      "reasoningLevel": "high",
+      "promptId": "case-03-no-skill",
+      "promptPath": "inputs/prompts/case-03/no-skill.md",
+      "sourcePath": "sol-high/no-skill/03-settings-form",
+      "publicPath": "runs/case-03/no-skill/sol-high/README.md",
+      "rawPath": "raw/case-03/no-skill/sol-high",
+      "summaryPath": "summaries/03-settings-form-no-skill.md",
+      "runNotesPath": "raw/case-03/no-skill/sol-high/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/DESIGN.md",
+          "publicPath": "raw/case-03/no-skill/sol-high/DESIGN.md"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/PLAN.md",
+          "publicPath": "raw/case-03/no-skill/sol-high/PLAN.md"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/RUN.md",
+          "publicPath": "raw/case-03/no-skill/sol-high/RUN.md"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/index.html",
+          "publicPath": "raw/case-03/no-skill/sol-high/index.html"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/script.js",
+          "publicPath": "raw/case-03/no-skill/sol-high/script.js"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/styles.css",
+          "publicPath": "raw/case-03/no-skill/sol-high/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/DESIGN.md",
+          "publicPath": "raw/case-03/no-skill/sol-high/DESIGN.md",
+          "classification": "model-produced auxiliary output",
+          "promptAuthorization": "unknown"
+        },
+        {
+          "sourcePath": "sol-high/no-skill/03-settings-form/PLAN.md",
+          "publicPath": "raw/case-03/no-skill/sol-high/PLAN.md",
+          "classification": "model-produced auxiliary output",
+          "promptAuthorization": "unknown"
+        }
+      ],
+      "recordedBatchDuration": 863.606,
+      "recordedIndividualDuration": 863.605,
+      "timingCaveat": "Timing limitation: the orchestrator captured dispatch immediately before each spawn and completion immediately after each concurrent wait returned. The wait results surfaced together, so the three observed completion timestamps are clustered within 68 ms; these are the official orchestrator-observed benchmark timings.",
+      "sanitizationChanges": [
+        {
+          "category": "local-path",
+          "files": [
+            "PLAN.md",
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    },
+    {
+      "runId": "case-03-no-skill-terra-xhigh",
+      "case": 3,
+      "condition": "no-skill",
+      "model": "Terra",
+      "reasoningLevel": "xhigh",
+      "promptId": "case-03-no-skill",
+      "promptPath": "inputs/prompts/case-03/no-skill.md",
+      "sourcePath": "terra-xhigh/no-skill/03-settings-form",
+      "publicPath": "runs/case-03/no-skill/terra-xhigh/README.md",
+      "rawPath": "raw/case-03/no-skill/terra-xhigh",
+      "summaryPath": "summaries/03-settings-form-no-skill.md",
+      "runNotesPath": "raw/case-03/no-skill/terra-xhigh/RUN.md",
+      "rawArtifacts": [
+        {
+          "sourcePath": "terra-xhigh/no-skill/03-settings-form/RUN.md",
+          "publicPath": "raw/case-03/no-skill/terra-xhigh/RUN.md"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/03-settings-form/index.html",
+          "publicPath": "raw/case-03/no-skill/terra-xhigh/index.html"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/03-settings-form/script.js",
+          "publicPath": "raw/case-03/no-skill/terra-xhigh/script.js"
+        },
+        {
+          "sourcePath": "terra-xhigh/no-skill/03-settings-form/styles.css",
+          "publicPath": "raw/case-03/no-skill/terra-xhigh/styles.css"
+        }
+      ],
+      "screenshots": [],
+      "auxiliaryArtifacts": [],
+      "recordedBatchDuration": 863.606,
+      "recordedIndividualDuration": 863.601,
+      "timingCaveat": "Timing limitation: the orchestrator captured dispatch immediately before each spawn and completion immediately after each concurrent wait returned. The wait results surfaced together, so the three observed completion timestamps are clustered within 68 ms; these are the official orchestrator-observed benchmark timings.",
+      "sanitizationChanges": [
+        {
+          "category": "email-alias",
+          "files": [
+            "index.html"
+          ]
+        },
+        {
+          "category": "local-path",
+          "files": [
+            "RUN.md",
+            "index.html"
+          ]
+        }
+      ]
+    }
+  ]
+}

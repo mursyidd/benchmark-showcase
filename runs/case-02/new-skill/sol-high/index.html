@@ -1,0 +1,221 @@
+<!doctype html>
+<!-- Agent: Sol | Reasoning level: high | Skill condition: new-skill | Output directory: <LOCAL_SAMPLE_ROOT>/sol-high/new-skill/02-operational-dashboard -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Parcel Operations Dashboard — Sol high — New Skill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to dashboard content</a>
+
+  <header class="app-header">
+    <div class="brand-block" aria-label="Northline Logistics operations">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+      <div>
+        <strong>Northline</strong>
+        <span>Network control</span>
+      </div>
+    </div>
+    <div class="header-context">
+      <span class="live-indicator"><span aria-hidden="true"></span> Network live</span>
+      <time id="header-time" datetime="2026-07-13T12:17:57+08:00">13 Jul 2026 · 12:17 MYT</time>
+    </div>
+    <button class="icon-button sidebar-toggle" id="sidebar-toggle" type="button" aria-controls="sidebar" aria-expanded="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <span class="sr-only">Collapse navigation</span>
+    </button>
+    <div class="header-actions">
+      <button class="icon-button" type="button" aria-label="Open notifications">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4"/></svg>
+        <span class="notification-count" aria-hidden="true">3</span>
+      </button>
+      <button class="profile-button" type="button" aria-label="Open user menu for Maya Chen">
+        <span class="avatar" aria-hidden="true">MC</span>
+        <span class="profile-copy"><strong>Maya Chen</strong><small>Network lead</small></span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 10 4 4 4-4"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+    <nav>
+      <p class="nav-label">Monitor</p>
+      <a class="nav-item active" href="#overview" aria-current="page">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 13h6V4H4v9Zm0 7h6v-4H4v4Zm10 0h6v-9h-6v9Zm0-16v4h6V4h-6Z"/></svg>
+        <span>Overview</span>
+      </a>
+      <a class="nav-item" href="#facilities">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6M8 10h.01M12 10h.01M16 10h.01"/></svg>
+        <span>Facilities</span><b>12</b>
+      </a>
+      <a class="nav-item" href="#shipments">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 7 9-4 9 4-9 4-9-4Zm0 0v10l9 4 9-4V7M12 11v10"/></svg>
+        <span>Shipments</span>
+      </a>
+      <a class="nav-item" href="#exceptions">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 9v4m0 4h.01M10.3 3.9 2.6 17.2A2 2 0 0 0 4.3 20h15.4a2 2 0 0 0 1.7-2.8L13.7 3.9a2 2 0 0 0-3.4 0Z"/></svg>
+        <span>Exceptions</span><b class="alert-count">8</b>
+      </a>
+
+      <p class="nav-label">Manage</p>
+      <a class="nav-item" href="#labor">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm13 10v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></svg>
+        <span>Labor planning</span>
+      </a>
+      <a class="nav-item" href="#reports">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9m5 10V5m5 14v-7m5 7V3"/></svg>
+        <span>Reports</span>
+      </a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="shift-card">
+        <span class="shift-icon" aria-hidden="true">B</span>
+        <div><strong>Shift B</strong><span>06:00–14:00</span></div>
+      </div>
+      <p>Last sync <strong>12:16:42</strong></p>
+    </div>
+  </aside>
+  <div class="sidebar-scrim" id="sidebar-scrim" hidden></div>
+
+  <main id="main-content" class="main-content" tabindex="-1">
+    <section class="control-bar" aria-labelledby="page-title">
+      <div class="title-block">
+        <p>Network operations / Live overview</p>
+        <h1 id="page-title">Parcel operations</h1>
+      </div>
+      <div class="filters">
+        <label class="select-control">
+          <span>Facility</span>
+          <select id="facility-select">
+            <option value="network">All facilities</option>
+            <option value="dfw">Dallas–Fort Worth (DFW-01)</option>
+            <option value="mem">Memphis Gateway (MEM-02)</option>
+            <option value="ont">Ontario West (ONT-04)</option>
+            <option value="abe">Lehigh Valley (ABE-03)</option>
+          </select>
+        </label>
+        <label class="select-control">
+          <span>Date range</span>
+          <select id="range-select">
+            <option value="24h">Last 24 hours</option>
+            <option value="7d" selected>Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+          </select>
+        </label>
+        <fieldset class="state-switcher">
+          <legend>Data view</legend>
+          <div class="segmented-control">
+            <input type="radio" name="view-state" id="state-populated" value="populated" checked>
+            <label for="state-populated">Live</label>
+            <input type="radio" name="view-state" id="state-loading" value="loading">
+            <label for="state-loading">Loading</label>
+            <input type="radio" name="view-state" id="state-empty" value="empty">
+            <label for="state-empty">Empty</label>
+            <input type="radio" name="view-state" id="state-error" value="error">
+            <label for="state-error">Error</label>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div id="state-announcer" class="sr-only" aria-live="polite"></div>
+
+    <section id="dashboard-populated" class="dashboard-state" aria-label="Operational dashboard">
+      <div class="metric-grid" id="overview">
+        <article class="metric-card">
+          <div class="metric-heading"><span>Parcels processed</span><span class="metric-icon blue" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m4 7 8-4 8 4-8 4-8-4Zm0 0v10l8 4 8-4V7M12 11v10"/></svg></span></div>
+          <strong class="metric-value" id="metric-volume">1.84M</strong>
+          <div class="metric-foot"><span class="delta positive" id="volume-delta">↑ 5.8%</span><span>vs prior period</span></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-heading"><span>On-time throughput</span><span class="metric-icon teal" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 1 1-3-5.7M20 4v7h-7M9 12l2 2 4-4"/></svg></span></div>
+          <strong class="metric-value" id="metric-ontime">96.4%</strong>
+          <div class="metric-foot"><span class="delta positive" id="ontime-delta">↑ 1.2 pts</span><span>target 95.0%</span></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-heading"><span>Delayed shipments</span><span class="metric-icon amber" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9Z"/></svg></span></div>
+          <strong class="metric-value" id="metric-delayed">2,184</strong>
+          <div class="metric-foot"><span class="delta negative" id="delayed-delta">↑ 8.1%</span><span>needs attention</span></div>
+        </article>
+        <article class="metric-card">
+          <div class="metric-heading"><span>Active capacity</span><span class="metric-icon slate" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 20h18M5 20V8l7-5 7 5v12M8 13h8M8 16h8M8 10h8"/></svg></span></div>
+          <strong class="metric-value" id="metric-capacity">78.6%</strong>
+          <div class="metric-foot"><span class="delta neutral" id="capacity-delta">12 sites</span><span>3 near threshold</span></div>
+        </article>
+      </div>
+
+      <div class="primary-grid">
+        <article class="panel chart-panel">
+          <header class="panel-header">
+            <div><p class="eyebrow">Flow telemetry</p><h2>Parcel volume</h2><p id="chart-subtitle">Processed vs forecast · Last 7 days</p></div>
+            <div class="chart-legend" aria-label="Chart legend"><span><i class="actual"></i>Processed</span><span><i class="forecast"></i>Forecast</span></div>
+          </header>
+          <div class="chart-summary"><strong id="chart-total">1,842,600</strong><span>total parcels</span><b id="chart-variance">+3.7% to plan</b></div>
+          <div class="chart-wrap">
+            <svg id="volume-chart" viewBox="0 0 760 260" role="img" aria-labelledby="chart-title chart-desc" preserveAspectRatio="none">
+              <title id="chart-title">Parcel volume trend</title>
+              <desc id="chart-desc">Processed parcel volume compared with forecast for the selected date range.</desc>
+            </svg>
+          </div>
+        </article>
+
+        <aside class="panel alert-panel" id="exceptions" aria-labelledby="alerts-title">
+          <header class="panel-header alert-header">
+            <div><p class="eyebrow">Exceptions queue</p><h2 id="alerts-title">Delayed shipments</h2></div>
+            <span class="severity-badge">3 critical</span>
+          </header>
+          <ol class="alert-list" id="alert-list"></ol>
+          <button class="text-button" type="button">View all 8 exceptions <span aria-hidden="true">→</span></button>
+        </aside>
+      </div>
+
+      <div class="secondary-grid">
+        <article class="panel table-panel" id="facilities">
+          <header class="panel-header">
+            <div><p class="eyebrow">Node performance</p><h2>Facility status</h2><p>Current processing health across the network</p></div>
+            <button class="quiet-button" type="button">Export CSV</button>
+          </header>
+          <div class="table-scroll" tabindex="0" aria-label="Scrollable facility status table">
+            <table>
+              <thead><tr><th scope="col">Facility</th><th scope="col">Status</th><th scope="col">Processed</th><th scope="col">On time</th><th scope="col">Utilization</th><th scope="col">Backlog</th></tr></thead>
+              <tbody id="facility-table-body"></tbody>
+            </table>
+          </div>
+          <footer class="panel-footer"><span id="facility-count">Showing 5 of 12 facilities</span><button class="text-button" type="button">View network <span aria-hidden="true">→</span></button></footer>
+        </article>
+
+        <aside class="panel events-panel" aria-labelledby="events-title">
+          <header class="panel-header"><div><p class="eyebrow">Activity stream</p><h2 id="events-title">Recent events</h2><p>Latest operational updates</p></div></header>
+          <ol class="event-list" id="event-list"></ol>
+          <button class="text-button" type="button">Open event log <span aria-hidden="true">→</span></button>
+        </aside>
+      </div>
+    </section>
+
+    <section id="dashboard-loading" class="dashboard-state state-message loading-state" hidden aria-label="Loading dashboard" aria-busy="true">
+      <div class="skeleton-grid" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <div class="skeleton-content" aria-hidden="true"><i></i><i></i></div>
+      <div class="loading-copy"><span class="spinner" aria-hidden="true"></span><strong>Updating operational feed</strong><p>Receiving the latest scan, sort, and linehaul data…</p></div>
+    </section>
+
+    <section id="dashboard-empty" class="dashboard-state state-message" hidden aria-labelledby="empty-title">
+      <div class="state-symbol empty-symbol" aria-hidden="true"><span></span><span></span><span></span></div>
+      <p class="eyebrow">No matching records</p><h2 id="empty-title">No parcel activity in this view</h2>
+      <p>Try another facility or a wider date range. Filters remain available above.</p>
+      <button class="primary-button" id="reset-filters" type="button">Reset to network view</button>
+    </section>
+
+    <section id="dashboard-error" class="dashboard-state state-message error-state" hidden aria-labelledby="error-title" role="alert">
+      <div class="state-symbol error-symbol" aria-hidden="true">!</div>
+      <p class="eyebrow">Feed unavailable</p><h2 id="error-title">Operational data could not be loaded</h2>
+      <p>The last successful refresh was at 12:16:42. Existing dispatch systems are unaffected.</p>
+      <button class="primary-button" id="retry-button" type="button">Retry connection</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

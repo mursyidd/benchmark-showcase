@@ -1,0 +1,1010 @@
+[
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-new-skill-luna-xhigh",
+    "capturedFrom": "runs/case-01/new-skill/luna-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:14.871Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-new-skill-luna-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-new-skill-luna-xhigh",
+    "capturedFrom": "runs/case-01/new-skill/luna-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:15.828Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-new-skill-luna-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-new-skill-sol-high",
+    "capturedFrom": "runs/case-01/new-skill/sol-high/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:16.968Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-new-skill-sol-high/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-new-skill-sol-high",
+    "capturedFrom": "runs/case-01/new-skill/sol-high/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:17.871Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-new-skill-sol-high/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-new-skill-terra-xhigh",
+    "capturedFrom": "runs/case-01/new-skill/terra-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:18.975Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-new-skill-terra-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-new-skill-terra-xhigh",
+    "capturedFrom": "runs/case-01/new-skill/terra-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:19.873Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-new-skill-terra-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-no-skill-luna-xhigh",
+    "capturedFrom": "runs/case-01/no-skill/luna-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:20.710Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-no-skill-luna-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-no-skill-luna-xhigh",
+    "capturedFrom": "runs/case-01/no-skill/luna-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:21.490Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-no-skill-luna-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-no-skill-sol-high",
+    "capturedFrom": "runs/case-01/no-skill/sol-high/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:22.263Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-no-skill-sol-high/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-no-skill-sol-high",
+    "capturedFrom": "runs/case-01/no-skill/sol-high/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:23.027Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-no-skill-sol-high/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-no-skill-terra-xhigh",
+    "capturedFrom": "runs/case-01/no-skill/terra-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:23.857Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-no-skill-terra-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-01-no-skill-terra-xhigh",
+    "capturedFrom": "runs/case-01/no-skill/terra-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:24.628Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-01-no-skill-terra-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-new-skill-luna-xhigh",
+    "capturedFrom": "runs/case-02/new-skill/luna-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:25.327Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-new-skill-luna-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-new-skill-luna-xhigh",
+    "capturedFrom": "runs/case-02/new-skill/luna-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:26.002Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-new-skill-luna-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-new-skill-sol-high",
+    "capturedFrom": "runs/case-02/new-skill/sol-high/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:26.816Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-new-skill-sol-high/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-new-skill-sol-high",
+    "capturedFrom": "runs/case-02/new-skill/sol-high/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:27.556Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-new-skill-sol-high/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-new-skill-terra-xhigh",
+    "capturedFrom": "runs/case-02/new-skill/terra-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:28.440Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-new-skill-terra-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-new-skill-terra-xhigh",
+    "capturedFrom": "runs/case-02/new-skill/terra-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:29.296Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-new-skill-terra-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-no-skill-luna-xhigh",
+    "capturedFrom": "runs/case-02/no-skill/luna-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:30.022Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-no-skill-luna-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-no-skill-luna-xhigh",
+    "capturedFrom": "runs/case-02/no-skill/luna-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:30.759Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-no-skill-luna-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-no-skill-sol-high",
+    "capturedFrom": "runs/case-02/no-skill/sol-high/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:31.471Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-no-skill-sol-high/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-no-skill-sol-high",
+    "capturedFrom": "runs/case-02/no-skill/sol-high/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:32.155Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-no-skill-sol-high/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-no-skill-terra-xhigh",
+    "capturedFrom": "runs/case-02/no-skill/terra-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:32.848Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-no-skill-terra-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-02-no-skill-terra-xhigh",
+    "capturedFrom": "runs/case-02/no-skill/terra-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:33.578Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-02-no-skill-terra-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-new-skill-luna-xhigh",
+    "capturedFrom": "runs/case-03/new-skill/luna-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:34.274Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-new-skill-luna-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-new-skill-luna-xhigh",
+    "capturedFrom": "runs/case-03/new-skill/luna-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:34.971Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-new-skill-luna-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-new-skill-sol-high",
+    "capturedFrom": "runs/case-03/new-skill/sol-high/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:35.641Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-new-skill-sol-high/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-new-skill-sol-high",
+    "capturedFrom": "runs/case-03/new-skill/sol-high/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:36.305Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-new-skill-sol-high/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-new-skill-terra-xhigh",
+    "capturedFrom": "runs/case-03/new-skill/terra-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:37.008Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-new-skill-terra-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-new-skill-terra-xhigh",
+    "capturedFrom": "runs/case-03/new-skill/terra-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:37.689Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-new-skill-terra-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-no-skill-luna-xhigh",
+    "capturedFrom": "runs/case-03/no-skill/luna-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:38.388Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-no-skill-luna-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-no-skill-luna-xhigh",
+    "capturedFrom": "runs/case-03/no-skill/luna-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:39.089Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-no-skill-luna-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-no-skill-sol-high",
+    "capturedFrom": "runs/case-03/no-skill/sol-high/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:39.806Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-no-skill-sol-high/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-no-skill-sol-high",
+    "capturedFrom": "runs/case-03/no-skill/sol-high/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:40.505Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-no-skill-sol-high/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-no-skill-terra-xhigh",
+    "capturedFrom": "runs/case-03/no-skill/terra-xhigh/index.html",
+    "variant": "desktop",
+    "captureViewport": {
+      "width": 1440,
+      "height": 900
+    },
+    "capturedAt": "2026-07-13T13:11:41.184Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-no-skill-terra-xhigh/desktop.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  },
+  {
+    "provenance": "publication-time-derived-capture",
+    "label": "Publication-time derived capture",
+    "sourceRunId": "case-03-no-skill-terra-xhigh",
+    "capturedFrom": "runs/case-03/no-skill/terra-xhigh/index.html",
+    "variant": "mobile",
+    "captureViewport": {
+      "width": 390,
+      "height": 844
+    },
+    "capturedAt": "2026-07-13T13:11:41.853Z",
+    "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+    "capturePolicy": {
+      "waitStrategy": "domcontentloaded-load-fonts-two-raf-500ms-v1",
+      "deviceScaleFactor": 1,
+      "colorScheme": "light",
+      "reducedMotion": "reduce",
+      "locale": "en-US",
+      "timezoneId": "UTC",
+      "format": "png",
+      "fullPage": false,
+      "initialInteraction": "none"
+    },
+    "path": "assets/screenshots/derived/case-03-no-skill-terra-xhigh/mobile.png",
+    "failureReason": null,
+    "status": "captured",
+    "sourceModified": false
+  }
+]

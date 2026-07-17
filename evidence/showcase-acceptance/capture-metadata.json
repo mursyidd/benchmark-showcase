@@ -1,0 +1,76 @@
+{
+  "captureType": "showcase-acceptance",
+  "captureTool": "Playwright 1.61.1; Chromium 149.0.7827.55",
+  "records": [
+    {
+      "label": "Showcase acceptance capture",
+      "name": "desktop-report",
+      "path": "evidence/showcase-acceptance/desktop-report.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "capturedAt": "2026-07-15T14:43:14.947Z"
+    },
+    {
+      "label": "Showcase acceptance capture",
+      "name": "mobile-report",
+      "path": "evidence/showcase-acceptance/mobile-report.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "capturedAt": "2026-07-15T14:43:15.609Z"
+    },
+    {
+      "label": "Showcase acceptance capture",
+      "name": "selected-case-comparison",
+      "path": "evidence/showcase-acceptance/selected-case-comparison.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "capturedAt": "2026-07-15T14:43:16.453Z"
+    },
+    {
+      "label": "Showcase acceptance capture",
+      "name": "exact-prompt-view",
+      "path": "evidence/showcase-acceptance/exact-prompt-view.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "capturedAt": "2026-07-15T14:43:17.372Z"
+    },
+    {
+      "label": "Showcase acceptance capture",
+      "name": "tested-skill-view",
+      "path": "evidence/showcase-acceptance/tested-skill-view.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "capturedAt": "2026-07-15T14:43:18.345Z"
+    },
+    {
+      "label": "Showcase acceptance capture",
+      "name": "sandboxed-preview",
+      "path": "evidence/showcase-acceptance/sandboxed-preview.png",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "capturedAt": "2026-07-15T14:43:19.741Z"
+    },
+    {
+      "label": "Showcase acceptance capture",
+      "name": "mobile-run-explorer",
+      "path": "evidence/showcase-acceptance/mobile-run-explorer.png",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "capturedAt": "2026-07-15T14:43:20.222Z"
+    }
+  ]
+}

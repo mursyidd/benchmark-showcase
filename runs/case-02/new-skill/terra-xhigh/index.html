@@ -1,0 +1,200 @@
+<!doctype html>
+<!-- Agent: Terra | Reasoning level: xhigh | Skill condition: New Skill | Output directory: <LOCAL_SAMPLE_ROOT>/terra-xhigh/new-skill/02-operational-dashboard -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Parcel Operations Dashboard — Terra xhigh — New Skill</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to operations content</a>
+
+  <header class="app-header">
+    <div class="brand-lockup" aria-label="Northline Logistics">
+      <span class="brand-mark" aria-hidden="true">NL</span>
+      <span class="brand-name">NORTHLINE <b>OPS</b></span>
+    </div>
+    <p class="header-status"><span class="live-dot" aria-hidden="true"></span>Data refreshed 08:42 MYT</p>
+    <button class="header-nav-toggle" id="mobileNavToggle" type="button" aria-controls="sidebar" aria-expanded="false">
+      <span aria-hidden="true">☰</span><span>Menu</span>
+    </button>
+    <button class="operator" type="button" aria-label="Open operator profile">RA</button>
+  </header>
+
+  <aside class="sidebar" id="sidebar" aria-label="Primary navigation">
+    <div class="sidebar-heading">
+      <span class="rail-label">Operations</span>
+      <button class="sidebar-toggle" id="sidebarToggle" type="button" aria-label="Collapse navigation" aria-expanded="true" title="Collapse navigation">
+        <span aria-hidden="true">‹</span>
+      </button>
+    </div>
+    <nav>
+      <a class="nav-link active" href="#main-content" aria-current="page"><span class="nav-icon" aria-hidden="true">▦</span><span class="nav-label">Overview</span></a>
+      <a class="nav-link" href="#facility-status"><span class="nav-icon" aria-hidden="true">⌁</span><span class="nav-label">Facilities</span></a>
+      <a class="nav-link" href="#alerts"><span class="nav-icon" aria-hidden="true">△</span><span class="nav-label">Exceptions</span><span class="nav-count">3</span></a>
+      <a class="nav-link" href="#events"><span class="nav-icon" aria-hidden="true">≡</span><span class="nav-label">Event log</span></a>
+    </nav>
+    <div class="sidebar-footer">
+      <a class="nav-link" href="#support"><span class="nav-icon" aria-hidden="true">?</span><span class="nav-label">Shift support</span></a>
+      <p class="rail-label">Shift A<br><span>06:00–14:00</span></p>
+    </div>
+  </aside>
+
+  <main id="main-content" class="main-content" tabindex="-1">
+    <section class="page-intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">National network / live operating view</p>
+        <h1 id="page-title">Parcel operations</h1>
+        <p class="intro-copy" id="scopeCopy">All facilities · Current day</p>
+      </div>
+      <div class="control-deck" aria-label="Dashboard filters">
+        <label class="select-control">
+          <span>Facility</span>
+          <select id="facilitySelect" aria-label="Select facility">
+            <option value="network">Network total</option>
+            <option value="kl">Kuala Lumpur Sort Centre</option>
+            <option value="johor">Johor Gateway Hub</option>
+            <option value="penang">Penang Regional Depot</option>
+          </select>
+        </label>
+        <label class="select-control">
+          <span>Date range</span>
+          <select id="dateRangeSelect" aria-label="Select date range">
+            <option value="today">Today · 13 Jul</option>
+            <option value="7d">Last 7 days</option>
+            <option value="30d">Last 30 days</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section class="view-controls" aria-labelledby="view-controls-title">
+      <p id="view-controls-title">Data view</p>
+      <div class="segmented-control" role="group" aria-label="Choose dashboard data state">
+        <button class="state-button is-active" type="button" data-state="populated" aria-pressed="true">Live data</button>
+        <button class="state-button" type="button" data-state="loading" aria-pressed="false">Loading</button>
+        <button class="state-button" type="button" data-state="empty" aria-pressed="false">No data</button>
+        <button class="state-button" type="button" data-state="error" aria-pressed="false">Data issue</button>
+      </div>
+      <p id="viewNotice" class="view-notice" role="status" aria-live="polite">Live operational data is displayed.</p>
+    </section>
+
+    <div id="dashboardView" class="dashboard-view" data-state="populated">
+      <section class="metrics-grid" aria-label="Operational summary">
+        <article class="metric-card metric-volume">
+          <div class="metric-header"><p>Parcels inducted</p><span class="metric-mark" aria-hidden="true">↓</span></div>
+          <p class="metric-value" data-metric="inducted">184,260</p>
+          <p class="metric-detail"><span class="trend good" data-trend="inducted">↑ 6.8%</span> <span>vs matched period</span></p>
+        </article>
+        <article class="metric-card">
+          <div class="metric-header"><p>Sort completion</p><span class="metric-mark" aria-hidden="true">✓</span></div>
+          <p class="metric-value" data-metric="completion">93.4%</p>
+          <p class="metric-detail"><span class="trend good" data-trend="completion">↑ 1.2 pts</span> <span>by planned cut-off</span></p>
+        </article>
+        <article class="metric-card">
+          <div class="metric-header"><p>On-time dispatch</p><span class="metric-mark" aria-hidden="true">→</span></div>
+          <p class="metric-value" data-metric="dispatch">96.1%</p>
+          <p class="metric-detail"><span class="trend good" data-trend="dispatch">↑ 0.7 pts</span> <span>network target 95.0%</span></p>
+        </article>
+        <article class="metric-card metric-exception">
+          <div class="metric-header"><p>Parcels at risk</p><span class="metric-mark" aria-hidden="true">!</span></div>
+          <p class="metric-value" data-metric="risk">1,842</p>
+          <p class="metric-detail"><span class="trend alert" data-trend="risk">↑ 318</span> <span>require intervention</span></p>
+        </article>
+      </section>
+
+      <section class="operational-grid" aria-label="Operational detail">
+        <article class="panel volume-panel">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Network flow</p>
+              <h2>Parcel volume by hour</h2>
+            </div>
+            <div class="chart-key"><span class="key-line" aria-hidden="true"></span>Inducted</div>
+          </div>
+          <div class="chart-summary" id="chartSummary">Peak: 21,640 parcels at 07:00 · Target capacity: 24,000/hr</div>
+          <div class="chart-wrap">
+            <svg class="volume-chart" id="volumeChart" viewBox="0 0 780 270" role="img" aria-labelledby="chart-title chart-desc" preserveAspectRatio="none">
+              <title id="chart-title">Parcel volume by hour</title>
+              <desc id="chart-desc">A line chart showing inducted parcel volume from midnight to 10 AM.</desc>
+              <g class="chart-grid" aria-hidden="true">
+                <line x1="48" x2="760" y1="30" y2="30"></line><line x1="48" x2="760" y1="83" y2="83"></line><line x1="48" x2="760" y1="136" y2="136"></line><line x1="48" x2="760" y1="189" y2="189"></line><line x1="48" x2="760" y1="242" y2="242"></line>
+              </g>
+              <g class="chart-axis" aria-hidden="true">
+                <text x="0" y="34">24k</text><text x="0" y="87">18k</text><text x="0" y="140">12k</text><text x="8" y="193">6k</text><text x="28" y="246">0</text>
+                <text x="48" y="264">00</text><text x="186" y="264">02</text><text x="326" y="264">04</text><text x="466" y="264">06</text><text x="606" y="264">08</text><text x="745" y="264">10</text>
+              </g>
+              <path id="chartArea" class="chart-area" d=""></path>
+              <polyline id="chartLine" class="chart-line" points=""></polyline>
+              <circle id="peakDot" class="chart-dot" cx="0" cy="0" r="5"></circle>
+              <g id="peakCallout" class="peak-callout" aria-hidden="true"><rect x="0" y="0" width="78" height="30" rx="3"></rect><text x="0" y="0">PEAK</text></g>
+            </svg>
+          </div>
+          <div class="chart-footer"><span>Actual parcels <strong data-metric="inducted">184,260</strong></span><span>Planned capacity <strong>216,000</strong></span></div>
+        </article>
+
+        <div class="side-stack">
+          <article class="panel alerts-panel" id="alerts" aria-labelledby="alerts-title">
+            <div class="panel-heading compact-heading"><div><p class="eyebrow danger-copy">Attention required</p><h2 id="alerts-title">Delayed shipments</h2></div><span class="badge-critical">3</span></div>
+            <ul class="alert-list">
+              <li><span class="severity critical" aria-hidden="true"></span><div><strong>MXP-482771</strong><p>Missed linehaul to Kota Bharu · 42 parcels</p></div><time datetime="2026-07-13T08:17:00+08:00">25m</time></li>
+              <li><span class="severity warning" aria-hidden="true"></span><div><strong>JHR-119084</strong><p>Manifest exception at Johor Gateway · 18 parcels</p></div><time datetime="2026-07-13T08:05:00+08:00">37m</time></li>
+              <li><span class="severity warning" aria-hidden="true"></span><div><strong>PNG-773902</strong><p>Outbound cage not scanned · 11 parcels</p></div><time datetime="2026-07-13T07:51:00+08:00">51m</time></li>
+            </ul>
+            <button class="text-action" type="button" id="reviewAlerts">Review exceptions <span aria-hidden="true">→</span></button>
+          </article>
+
+          <article class="panel events-panel" id="events" aria-labelledby="events-title">
+            <div class="panel-heading compact-heading"><div><p class="eyebrow">Last 45 minutes</p><h2 id="events-title">Operational events</h2></div></div>
+            <ol class="event-list">
+              <li><time datetime="2026-07-13T08:42:00+08:00">08:42</time><p><strong>Kuala Lumpur</strong> opened chute 14 after capacity alert cleared.</p></li>
+              <li><time datetime="2026-07-13T08:31:00+08:00">08:31</time><p><strong>Johor Gateway</strong> loaded linehaul JH-221 to Kuantan.</p></li>
+              <li><time datetime="2026-07-13T08:18:00+08:00">08:18</time><p><strong>Penang Depot</strong> completed AM sort wave 3.</p></li>
+            </ol>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel facility-panel" id="facility-status" aria-labelledby="facility-title">
+        <div class="panel-heading facility-heading"><div><p class="eyebrow">Site readiness</p><h2 id="facility-title">Facility status</h2></div><p class="table-note">All times MYT</p></div>
+        <div class="table-wrap" tabindex="0" aria-label="Facility status table. Scroll horizontally on smaller screens.">
+          <table>
+            <caption class="sr-only">Current processing status for each parcel facility.</caption>
+            <thead><tr><th scope="col">Facility</th><th scope="col">Operating status</th><th scope="col">Inbound queue</th><th scope="col">Sort completion</th><th scope="col">Next dispatch</th><th scope="col">Owner</th></tr></thead>
+            <tbody id="facilityTableBody">
+              <tr><th scope="row"><strong>Kuala Lumpur Sort Centre</strong><span>KL-SC01 · Central</span></th><td><span class="status operational">Operating normally</span></td><td>21 min</td><td>96.8%</td><td>09:15 · KTN-04</td><td>R. Afiq</td></tr>
+              <tr><th scope="row"><strong>Johor Gateway Hub</strong><span>JHR-GW01 · South</span></th><td><span class="status watch">Capacity watch</span></td><td>47 min</td><td>89.1%</td><td>09:05 · JH-221</td><td>S. Lim</td></tr>
+              <tr><th scope="row"><strong>Penang Regional Depot</strong><span>PNG-RD02 · North</span></th><td><span class="status operational">Operating normally</span></td><td>16 min</td><td>94.5%</td><td>09:40 · PG-118</td><td>N. Tan</td></tr>
+              <tr><th scope="row"><strong>Kota Kinabalu Hub</strong><span>KK-HB01 · East</span></th><td><span class="status delayed">Dispatch delay</span></td><td>38 min</td><td>83.6%</td><td>10:20 · KK-091</td><td>A. Morshidi</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+
+    <section id="support" class="support-note" aria-label="Support information">
+      <span aria-hidden="true">●</span> Shift support desk: +60 3 2788 1180 · Escalate critical delays within 15 minutes.
+    </section>
+  </main>
+
+  <template id="loadingTemplate">
+    <section class="metrics-grid loading-grid" aria-label="Loading operational summary">
+      <div class="skeleton metric-skeleton"></div><div class="skeleton metric-skeleton"></div><div class="skeleton metric-skeleton"></div><div class="skeleton metric-skeleton"></div>
+    </section>
+    <section class="operational-grid loading-layout" aria-label="Loading detailed operations"><div class="skeleton content-skeleton"></div><div class="skeleton content-skeleton stacked"></div></section>
+    <section class="loading-copy" role="status"><span class="loading-spinner" aria-hidden="true"></span><div><h2>Updating operational data</h2><p>Fetching facility throughput, dispatch, and exception queues.</p></div></section>
+  </template>
+
+  <template id="emptyTemplate">
+    <section class="state-card state-empty" aria-labelledby="empty-title"><span class="state-symbol" aria-hidden="true">○</span><div><p class="eyebrow">No records found</p><h2 id="empty-title">No processing activity for this selection</h2><p>Try a broader date range or select another facility. This view will update when the next operating scan is received.</p><button class="primary-action" type="button" id="resetFilters">Reset filters</button></div></section>
+  </template>
+
+  <template id="errorTemplate">
+    <section class="state-card state-error" aria-labelledby="error-title"><span class="state-symbol" aria-hidden="true">!</span><div><p class="eyebrow danger-copy">Data connection issue</p><h2 id="error-title">Operational data is temporarily unavailable</h2><p>The last confirmed network snapshot was 08:42 MYT. Retry the connection before making dispatch decisions from this view.</p><button class="primary-action" type="button" id="retryLoad">Retry data connection</button></div></section>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>

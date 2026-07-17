@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "decisions": [
+    {
+      "findingId": "finding-missing-fragment-target-case-02-new-skill-luna-xhigh",
+      "detectorId": "missing-fragment-target",
+      "evidenceFingerprint": "sha256:7e33d47a4fba9b9063f15aeb65c83444234d987bfd999284137b22e827114ef1",
+      "status": "human-review-verified-for-archive",
+      "reviewedAt": "2026-07-15T14:06:42Z",
+      "rationale": "Confirmed against the finalized generated output. Defect intentionally retained as archival evidence."
+    },
+    {
+      "findingId": "finding-missing-fragment-target-case-02-new-skill-sol-high",
+      "detectorId": "missing-fragment-target",
+      "evidenceFingerprint": "sha256:c583f07c6a6774cf0a662348b6c03724752f09c51e7f5367099dd7ca5eda1ca2",
+      "status": "human-review-verified-for-archive",
+      "reviewedAt": "2026-07-15T14:06:42Z",
+      "rationale": "Confirmed against the finalized generated output. Defect intentionally retained as archival evidence."
+    },
+    {
+      "findingId": "finding-missing-fragment-target-case-02-no-skill-luna-xhigh",
+      "detectorId": "missing-fragment-target",
+      "evidenceFingerprint": "sha256:80ef5b15639b00467d15cca1d5821a526680b2fa8428bb6bdef5cd07182e4189",
+      "status": "human-review-verified-for-archive",
+      "reviewedAt": "2026-07-15T14:06:42Z",
+      "rationale": "Confirmed against the finalized generated output. Defect intentionally retained as archival evidence."
+    },
+    {
+      "findingId": "finding-missing-fragment-target-case-02-no-skill-sol-high",
+      "detectorId": "missing-fragment-target",
+      "evidenceFingerprint": "sha256:a75af71dacba5ee74dbacde3b45873e2e9d89f645ac541bad0f1b19541af29e8",
+      "status": "human-review-verified-for-archive",
+      "reviewedAt": "2026-07-15T14:06:42Z",
+      "rationale": "Confirmed against the finalized generated output. Defect intentionally retained as archival evidence."
+    },
+    {
+      "findingId": "finding-missing-fragment-target-case-02-no-skill-terra-xhigh",
+      "detectorId": "missing-fragment-target",
+      "evidenceFingerprint": "sha256:cf60db9ef70ad21ed98920c7bf5938432f54032d07692b0138c4cd8e8134ffdb",
+      "status": "human-review-verified-for-archive",
+      "reviewedAt": "2026-07-15T14:06:42Z",
+      "rationale": "Confirmed against the finalized generated output. Defect intentionally retained as archival evidence."
+    },
+    {
+      "findingId": "finding-missing-fragment-target-case-03-new-skill-sol-high",
+      "detectorId": "missing-fragment-target",
+      "evidenceFingerprint": "sha256:c78567dbe34c3620904ce8cbd8e54fce4a8edd18ec882f2f1f3a7b564958cfb9",
+      "status": "human-review-verified-for-archive",
+      "reviewedAt": "2026-07-15T14:06:42Z",
+      "rationale": "Confirmed against the finalized generated output. Defect intentionally retained as archival evidence."
+    }
+  ]
+}
+

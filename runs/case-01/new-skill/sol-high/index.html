@@ -1,0 +1,285 @@
+<!doctype html>
+<!-- Agent: Sol | Reasoning level: high | Skill condition: new-skill | Output directory: <LOCAL_SAMPLE_ROOT>/sol-high/new-skill/01-creative-landing -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gantry is the desktop control plane for dispatching, observing, and merging the work of multiple AI coding agents.">
+  <title>AI Agent Desktop Tool — Sol high — New Skill</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#top" aria-label="Gantry home">
+      <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M3 25h26M7 25V8h18v17M11 8V4h10v4M11 14h10M16 14v11"/></svg>
+      <span>GANTRY</span><small>DESKTOP</small>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="#control">Control room</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#workflow">Workflow</a>
+      <a href="#pricing">Pricing</a>
+      <a class="nav-cta" href="#pricing">Get early access <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Multi-agent engineering, under control</p>
+        <h1 id="hero-title">Parallel work.<br><em>One clean merge.</em></h1>
+        <p class="hero-lede">Gantry is the desktop switchboard for serious agentic development. Dispatch specialized coding agents, watch their lanes converge, and bring proven work home without losing the plot.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#pricing">Join the private beta <span aria-hidden="true">→</span></a>
+          <a class="button button-quiet" href="#control"><span class="play-mark" aria-hidden="true">▶</span> Watch the run</a>
+        </div>
+        <div class="hero-proof" aria-label="Product details">
+          <span><b>Local-first</b> workspace context</span>
+          <span><b>Mac + Windows</b> desktop app</span>
+          <span><b>Your agents</b> your credentials</span>
+        </div>
+      </div>
+
+      <div class="hero-mark" aria-hidden="true">
+        <span class="mark-number">04</span>
+        <span class="mark-copy">lanes<br>converging</span>
+        <svg viewBox="0 0 210 210"><circle cx="105" cy="105" r="91"/><path d="M25 52h55l25 53v80M185 52h-55l-25 53M25 158h40l40-53M185 158h-40l-40-53"/><circle cx="105" cy="105" r="8"/></svg>
+      </div>
+    </section>
+
+    <section class="control-section" id="control" aria-labelledby="control-title">
+      <div class="section-heading section-heading-light">
+        <p class="section-kicker">LIVE CONTROL ROOM / RUN 148</p>
+        <div>
+          <h2 id="control-title">See the whole system move.</h2>
+          <p>Not four chat windows. One coordinated run with clear ownership, dependencies, and a visible path back to main.</p>
+        </div>
+      </div>
+
+      <div class="console-shell">
+        <div class="console-topbar">
+          <div class="window-controls" aria-hidden="true"><i></i><i></i><i></i></div>
+          <p><span>~/heliograph</span> / release/auth-hardening</p>
+          <span class="connection"><i></i> LOCAL SESSION</span>
+        </div>
+
+        <div class="console-body">
+          <aside class="run-rail" aria-label="Run summary">
+            <div><span>RUN</span><b>#148</b></div>
+            <div><span>BRANCHES</span><b id="branch-count">04</b></div>
+            <div><span>FILES Δ</span><b id="file-count">12</b></div>
+            <div class="run-clock"><span>ELAPSED</span><b id="run-clock">08:42</b></div>
+          </aside>
+
+          <div class="orchestration-panel">
+            <div class="demo-controls">
+              <div class="state-tabs" role="tablist" aria-label="Orchestration run state">
+                <button type="button" role="tab" id="tab-dispatch" aria-controls="run-board" aria-selected="true" tabindex="0" data-state="dispatch">01 Dispatch</button>
+                <button type="button" role="tab" id="tab-build" aria-controls="run-board" aria-selected="false" tabindex="-1" data-state="build">02 In flight</button>
+                <button type="button" role="tab" id="tab-merge" aria-controls="run-board" aria-selected="false" tabindex="-1" data-state="merge">03 Merge ready</button>
+              </div>
+              <button class="sequence-button" type="button" data-play aria-label="Play orchestration sequence"><span aria-hidden="true">▶</span> Play sequence</button>
+            </div>
+
+            <div class="run-board" id="run-board" role="tabpanel" tabindex="0" aria-labelledby="tab-dispatch" aria-live="polite">
+              <div class="orchestrator-card">
+                <div class="agent-id agent-id-main">OR</div>
+                <div><span>ORCHESTRATOR</span><strong>Sol / Lead</strong></div>
+                <p id="orchestrator-note">Scoping worktree boundaries and dispatching lanes</p>
+                <span class="pulse-dot" aria-label="Active"></span>
+              </div>
+
+              <div class="route-spine" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+
+              <div class="lane-list" aria-label="Implementation lanes">
+                <article class="agent-lane" data-lane="0">
+                  <div class="agent-id agent-id-cyan">AR</div>
+                  <div class="lane-info"><span>ARCHITECTURE · TERRA</span><strong>Map auth boundary</strong><small class="dependency">No dependencies</small></div>
+                  <div class="lane-status"><span class="status-tag">QUEUED</span><div class="progress" aria-label="0 percent complete"><i style="--progress:0%"></i></div><b>0%</b></div>
+                </article>
+                <article class="agent-lane" data-lane="1">
+                  <div class="agent-id agent-id-orange">UI</div>
+                  <div class="lane-info"><span>FRONTEND · SOL</span><strong>Rebuild session shell</strong><small class="dependency">Waits for architecture map</small></div>
+                  <div class="lane-status"><span class="status-tag">BLOCKED</span><div class="progress" aria-label="0 percent complete"><i style="--progress:0%"></i></div><b>0%</b></div>
+                </article>
+                <article class="agent-lane" data-lane="2">
+                  <div class="agent-id agent-id-lime">DB</div>
+                  <div class="lane-info"><span>DATA · LUNA</span><strong>Audit token storage</strong><small class="dependency">No dependencies</small></div>
+                  <div class="lane-status"><span class="status-tag">QUEUED</span><div class="progress" aria-label="0 percent complete"><i style="--progress:0%"></i></div><b>0%</b></div>
+                </article>
+                <article class="agent-lane" data-lane="3">
+                  <div class="agent-id agent-id-paper">QA</div>
+                  <div class="lane-info"><span>VERIFICATION · TERRA</span><strong>Draft regression matrix</strong><small class="dependency">Waits for UI + data</small></div>
+                  <div class="lane-status"><span class="status-tag">BLOCKED</span><div class="progress" aria-label="0 percent complete"><i style="--progress:0%"></i></div><b>0%</b></div>
+                </article>
+              </div>
+
+              <div class="return-track" aria-hidden="true"><span></span></div>
+              <div class="output-card" id="output-card">
+                <div class="output-icon" aria-hidden="true">↳</div>
+                <div><span>RETURNING TO ORCHESTRATOR</span><strong id="output-title">Awaiting completed lanes</strong><small id="output-detail">0 checks passed · merge gate closed</small></div>
+                <span class="merge-state" id="merge-state">PENDING</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="control-caption">
+        <p><b>Every lane has a contract.</b> Gantry keeps the branch, scope, dependencies, context budget, and acceptance checks attached to the work—not buried in a prompt history.</p>
+        <div class="metric"><strong>3.2×</strong><span>more work surfaced<br>before merge</span></div>
+        <div class="metric"><strong>0</strong><span>mystery branches<br>left behind</span></div>
+      </div>
+    </section>
+
+    <section class="capabilities" id="capabilities" aria-labelledby="capabilities-title">
+      <div class="section-heading">
+        <p class="section-kicker">CONTROL WITHOUT THE CEREMONY</p>
+        <div>
+          <h2 id="capabilities-title">Built for the work<br>between prompts.</h2>
+          <p>Gantry turns agent activity into an engineering system you can inspect, steer, and trust.</p>
+        </div>
+      </div>
+
+      <div class="feature-ledger">
+        <article class="feature-row">
+          <span class="feature-index">01</span>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M8 13h18v15H8zM38 36h18v15H38zM26 20h12v23M32 20v23"/></svg></div>
+          <h3>Dispatch with boundaries</h3>
+          <p>Give each agent a narrow mission, explicit files, branch isolation, and a definition of done. Gantry packages the handoff before the first token is spent.</p>
+          <span class="feature-label">SCOPE / ROUTE</span>
+        </article>
+        <article class="feature-row">
+          <span class="feature-index">02</span>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="22"/><path d="M32 10v44M10 32h44M18 18l28 28M46 18 18 46"/></svg></div>
+          <h3>Observe real progress</h3>
+          <p>Follow tool calls, file changes, tests, context use, and blockers as structured events. Zoom from the full run to one agent’s exact decision trail.</p>
+          <span class="feature-label">TRACE / SIGNAL</span>
+        </article>
+        <article class="feature-row">
+          <span class="feature-index">03</span>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M9 14h18v13H9zM37 37h18v13H37zM27 20h9l-5 4 5 4h-9M37 43h-9l5-4-5-4h9"/></svg></div>
+          <h3>Coordinate dependencies</h3>
+          <p>Declare what can run now, what must wait, and what changed underneath another lane. Gantry reroutes context without restarting the entire job.</p>
+          <span class="feature-label">DEPEND / SYNC</span>
+        </article>
+        <article class="feature-row">
+          <span class="feature-index">04</span>
+          <div class="feature-icon" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M12 12v14c0 5 4 9 9 9h22M52 12v14c0 5-4 9-9 9H21M32 35v17M24 45l8 8 8-8"/></svg></div>
+          <h3>Bring back proven work</h3>
+          <p>Review lane summaries, diffs, test evidence, and conflicts in one return packet. Merge only the outputs that meet your gate.</p>
+          <span class="feature-label">REVIEW / MERGE</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="workflow" id="workflow" aria-labelledby="workflow-title">
+      <div class="workflow-intro">
+        <p class="section-kicker">A RUN, END TO END</p>
+        <h2 id="workflow-title">Keep your hands<br>on the system.</h2>
+        <p>Open each stage to see what Gantry records and returns. The default path stays compact; the evidence is there when you need it.</p>
+      </div>
+
+      <div class="workflow-steps">
+        <article class="workflow-step is-open">
+          <button type="button" aria-expanded="true" aria-controls="workflow-panel-1" id="workflow-button-1">
+            <span>01</span><strong>Frame the mission</strong><i aria-hidden="true">−</i>
+          </button>
+          <div class="workflow-panel" id="workflow-panel-1" role="region" aria-labelledby="workflow-button-1">
+            <p>Describe the outcome once. Gantry identifies separable work, proposes lane boundaries, and makes shared constraints explicit before dispatch.</p>
+            <ul><li>Repository map</li><li>Editable paths</li><li>Acceptance gates</li></ul>
+          </div>
+        </article>
+        <article class="workflow-step">
+          <button type="button" aria-expanded="false" aria-controls="workflow-panel-2" id="workflow-button-2">
+            <span>02</span><strong>Route the lanes</strong><i aria-hidden="true">+</i>
+          </button>
+          <div class="workflow-panel" id="workflow-panel-2" role="region" aria-labelledby="workflow-button-2" hidden>
+            <p>Assign models and specializations per lane. Gantry isolates branches, sends only relevant context, and marks dependency edges.</p>
+            <ul><li>Model routing</li><li>Worktree isolation</li><li>Context budgets</li></ul>
+          </div>
+        </article>
+        <article class="workflow-step">
+          <button type="button" aria-expanded="false" aria-controls="workflow-panel-3" id="workflow-button-3">
+            <span>03</span><strong>Steer by exception</strong><i aria-hidden="true">+</i>
+          </button>
+          <div class="workflow-panel" id="workflow-panel-3" role="region" aria-labelledby="workflow-button-3" hidden>
+            <p>Healthy lanes keep moving. You are pulled in for blockers, scope drift, failed checks, or decisions that genuinely need human judgment.</p>
+            <ul><li>Live event stream</li><li>Pause + redirect</li><li>Drift alerts</li></ul>
+          </div>
+        </article>
+        <article class="workflow-step">
+          <button type="button" aria-expanded="false" aria-controls="workflow-panel-4" id="workflow-button-4">
+            <span>04</span><strong>Review the return</strong><i aria-hidden="true">+</i>
+          </button>
+          <div class="workflow-panel" id="workflow-panel-4" role="region" aria-labelledby="workflow-button-4" hidden>
+            <p>Completed lanes arrive as evidence-rich packets. Compare output, inspect diffs, rerun checks, then combine the work in the order you choose.</p>
+            <ul><li>Diff summaries</li><li>Test receipts</li><li>Merge sequencing</li></ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="pricing" id="pricing" aria-labelledby="pricing-title">
+      <div class="pricing-head">
+        <div>
+          <p class="section-kicker">PRIVATE BETA PRICING</p>
+          <h2 id="pricing-title">Start with one seat.<br>Bring every agent.</h2>
+        </div>
+        <div class="billing-toggle" role="group" aria-label="Billing period">
+          <button type="button" aria-pressed="true" data-billing="monthly">Monthly</button>
+          <button type="button" aria-pressed="false" data-billing="annual">Annual <span>−20%</span></button>
+        </div>
+      </div>
+
+      <div class="price-ticket">
+        <div class="ticket-main">
+          <div class="ticket-label"><span>FOUNDER PLAN</span><i>BETA 01</i></div>
+          <p>For individual developers shipping real work with multiple agents.</p>
+          <div class="price-line"><span class="currency">$</span><strong id="price-value">32</strong><span class="period" id="price-period">/ month</span></div>
+          <p class="billing-note" id="billing-note">Billed monthly. Cancel any time.</p>
+          <a class="button button-dark" href="mailto:contact@example.invalid?subject=Gantry%20Private%20Beta">Reserve a beta seat <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="ticket-stub">
+          <p>INCLUDED</p>
+          <ul>
+            <li>Unlimited local projects</li>
+            <li>Up to 8 concurrent lanes</li>
+            <li>Bring your own agent accounts</li>
+            <li>Run history + diff evidence</li>
+            <li>Priority beta channel</li>
+          </ul>
+          <small>Agent usage is billed by your providers. Team controls are coming after beta.</small>
+          <div class="barcode" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta" aria-labelledby="final-title">
+      <div class="cta-route" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+      <p class="section-kicker">THE NEXT RUN STARTS HERE</p>
+      <h2 id="final-title">Stop supervising tabs.<br><em>Start directing work.</em></h2>
+      <p>Join the private beta and turn your collection of coding agents into one engineering system.</p>
+      <a class="button button-signal" href="mailto:contact@example.invalid?subject=Gantry%20Private%20Beta">Request desktop access <span aria-hidden="true">↗</span></a>
+      <span class="cta-note">Mac + Windows · New seats released weekly</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand brand-footer" href="#top" aria-label="Gantry home">
+      <svg aria-hidden="true" viewBox="0 0 32 32"><path d="M3 25h26M7 25V8h18v17M11 8V4h10v4M11 14h10M16 14v11"/></svg>
+      <span>GANTRY</span>
+    </a>
+    <p>Desktop coordination for agentic engineering.</p>
+    <nav aria-label="Footer navigation"><a href="#control">Product</a><a href="#capabilities">Capabilities</a><a href="#pricing">Pricing</a><a href="mailto:contact@example.invalid">Contact</a></nav>
+    <p class="copyright">© 2026 Gantry Systems. Built for people who build.</p>
+  </footer>
+</body>
+</html>

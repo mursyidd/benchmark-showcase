@@ -1,0 +1,755 @@
+{
+  "publicationRoot": "publication/",
+  "statement": "Showcase copies match the finalized sanitized publication artifacts from which they were copied.",
+  "files": [
+    {
+      "sourcePath": "audit/excluded-artifacts.md",
+      "destinationPath": "evidence/audit/excluded-artifacts.md",
+      "kind": "publication-evidence",
+      "sha256": "d06997e011d318a5bc0fa44c591c177219f359f1c5b4086a92596b0a6ecc3617",
+      "bytes": 1663
+    },
+    {
+      "sourcePath": "audit/sanitization-report.md",
+      "destinationPath": "evidence/audit/sanitization-report.md",
+      "kind": "publication-evidence",
+      "sha256": "c74628dd6033edf1932032890284ff401785014b2df462e741ed2ad481f9fa42",
+      "bytes": 18799
+    },
+    {
+      "sourcePath": "audit/source-public-map.json",
+      "destinationPath": "evidence/audit/source-public-map.json",
+      "kind": "publication-evidence",
+      "sha256": "f61b6297d5ca7381c75779806b0301a0ff2095b2cf1c04a3b3a7a84f6c577c6e",
+      "bytes": 23687
+    },
+    {
+      "sourcePath": "benchmark-manifest.json",
+      "destinationPath": "evidence/benchmark-manifest.json",
+      "kind": "publication-evidence",
+      "sha256": "e46d9969c5c2fbd597819b5e5894ead55231fcd8c4e979ab54c81c20049f3185",
+      "bytes": 45439
+    },
+    {
+      "sourcePath": "README.md",
+      "destinationPath": "evidence/README.md",
+      "kind": "publication-evidence",
+      "sha256": "4bd828ca45b5e511152965de865a80853f76603a8ce34807804c7daf12d3d9d7",
+      "bytes": 5592
+    },
+    {
+      "sourcePath": "summaries/01-creative-landing-new-skill.md",
+      "destinationPath": "evidence/summaries/01-creative-landing-new-skill.md",
+      "kind": "summary",
+      "sha256": "3fcd4b267c7e86ad724fd7f678c39e88355ba3aa7b5918c7de9ff3aed6080a50",
+      "bytes": 4025
+    },
+    {
+      "sourcePath": "summaries/01-creative-landing-no-skill.md",
+      "destinationPath": "evidence/summaries/01-creative-landing-no-skill.md",
+      "kind": "summary",
+      "sha256": "ebcc337ba68fe0147e784ec86737589c2127e92b60a8f8a694633ce5ffbb911f",
+      "bytes": 4525
+    },
+    {
+      "sourcePath": "summaries/02-operational-dashboard-new-skill.md",
+      "destinationPath": "evidence/summaries/02-operational-dashboard-new-skill.md",
+      "kind": "summary",
+      "sha256": "5934b3eca4b2799d566cbe944e50eaf03364253d37234114b706f61e9622c66e",
+      "bytes": 3128
+    },
+    {
+      "sourcePath": "summaries/02-operational-dashboard-no-skill.md",
+      "destinationPath": "evidence/summaries/02-operational-dashboard-no-skill.md",
+      "kind": "summary",
+      "sha256": "f83099c93665be6cb4cd5ba4b4df249038f812acb4eb83c8582819ed6baab6ff",
+      "bytes": 1996
+    },
+    {
+      "sourcePath": "summaries/03-settings-form-new-skill.md",
+      "destinationPath": "evidence/summaries/03-settings-form-new-skill.md",
+      "kind": "summary",
+      "sha256": "8850acb5fb733f14f802a94dda8c1a6c0b419690c251cac68f676d4bd13f2187",
+      "bytes": 3036
+    },
+    {
+      "sourcePath": "summaries/03-settings-form-no-skill.md",
+      "destinationPath": "evidence/summaries/03-settings-form-no-skill.md",
+      "kind": "summary",
+      "sha256": "165d131164452cb806448812e3ddc30924db846b5ab8f91fd272363576e8a6e7",
+      "bytes": 3144
+    },
+    {
+      "sourcePath": "inputs/prompts/case-01/new-skill.md",
+      "destinationPath": "inputs/prompts/case-01/new-skill.md",
+      "kind": "canonical-prompt",
+      "sha256": "6bc3be329f9f8ed7a86d18a0bc32c437e34d6fb2ccb201fda9cc8d362750bef2",
+      "bytes": 11207
+    },
+    {
+      "sourcePath": "inputs/prompts/case-01/no-skill.md",
+      "destinationPath": "inputs/prompts/case-01/no-skill.md",
+      "kind": "canonical-prompt",
+      "sha256": "1f5d56e062f601d28760ea874c21050532fb0592bec551af29b9329089564a08",
+      "bytes": 15956
+    },
+    {
+      "sourcePath": "inputs/prompts/case-02/new-skill.md",
+      "destinationPath": "inputs/prompts/case-02/new-skill.md",
+      "kind": "canonical-prompt",
+      "sha256": "a5a6691a54cc80105248bbc5cf6125487582c505300620d8e47905d1c9098dcd",
+      "bytes": 8704
+    },
+    {
+      "sourcePath": "inputs/prompts/case-02/no-skill.md",
+      "destinationPath": "inputs/prompts/case-02/no-skill.md",
+      "kind": "canonical-prompt",
+      "sha256": "45c2003ebb00fb86c60a0c96eb8181965bccb752316d1e068726f55b70288c38",
+      "bytes": 8299
+    },
+    {
+      "sourcePath": "inputs/prompts/case-03/new-skill.md",
+      "destinationPath": "inputs/prompts/case-03/new-skill.md",
+      "kind": "canonical-prompt",
+      "sha256": "bdb3146710332b0a55a8b784cd443f9004aeb174480f4ea716653b75985688d1",
+      "bytes": 9741
+    },
+    {
+      "sourcePath": "inputs/prompts/case-03/no-skill.md",
+      "destinationPath": "inputs/prompts/case-03/no-skill.md",
+      "kind": "canonical-prompt",
+      "sha256": "b41589546b00f76aacd48cfbdac2a85368b5d67e4fa5b10500c2dbc4c99ad4f0",
+      "bytes": 9310
+    },
+    {
+      "sourcePath": "inputs/skill/SKILL.md",
+      "destinationPath": "inputs/skill/SKILL.md",
+      "kind": "canonical-skill",
+      "sha256": "d5b6e60238d56ff59adc9bead7ecd77477c135e5c43e083d1d4200f814213b08",
+      "bytes": 4451
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/luna-xhigh/index.html",
+      "destinationPath": "runs/case-01/new-skill/luna-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "8ee050ae2ab5ef84d0c0adc8a06d486b140079ae8a8c08ead1d99609ab514e89",
+      "bytes": 21693
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/luna-xhigh/RUN.md",
+      "destinationPath": "runs/case-01/new-skill/luna-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "0452075517bad534dc06fa9afd9f83e58da490ddc606d50a8d5189142b3aa90f",
+      "bytes": 5123
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/luna-xhigh/script.js",
+      "destinationPath": "runs/case-01/new-skill/luna-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "2df17cae19c3c40cd983d81d6c4350100adbdd9e5a5e4f5e88a53488dc4db17d",
+      "bytes": 9196
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/luna-xhigh/styles.css",
+      "destinationPath": "runs/case-01/new-skill/luna-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "23db61f2f55b1046dea23982f4bbf1b31b6ba97c346480616145a318f7a46685",
+      "bytes": 36812
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/index.html",
+      "destinationPath": "runs/case-01/new-skill/sol-high/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "40fd0f4ac7867b860da4ee1211b345a093de57b5e03198a2247aee2cd1639b1e",
+      "bytes": 17556
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/RUN.md",
+      "destinationPath": "runs/case-01/new-skill/sol-high/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "e7496f5b6944f5e81ef8f1429ff1e8e16b353b5cac87d2212742c46e33529e2b",
+      "bytes": 6331
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/script.js",
+      "destinationPath": "runs/case-01/new-skill/sol-high/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "24c5489777125b78ae760865cc73d82088630e18d5586a515768135afa190c6c",
+      "bytes": 8282
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/styles.css",
+      "destinationPath": "runs/case-01/new-skill/sol-high/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "e5d2635ecf4d80fd2898e9d8b2c624d1463b18afcef6a8044325d66acfa8f5fb",
+      "bytes": 28873
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-control-room.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-control-room.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "d6c6f6cc0c17c449aae8661c2cd3f89ff8a2cc2bca5035eacb01e40edbc4e109",
+      "bytes": 78974
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-desktop-viewport.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-desktop-viewport.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "9a57e27a110c4a38b17049857b72cb669b7bb041ef5071c2bf216dd58ba51a6d",
+      "bytes": 80558
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-desktop.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-desktop.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "9a57e27a110c4a38b17049857b72cb669b7bb041ef5071c2bf216dd58ba51a6d",
+      "bytes": 80558
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-features.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-features.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "5c90842a7848efe37572f90aa331372c67281a7e56310e7ca328d519986f66b8",
+      "bytes": 79615
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-final-cta.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-final-cta.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "4c0ed1ec1b4f36a9a222ce428e82e55a08f2856fb80843290f859f81e6f77d07",
+      "bytes": 73685
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-keyboard-focus.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-keyboard-focus.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "0038f1d4ceaf4327f6318ef677f944c7e9cea3f71dd8e591bf84fcdb24addc96",
+      "bytes": 80227
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-mobile-control.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-mobile-control.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "078b068e5e42315c32a54279b88ff5256df639379aebd3c50f6385004e0c6720",
+      "bytes": 33284
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-mobile-menu.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-mobile-menu.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "f0f05c743ccc82b4d04ab6222c5af95852f65f2d06ca6a932dc43b4fb3c81487",
+      "bytes": 15497
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-mobile-pricing.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-mobile-pricing.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "49723416c5377e86a9257cc06ae73597f76a9adc09a69b5580a2e6941d52075b",
+      "bytes": 30172
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-mobile-ticket.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-mobile-ticket.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "4918e51c1f4c0547368d7914bf83a4d1c7c3d16f56924a5d015f537c2677b410",
+      "bytes": 32856
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-mobile.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-mobile.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "43b6dcc7732b44c7962c8d48cdd2266ecce1836d10c292bf64e245d02d50bc53",
+      "bytes": 38305
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-pricing.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-pricing.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "e115db452764f8da6993a42aee86e2ec811f522f07a18496553edd164372dae9",
+      "bytes": 60869
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-tablet-control.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-tablet-control.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "89804629084210a30c92fc336f69d1d46f254c8ff39c315b6a280b43772df86a",
+      "bytes": 50546
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-tablet.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-tablet.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "0dd511b991cd02bd2a169f4ab7112012fc717f467cd2e4a78def2e9219b4b1b3",
+      "bytes": 58370
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/sol-high/verification-workflow.png",
+      "destinationPath": "runs/case-01/new-skill/sol-high/verification-workflow.png",
+      "kind": "sanitized-run-artifact",
+      "sha256": "e34cb73fb79cb7e077bc252f7ee9c4a2d3311e5ffa0be6dc057e6b9892b3eea0",
+      "bytes": 78570
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/terra-xhigh/index.html",
+      "destinationPath": "runs/case-01/new-skill/terra-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "5920da6b76f957cf904110c063241f1acb88e01b65f472d011195edccadfb179",
+      "bytes": 14744
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/terra-xhigh/RUN.md",
+      "destinationPath": "runs/case-01/new-skill/terra-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "dcfcb25ffdce3a841689b3af937b36425e86d24991ad9733d419bcc0ca564647",
+      "bytes": 2684
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/terra-xhigh/script.js",
+      "destinationPath": "runs/case-01/new-skill/terra-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "ba7a454437ed84cb72fd9d2728fc532e90ff351db715936bd8e7cd9727320de2",
+      "bytes": 5382
+    },
+    {
+      "sourcePath": "raw/case-01/new-skill/terra-xhigh/styles.css",
+      "destinationPath": "runs/case-01/new-skill/terra-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "bd6edfb1be1212c0009d9ec81c2731bfdcc8c84f4bb953f978f268f868959073",
+      "bytes": 22986
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/luna-xhigh/index.html",
+      "destinationPath": "runs/case-01/no-skill/luna-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "a7a69b6024114902e74513ed90546c56c79a24109197f7b71ace3a84c1efb381",
+      "bytes": 21637
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/luna-xhigh/RUN.md",
+      "destinationPath": "runs/case-01/no-skill/luna-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "8fe45a3251fcc32abdee773b9a2070bf521650b46e8da20c9594ab02b1997ccc",
+      "bytes": 3925
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/luna-xhigh/script.js",
+      "destinationPath": "runs/case-01/no-skill/luna-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "558a2ed0d64d9b5f683360472f7bc31c9cf1e0e70492266bfe95cb2f9c18c17b",
+      "bytes": 8672
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/luna-xhigh/styles.css",
+      "destinationPath": "runs/case-01/no-skill/luna-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "91685d7d8c8008a3f8f4a66ae38e7cfbf3dab4f4cdea453b333918d79f4b49d0",
+      "bytes": 34775
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/sol-high/index.html",
+      "destinationPath": "runs/case-01/no-skill/sol-high/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "be124bc10a6d1d71f1ff5bc4dc344190db5f022e45ab150bfe230cb943187fe5",
+      "bytes": 14398
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/sol-high/RUN.md",
+      "destinationPath": "runs/case-01/no-skill/sol-high/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "71ba15e1a1c5de746933bdfeaaeae7cfe1f6896c1f60f77d30e6d09299342583",
+      "bytes": 2848
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/sol-high/script.js",
+      "destinationPath": "runs/case-01/no-skill/sol-high/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "6bc4e3bd9a1328842f769856285dbd318f79fd04e285b0276616038f32bcc33f",
+      "bytes": 6967
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/sol-high/styles.css",
+      "destinationPath": "runs/case-01/no-skill/sol-high/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "5f94eb6af6671ac74bee72bfa078461f98a34697a5b965b2cfc68f6f89ae15c1",
+      "bytes": 24825
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/terra-xhigh/index.html",
+      "destinationPath": "runs/case-01/no-skill/terra-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "2e43f4134797c7942c56ffbdfdec1754b8533155b7ba190de0686881fbcaa480",
+      "bytes": 17105
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/terra-xhigh/RUN.md",
+      "destinationPath": "runs/case-01/no-skill/terra-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "bbe88f34ff7f826af9c4b79e64345f139fab6143dadb190a657da098886a517b",
+      "bytes": 3231
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/terra-xhigh/script.js",
+      "destinationPath": "runs/case-01/no-skill/terra-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "3f11742ac4eb3891e71c4d518ddae788800caa2154b429405f847425aef620d5",
+      "bytes": 6962
+    },
+    {
+      "sourcePath": "raw/case-01/no-skill/terra-xhigh/styles.css",
+      "destinationPath": "runs/case-01/no-skill/terra-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "7605836f942e3ac150bc50a9cbde78029bc50bb5538a19306e84f8d164765b5c",
+      "bytes": 24833
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/luna-xhigh/index.html",
+      "destinationPath": "runs/case-02/new-skill/luna-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "612af2a3c5305fdc604ebc7b5e9b93e8ccde07c536c18dd99f2126e4486b98f5",
+      "bytes": 9235
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/luna-xhigh/RUN.md",
+      "destinationPath": "runs/case-02/new-skill/luna-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "8094ba9783c0c32e33792723d874c1cd21e137babf2f6382f3fee9881dc8db3e",
+      "bytes": 3261
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/luna-xhigh/script.js",
+      "destinationPath": "runs/case-02/new-skill/luna-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "a12d1ba191f58372cfc15572f228749be0f24f4a2b2ead699ba5b6b63ced2460",
+      "bytes": 17994
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/luna-xhigh/styles.css",
+      "destinationPath": "runs/case-02/new-skill/luna-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "7e3374a7f567d29ef39dcca9f2fe100bfe48b76cc13fbcd2ee59322beb2d9418",
+      "bytes": 22655
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/sol-high/index.html",
+      "destinationPath": "runs/case-02/new-skill/sol-high/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "f5b40950bb3ffc77530b53aa019d3cb9fd12519081e5ffd0e896d85eb5fb4572",
+      "bytes": 12649
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/sol-high/RUN.md",
+      "destinationPath": "runs/case-02/new-skill/sol-high/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "bcabceab06c785d6ac3c9cb7bdd8c2ddc94230d73be40adc248c8e5f74d8460d",
+      "bytes": 1784
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/sol-high/script.js",
+      "destinationPath": "runs/case-02/new-skill/sol-high/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "ff5ed4f9e7533690dd7da0bf0bdb87076657d1a54abbbec702298a89405683ef",
+      "bytes": 13726
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/sol-high/styles.css",
+      "destinationPath": "runs/case-02/new-skill/sol-high/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "7c411f4f142fe4c8e26924556a36ac3c3a1d00ee5e0d1a24fe44955595a4a3f7",
+      "bytes": 23475
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/terra-xhigh/index.html",
+      "destinationPath": "runs/case-02/new-skill/terra-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "c963089f9fe9b1947da96cf9c6575fc5fd1368023bd54de192a5f130d450ba59",
+      "bytes": 14486
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/terra-xhigh/RUN.md",
+      "destinationPath": "runs/case-02/new-skill/terra-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "b0d06bc5cd5255314f940d9a2c94596ea13540c8a9481fe6a2dfaa028519c650",
+      "bytes": 2681
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/terra-xhigh/script.js",
+      "destinationPath": "runs/case-02/new-skill/terra-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "ee06ac6e4e19d79a830ddf0d5e725f2da7e9413aeb04446006450f388bd99c95",
+      "bytes": 8682
+    },
+    {
+      "sourcePath": "raw/case-02/new-skill/terra-xhigh/styles.css",
+      "destinationPath": "runs/case-02/new-skill/terra-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "1b726db5d0a13e07d2c1f761d6aac12753a699ea7544b068ec507cd57efdf3e0",
+      "bytes": 18761
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/luna-xhigh/index.html",
+      "destinationPath": "runs/case-02/no-skill/luna-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "02b62bc6f26b6ffb9e0918dd5163542f2c50144c60e8b09afd15120a96481198",
+      "bytes": 12985
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/luna-xhigh/RUN.md",
+      "destinationPath": "runs/case-02/no-skill/luna-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "bacd5658047547c12d0c16c37d9ed1747f2decb0689f48ea8641d7e90326196e",
+      "bytes": 3347
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/luna-xhigh/script.js",
+      "destinationPath": "runs/case-02/no-skill/luna-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "ae3285151452760a814a98aaf952ae672d3828eb82750640a540e6a6a811be8a",
+      "bytes": 15888
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/luna-xhigh/styles.css",
+      "destinationPath": "runs/case-02/no-skill/luna-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "1e0a8400c3211a514995f909b4dbdde94a7b04b8f51859a35d76c969cb917ac1",
+      "bytes": 21243
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/sol-high/index.html",
+      "destinationPath": "runs/case-02/no-skill/sol-high/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "f91d4fa7d444199b295eb083db1d11b34c41d01447bf023673e8b7ab8d18eb84",
+      "bytes": 15403
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/sol-high/RUN.md",
+      "destinationPath": "runs/case-02/no-skill/sol-high/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "7d301dce000bf8c00e3b2a769a3f803ef159a2701b39d44d2537f290b41cf9a7",
+      "bytes": 2541
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/sol-high/script.js",
+      "destinationPath": "runs/case-02/no-skill/sol-high/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "df5ea38ea93fa9bb2aa9c575f5d958b0ef207cb2992d5e439656ded1fd6d650f",
+      "bytes": 12852
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/sol-high/styles.css",
+      "destinationPath": "runs/case-02/no-skill/sol-high/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "e0aa0ca37458c3797e00189e218604e7fe750734f4c195b4547d5ce655d7cbbf",
+      "bytes": 21313
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/terra-xhigh/index.html",
+      "destinationPath": "runs/case-02/no-skill/terra-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "cd5dd7f2a95527bfd7a7d1c95d9ba68c39f3f48fad740b6f1a5ec305be0262fd",
+      "bytes": 15923
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/terra-xhigh/RUN.md",
+      "destinationPath": "runs/case-02/no-skill/terra-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "d6678f11796a26742e55f29a2a50d688e67760bfb44e79a573209d7c20d9c838",
+      "bytes": 3043
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/terra-xhigh/script.js",
+      "destinationPath": "runs/case-02/no-skill/terra-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "226d6c22484ae70580d1a6f9f369755986f0225306713f2fd3b627ad40b3ce9d",
+      "bytes": 15867
+    },
+    {
+      "sourcePath": "raw/case-02/no-skill/terra-xhigh/styles.css",
+      "destinationPath": "runs/case-02/no-skill/terra-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "bcc4eb517d1260cd23e0972915af659a676ae2e2afc3507fb22c2e0686a5267b",
+      "bytes": 20801
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/luna-xhigh/index.html",
+      "destinationPath": "runs/case-03/new-skill/luna-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "edf0f625637d796547cdac21fa274bc31d380aebf63494edc9d86049bc87990b",
+      "bytes": 10960
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/luna-xhigh/RUN.md",
+      "destinationPath": "runs/case-03/new-skill/luna-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "73340edeb683bcec03d43b38a1bd952de497368cc6d51e323e20ee40117bc6de",
+      "bytes": 3974
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/luna-xhigh/script.js",
+      "destinationPath": "runs/case-03/new-skill/luna-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "a323110f15c6f4a9fc91516a91dd4fe4fd654c27b35e7c4e7028cbef55da22ef",
+      "bytes": 9188
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/luna-xhigh/styles.css",
+      "destinationPath": "runs/case-03/new-skill/luna-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "934609244e1b12fa98e5f303ca7e5d158b1f4a898d65d12bf804bbae6408c402",
+      "bytes": 16507
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/sol-high/index.html",
+      "destinationPath": "runs/case-03/new-skill/sol-high/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "30a987d95ffd84bfe76f2bd6fdc406aeeeec0b668d4fe01cd49bb25968137f4c",
+      "bytes": 10448
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/sol-high/RUN.md",
+      "destinationPath": "runs/case-03/new-skill/sol-high/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "4fbf2242f7d721fa676919a980551ec261cd76631c09c2d4b6f1a5f253f58431",
+      "bytes": 3094
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/sol-high/script.js",
+      "destinationPath": "runs/case-03/new-skill/sol-high/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "a86c54d459e633a36958d3677d6993fc5a665c2895af16580b0f284a2eec8a95",
+      "bytes": 8082
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/sol-high/styles.css",
+      "destinationPath": "runs/case-03/new-skill/sol-high/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "d60b39ff04157356282d2494a335896dbacba31402e00ee66ebad0494b9810d1",
+      "bytes": 13945
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/terra-xhigh/index.html",
+      "destinationPath": "runs/case-03/new-skill/terra-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "2bf58ae79942686629b0fbdaf7ae9e70dd20212be045ca42de06ce418e5ebbab",
+      "bytes": 8470
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/terra-xhigh/RUN.md",
+      "destinationPath": "runs/case-03/new-skill/terra-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "c7487fd6ef67897f74f0ad45393ede029407634e23db535585bfe75d2067e986",
+      "bytes": 2058
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/terra-xhigh/script.js",
+      "destinationPath": "runs/case-03/new-skill/terra-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "29980f7e4b1acb46da482243db390acccab783dd663deffec52a5e581df57606",
+      "bytes": 5918
+    },
+    {
+      "sourcePath": "raw/case-03/new-skill/terra-xhigh/styles.css",
+      "destinationPath": "runs/case-03/new-skill/terra-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "bdc69eb7172d402fc03ea5f9210e02e2ca7940aeb365707270550c981a550add",
+      "bytes": 10978
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/luna-xhigh/index.html",
+      "destinationPath": "runs/case-03/no-skill/luna-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "c8ffcead9a1ab4d709af6de559a21f502017b946817b3fbc561f6c4c4a226f6e",
+      "bytes": 10561
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/luna-xhigh/RUN.md",
+      "destinationPath": "runs/case-03/no-skill/luna-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "912c3e2096e3ad7bed0839b10afba5082275c2b583568ebab2267a52d850003a",
+      "bytes": 3539
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/luna-xhigh/script.js",
+      "destinationPath": "runs/case-03/no-skill/luna-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "1b597a9f0bfb14a1b4e1a7a48376e643d30c5ff73c9bb8758c0234348b097e10",
+      "bytes": 7679
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/luna-xhigh/styles.css",
+      "destinationPath": "runs/case-03/no-skill/luna-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "fb2ff2629b269a206cb21d5105aa3a6d91d5ffca6b44244827adc203da329ca7",
+      "bytes": 15211
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/sol-high/DESIGN.md",
+      "destinationPath": "runs/case-03/no-skill/sol-high/DESIGN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "2676289897f3f627b4ac6a6a19686ce15aaff1e616c3abf6a643bbca33e411e2",
+      "bytes": 2875
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/sol-high/index.html",
+      "destinationPath": "runs/case-03/no-skill/sol-high/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "f7a9749cd0dc32931d18ba627c5bbda8ed0e0040cf01fde514ad06463be1af9d",
+      "bytes": 9124
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/sol-high/PLAN.md",
+      "destinationPath": "runs/case-03/no-skill/sol-high/PLAN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "e1caada21e1088bd49953fe127740f30de8551a7871c99da1db799e34a962b3b",
+      "bytes": 2138
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/sol-high/RUN.md",
+      "destinationPath": "runs/case-03/no-skill/sol-high/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "b4535bfc0cefbf5c3651120d089271ccd569c8f0d9ecc67a7f9004444cb01231",
+      "bytes": 3797
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/sol-high/script.js",
+      "destinationPath": "runs/case-03/no-skill/sol-high/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "57da0bc1fa46b676f8cfc1009199e726340e60d03d5944b99fc7c32cb10c2097",
+      "bytes": 6693
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/sol-high/styles.css",
+      "destinationPath": "runs/case-03/no-skill/sol-high/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "d66c99eb31dc1ab2cf5e60d9b8f9c18ded1a1aa2382c3c664e63bb353fa2f9a7",
+      "bytes": 11499
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/terra-xhigh/index.html",
+      "destinationPath": "runs/case-03/no-skill/terra-xhigh/index.html",
+      "kind": "sanitized-run-artifact",
+      "sha256": "a3e00f18d81917e42f1c3cc65dfcebe88913496bac6108f20d77bf039ee62d82",
+      "bytes": 7312
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/terra-xhigh/RUN.md",
+      "destinationPath": "runs/case-03/no-skill/terra-xhigh/RUN.md",
+      "kind": "sanitized-run-artifact",
+      "sha256": "33f79639358bf8836bee07374e1553cd39590d4ff16455bad0d008204dd70f26",
+      "bytes": 3144
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/terra-xhigh/script.js",
+      "destinationPath": "runs/case-03/no-skill/terra-xhigh/script.js",
+      "kind": "sanitized-run-artifact",
+      "sha256": "4d0aed964283d266864f7fc7c2e8f0b8740a101407ef9a4a1814bd456a830dce",
+      "bytes": 5350
+    },
+    {
+      "sourcePath": "raw/case-03/no-skill/terra-xhigh/styles.css",
+      "destinationPath": "runs/case-03/no-skill/terra-xhigh/styles.css",
+      "kind": "sanitized-run-artifact",
+      "sha256": "6be5ef55c1b1c931930e31875ff8634b05ef1794ab845e0eb7f8cc7625af4ce2",
+      "bytes": 9974
+    }
+  ]
+}

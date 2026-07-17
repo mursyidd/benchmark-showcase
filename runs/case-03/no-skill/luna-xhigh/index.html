@@ -1,0 +1,201 @@
+<!doctype html>
+<!-- Agent: Luna | Reasoning level: xhigh | Skill condition: no-skill | Output directory: <LOCAL_SAMPLE_ROOT>/luna-xhigh/no-skill/03-settings-form -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light" />
+    <title>Account Settings — Luna xhigh — No Skill</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="app-header">
+      <a class="brand" href="#main-content" aria-label="Acme Workspace home">
+        <span class="brand-mark" aria-hidden="true">A</span>
+        <span class="brand-name">Acme Workspace</span>
+      </a>
+      <div class="header-context" aria-label="Current workspace">
+        <span class="header-context-label">Workspace</span>
+        <span class="header-context-value">Product team</span>
+      </div>
+      <div class="user-context">
+        <span class="user-name">Alex Chen</span>
+        <span class="avatar" aria-hidden="true">AC</span>
+      </div>
+    </header>
+
+    <div class="app-layout">
+      <aside class="settings-sidebar" aria-label="Settings navigation">
+        <div class="sidebar-heading">
+          <span class="sidebar-kicker">Workspace</span>
+          <h2>Settings</h2>
+        </div>
+        <nav>
+          <ul class="settings-nav-list">
+            <li>
+              <a class="settings-nav-link is-active" href="#profile" aria-current="page">
+                <span class="nav-icon" aria-hidden="true">◈</span>
+                <span>Account</span>
+              </a>
+            </li>
+            <li>
+              <a class="settings-nav-link" href="#notifications">
+                <span class="nav-icon" aria-hidden="true">◌</span>
+                <span>Notifications</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <p class="sidebar-note">Changes apply to your workspace profile and preferences.</p>
+      </aside>
+
+      <main id="main-content" class="main-content" tabindex="-1">
+        <div class="content-wrap">
+          <div class="page-intro">
+            <p class="eyebrow">Account</p>
+            <h1>Account settings</h1>
+            <p class="intro-copy">Keep your profile details and communication preferences up to date.</p>
+          </div>
+
+          <div id="form-feedback" class="feedback" role="status" aria-live="polite" aria-atomic="true" tabindex="-1" hidden>
+            <span id="feedback-icon" class="feedback-icon" aria-hidden="true"></span>
+            <div>
+              <strong id="feedback-title"></strong>
+              <p id="feedback-message"></p>
+            </div>
+          </div>
+
+          <form id="settings-form" novalidate>
+            <section id="profile" class="settings-card" aria-labelledby="profile-heading" tabindex="-1">
+              <div class="section-heading">
+                <div>
+                  <p class="section-kicker">Your profile</p>
+                  <h2 id="profile-heading">Profile information</h2>
+                </div>
+                <p class="section-description">This information is visible to teammates across your workspace.</p>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-field form-field-wide">
+                  <label for="email">Email address <span class="required-mark" aria-hidden="true">*</span><span class="sr-only">required</span></label>
+                  <input id="email" name="email" type="email" autocomplete="email" value="alex.chen@example.com" required aria-describedby="email-help email-error" />
+                  <p id="email-help" class="field-help">Used for account access and important notices.</p>
+                  <p id="email-error" class="field-error" role="alert" hidden></p>
+                </div>
+
+                <div class="form-field form-field-wide">
+                  <label for="display-name">Display name <span class="required-mark" aria-hidden="true">*</span><span class="sr-only">required</span></label>
+                  <input id="display-name" name="displayName" type="text" autocomplete="name" value="Alex Chen" maxlength="80" required aria-describedby="display-name-help display-name-error" />
+                  <p id="display-name-help" class="field-help">Your name as it appears in comments and activity.</p>
+                  <p id="display-name-error" class="field-error" role="alert" hidden></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="timezone">Time zone <span class="required-mark" aria-hidden="true">*</span><span class="sr-only">required</span></label>
+                  <select id="timezone" name="timezone" required aria-describedby="timezone-help timezone-error">
+                    <option value="">Select a time zone</option>
+                    <option value="America/Los_Angeles" selected>(GMT−08:00) Pacific Time</option>
+                    <option value="America/Denver">(GMT−07:00) Mountain Time</option>
+                    <option value="America/Chicago">(GMT−06:00) Central Time</option>
+                    <option value="America/New_York">(GMT−05:00) Eastern Time</option>
+                    <option value="Europe/London">(GMT+00:00) London</option>
+                    <option value="Europe/Berlin">(GMT+01:00) Berlin</option>
+                    <option value="Asia/Singapore">(GMT+08:00) Singapore</option>
+                    <option value="Australia/Sydney">(GMT+10:00) Sydney</option>
+                  </select>
+                  <p id="timezone-help" class="field-help">Used to format dates and schedule notifications.</p>
+                  <p id="timezone-error" class="field-error" role="alert" hidden></p>
+                </div>
+
+                <div class="form-field">
+                  <label for="language">Language <span class="required-mark" aria-hidden="true">*</span><span class="sr-only">required</span></label>
+                  <select id="language" name="language" required aria-describedby="language-help language-error">
+                    <option value="">Select a language</option>
+                    <option value="en-US" selected>English (US)</option>
+                    <option value="en-GB">English (UK)</option>
+                    <option value="de-DE">Deutsch</option>
+                    <option value="fr-FR">Français</option>
+                    <option value="ja-JP">日本語</option>
+                  </select>
+                  <p id="language-help" class="field-help">Your preferred language for the workspace interface.</p>
+                  <p id="language-error" class="field-error" role="alert" hidden></p>
+                </div>
+              </div>
+            </section>
+
+            <section id="notifications" class="settings-card" aria-labelledby="notifications-heading" tabindex="-1">
+              <div class="section-heading">
+                <div>
+                  <p class="section-kicker">Stay informed</p>
+                  <h2 id="notifications-heading">Notification preferences</h2>
+                </div>
+                <p class="section-description">Choose which updates appear in your inbox.</p>
+              </div>
+
+              <fieldset class="preference-list" aria-describedby="notification-help">
+                <legend class="sr-only">Notification preferences</legend>
+                <p id="notification-help" class="fieldset-help">You can change these preferences at any time.</p>
+
+                <label class="preference-row" for="product-updates">
+                  <span class="preference-copy">
+                    <span class="preference-title">Product updates</span>
+                    <span class="preference-description">Occasional news about improvements and new features.</span>
+                  </span>
+                  <input id="product-updates" name="productUpdates" type="checkbox" checked />
+                </label>
+
+                <label class="preference-row" for="security-alerts">
+                  <span class="preference-copy">
+                    <span class="preference-title">Security alerts</span>
+                    <span class="preference-description">Important notifications about sign-ins and account changes.</span>
+                  </span>
+                  <input id="security-alerts" name="securityAlerts" type="checkbox" checked />
+                </label>
+
+                <label class="preference-row" for="weekly-digest">
+                  <span class="preference-copy">
+                    <span class="preference-title">Weekly digest</span>
+                    <span class="preference-description">A Monday summary of activity from your workspace.</span>
+                  </span>
+                  <input id="weekly-digest" name="weeklyDigest" type="checkbox" />
+                </label>
+              </fieldset>
+            </section>
+
+            <section class="form-footer" aria-label="Save account settings">
+              <div id="unsaved-warning" class="unsaved-warning" role="status" aria-live="polite" aria-atomic="true" hidden>
+                <span class="warning-icon" aria-hidden="true">!</span>
+                <div>
+                  <strong>Unsaved changes</strong>
+                  <span>Save your updates before leaving this page.</span>
+                </div>
+              </div>
+
+              <div class="action-row">
+                <button id="cancel-button" class="button button-secondary" type="button" disabled>Cancel</button>
+                <button id="save-button" class="button button-primary" type="submit">
+                  <span id="save-button-label">Save changes</span>
+                  <span class="button-spinner" aria-hidden="true"></span>
+                </button>
+              </div>
+
+              <div class="simulation-control">
+                <label for="simulation-mode">Save response</label>
+                <select id="simulation-mode" aria-describedby="simulation-help">
+                  <option value="success" selected>Simulate success</option>
+                  <option value="failure">Simulate failure</option>
+                </select>
+                <p id="simulation-help">Choose a response, then select Save changes to exercise each feedback state.</p>
+              </div>
+            </section>
+          </form>
+        </div>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

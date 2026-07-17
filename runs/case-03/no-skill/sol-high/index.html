@@ -1,0 +1,177 @@
+<!doctype html>
+<!-- Agent: Sol | Reasoning level: high | Skill condition: no-skill (Active frontend skill: None) | Output directory: <LOCAL_SAMPLE_ROOT>/sol-high/no-skill/03-settings-form -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Account Settings — Sol high — No Skill</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to account settings</a>
+
+  <header class="app-header">
+    <div class="header-inner">
+      <a class="brand" href="#main-content" aria-label="Northstar home">
+        <span class="brand-mark" aria-hidden="true">N</span>
+        <span>Northstar</span>
+      </a>
+      <div class="header-account" aria-label="Signed in account">
+        <span class="avatar" aria-hidden="true">AM</span>
+        <span class="account-name">Alex Morgan</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="app-layout">
+    <nav class="settings-nav" aria-label="Settings navigation">
+      <p class="nav-heading">Settings</p>
+      <a class="nav-link" href="#account" aria-current="page">
+        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5 6.5c0-2.5 2.2-4.5 5-4.5s5 2 5 4.5"/></svg>
+        Account
+      </a>
+    </nav>
+
+    <main id="main-content" class="main-content">
+      <section id="account" aria-labelledby="page-title">
+        <div class="page-heading">
+          <p class="eyebrow">Personal settings</p>
+          <h1 id="page-title">Account settings</h1>
+          <p>Manage the profile details and notifications used across your account.</p>
+        </div>
+
+        <div id="dirty-warning" class="dirty-warning" role="status" aria-live="polite" hidden>
+          <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 6v4m0 3h.01M8.6 3.4 2.4 14.2A1.2 1.2 0 0 0 3.5 16h13a1.2 1.2 0 0 0 1.1-1.8L11.4 3.4a1.6 1.6 0 0 0-2.8 0Z"/></svg>
+          <span><strong>Unsaved changes.</strong> Save or cancel before leaving this page.</span>
+        </div>
+
+        <div id="form-status" class="status" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+
+        <form id="settings-form" novalidate>
+          <section class="form-section" aria-labelledby="profile-heading">
+            <div class="section-heading">
+              <h2 id="profile-heading">Profile information</h2>
+              <p>This information identifies you to teammates and in account activity.</p>
+            </div>
+
+            <div class="form-fields">
+              <div class="field">
+                <label for="email">Email address <span aria-hidden="true">*</span></label>
+                <p id="email-hint" class="field-hint">Used for sign-in and important account messages.</p>
+                <input id="email" name="email" type="email" value="alex.morgan@example.com" autocomplete="email" required aria-describedby="email-hint email-error">
+                <p id="email-error" class="field-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field">
+                <label for="display-name">Display name <span aria-hidden="true">*</span></label>
+                <p id="display-name-hint" class="field-hint">Shown to other people in your workspace.</p>
+                <input id="display-name" name="displayName" type="text" value="Alex Morgan" autocomplete="name" maxlength="80" required aria-describedby="display-name-hint display-name-error">
+                <p id="display-name-error" class="field-error" aria-live="polite"></p>
+              </div>
+
+              <div class="field-row">
+                <div class="field">
+                  <label for="timezone">Time zone <span aria-hidden="true">*</span></label>
+                  <select id="timezone" name="timezone" required aria-describedby="timezone-error">
+                    <option value="">Select a time zone</option>
+                    <option value="America/Los_Angeles">Pacific Time (UTC−08:00)</option>
+                    <option value="America/New_York">Eastern Time (UTC−05:00)</option>
+                    <option value="Europe/London">London (UTC+00:00)</option>
+                    <option value="Europe/Paris">Central European Time (UTC+01:00)</option>
+                    <option value="Asia/Kuala_Lumpur" selected>Kuala Lumpur (UTC+08:00)</option>
+                    <option value="Asia/Tokyo">Tokyo (UTC+09:00)</option>
+                    <option value="Australia/Sydney">Sydney (UTC+10:00)</option>
+                  </select>
+                  <p id="timezone-error" class="field-error" aria-live="polite"></p>
+                </div>
+
+                <div class="field">
+                  <label for="language">Language <span aria-hidden="true">*</span></label>
+                  <select id="language" name="language" required aria-describedby="language-error">
+                    <option value="">Select a language</option>
+                    <option value="en-US" selected>English (United States)</option>
+                    <option value="en-GB">English (United Kingdom)</option>
+                    <option value="de-DE">Deutsch</option>
+                    <option value="fr-FR">Français</option>
+                    <option value="ja-JP">日本語</option>
+                  </select>
+                  <p id="language-error" class="field-error" aria-live="polite"></p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="form-section" aria-labelledby="notifications-heading">
+            <div class="section-heading">
+              <h2 id="notifications-heading">Notification preferences</h2>
+              <p>Choose which optional updates you receive by email.</p>
+            </div>
+
+            <fieldset class="preference-list">
+              <legend class="sr-only">Email notification preferences</legend>
+              <label class="preference" for="product-updates">
+                <span class="preference-copy">
+                  <span class="preference-title">Product updates</span>
+                  <span class="preference-description">New features, improvements, and release notes.</span>
+                </span>
+                <span class="switch">
+                  <input id="product-updates" name="productUpdates" type="checkbox" checked>
+                  <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+                </span>
+              </label>
+
+              <label class="preference" for="activity-summary">
+                <span class="preference-copy">
+                  <span class="preference-title">Weekly activity summary</span>
+                  <span class="preference-description">A weekly overview of activity in your workspace.</span>
+                </span>
+                <span class="switch">
+                  <input id="activity-summary" name="activitySummary" type="checkbox">
+                  <span class="switch-track" aria-hidden="true"><span class="switch-thumb"></span></span>
+                </span>
+              </label>
+
+              <label class="preference" for="security-alerts">
+                <span class="preference-copy">
+                  <span class="preference-title">Security alerts</span>
+                  <span class="preference-description">Important sign-in and account-security notices.</span>
+                </span>
+                <span class="required-badge">Always on</span>
+                <input id="security-alerts" type="checkbox" checked disabled class="sr-only" aria-describedby="security-alerts-note">
+                <span id="security-alerts-note" class="sr-only">Security alerts cannot be disabled.</span>
+              </label>
+            </fieldset>
+          </section>
+
+          <div class="form-actions">
+            <p class="required-note"><span aria-hidden="true">*</span> Required fields</p>
+            <div class="action-buttons">
+              <button id="cancel-button" class="button button--secondary" type="button">Cancel</button>
+              <button id="save-button" class="button button--primary" type="submit">
+                <span class="button-spinner" aria-hidden="true"></span>
+                <span class="button-label">Save changes</span>
+              </button>
+            </div>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+
+  <dialog id="discard-dialog" aria-labelledby="discard-title" aria-describedby="discard-description">
+    <form method="dialog" class="dialog-card">
+      <div class="dialog-icon" aria-hidden="true">!</div>
+      <div>
+        <h2 id="discard-title">Discard unsaved changes?</h2>
+        <p id="discard-description">Your account settings will return to the last saved values.</p>
+      </div>
+      <div class="dialog-actions">
+        <button class="button button--secondary" value="keep" autofocus>Keep editing</button>
+        <button class="button button--danger" value="discard">Discard changes</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
+

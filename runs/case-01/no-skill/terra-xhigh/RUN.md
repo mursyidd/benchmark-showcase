@@ -1,0 +1,31 @@
+# Relay Desktop — Run Record
+
+- Agent name: Terra
+- Reasoning level: xhigh
+- Skill mode: no-skill
+- Active frontend-specific skill: None
+- Exact output directory: `<LOCAL_SAMPLE_ROOT>/terra-xhigh/no-skill/01-creative-landing`
+- Files created: `index.html`, `styles.css`, `script.js`, `RUN.md`
+- External dependencies: None. The page uses only local HTML, CSS, JavaScript, and inline SVG.
+- Design direction: A dark, field-instrument-inspired desktop control room. The orchestration surface uses technical grid lines, mission constraints, named specialists, visible dependency paths, and a return node so parallel agent work reads like an intentional system rather than a generic dashboard.
+- Interactions implemented:
+  - Responsive navigation menu with `aria-expanded` state.
+  - Agent-lane inspection controls that update specialization, status, files, dependency, and trace text.
+  - A handoff simulation control that advances real visible progress and return-to-orchestrator states.
+  - Accessible monthly/annual billing switch that updates prices.
+  - Native expandable workflow details.
+  - All custom controls use semantic buttons, accessible labels or visible names, and visible keyboard focus.
+- Verification performed:
+  - Loaded the page locally from `http://127.0.0.1:4173/index.html`; confirmed the exact required document title and a clean final browser console.
+  - Inspected rendered layout at desktop `1440×900`, tablet `768×900`, and mobile `390×844` viewports.
+  - Verified no horizontal overflow at all three widths. At 390px, checked that the agent inspector and return-to-orchestrator node remain inside the orchestration stage after a small positioning adjustment.
+  - Tested agent inspection by mouse and keyboard (Tab + Space), handoff simulation by mouse and keyboard (Tab + Enter), billing toggle by mouse and keyboard (Tab + Space), native workflow disclosure by mouse and keyboard, and mobile navigation by mouse and keyboard.
+  - Confirmed a mobile navigation link scrolls to its target and closes the menu; checked logical focus behavior and visible `:focus-visible` styling.
+  - Confirmed every link and button has an accessible name, all custom controls are semantic buttons, four native workflow disclosures are present, reduced-motion CSS resolves animation and transition durations to effectively instantaneous values, and the loaded page requests only `index.html`, `styles.css`, and `script.js` from localhost.
+  - Confirmed the assigned output directory contains only the four required deliverable files.
+- Verification results: Passed. The page opens successfully as a standalone local document, has no final console errors or network dependencies, works across tested widths without horizontal scrolling, and its tested controls update their visible state and accessible state as intended.
+- Known limitations: This is a static local product demonstration. The agent activity and pricing changes are simulated; no agents, repositories, accounts, or billing systems are connected.
+- Self-recorded work start time: 2026-07-13 15:18:19 +08:00
+- Self-recorded work completion time: 2026-07-13 15:33:10 +08:00
+- Self-recorded elapsed seconds: 891
+- Self-recorded elapsed HH:MM:SS: 00:14:51
